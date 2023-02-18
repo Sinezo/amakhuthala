@@ -10,13 +10,49 @@ body{
     background-size: cover;
 
 }
+/*styling header*/
+header{
+    height:150px;
+    padding:15px;
+    background-image: url('Pencil lamp logo template.creative pencil idea logo.png') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header .website-name{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:rgb(126, 95, 55);
+    font-size: x-large;
+}
+nav{
+    float:right;
+    padding:5px;
+    color:white;
+}
+nav span{
+    margin-left:50px;
+    font-size:large;
+    padding:10px;
+}
+nav span:hover{
+    border:5px solid rgb(214, 140, 30);
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-radius: 5px;
+    cursor:pointer;
+}
+nav .hire-us-btn{
+    background-color: rgb(42, 140, 165);
+    color:white;
+    padding:10px;
+}
 /*styling wrap all*/
 .wrap-all{
     display:flex;
 }
 /*styling menu wrapper*/
 .menu-wrapper{
-    height: 420px;
+    height: 425px;
     width:0;
     background-color: white;
     overflow: hidden;
@@ -145,38 +181,6 @@ body{
     padding:2px;
     background-color: rgb(56, 55, 54);
     transition: margin 200ms linear;
-}
-/*styling header*/
-header{
-    padding:15px;
-}
-header .website-name{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color:rgb(233, 142, 52);
-    font-size: x-large;
-}
-nav{
-    float:right;
-    padding:5px;
-    color:white;
-}
-nav span{
-    margin-left:50px;
-    font-size:large;
-    padding:10px;
-}
-nav span:hover{
-    border:5px solid rgb(214, 140, 30);
-    border-top: 0;
-    border-left: 0;
-    border-right: 0;
-    border-radius: 5px;
-    cursor:pointer;
-}
-nav .hire-us-btn{
-    background-color: rgb(42, 140, 165);
-    color:white;
-    padding:10px;
 }
 
 /*styling welcome-box*/

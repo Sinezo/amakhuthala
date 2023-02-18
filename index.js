@@ -5,6 +5,7 @@ function MENU(){
         document.querySelector('.content-wrapper').style.marginLeft='-250px';
         document.querySelector('.content-wrapper').style.opacity='.5';
         document.querySelector('.menu-wrapper').style.width='100%';
+        window.location="#";
 
         menu_show=0;
     }
