@@ -14,9 +14,9 @@ body{
 header{
     height:150px;
     padding:15px;
-    background-image: url('Pencil lamp logo template.creative pencil idea logo.png') ;
+    background-image: url('1.png') ;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 }
 header .website-name{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
