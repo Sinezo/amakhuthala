@@ -52,7 +52,7 @@ nav .hire-us-btn{
 }
 /*styling menu wrapper*/
 .menu-wrapper{
-    height: 425px;
+    height: 100%;
     width:0;
     background-color: white;
     overflow: hidden;
