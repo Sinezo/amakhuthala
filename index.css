@@ -212,8 +212,10 @@ nav .hire-us-btn{
     font-size: medium;
     text-align: start;
     padding:20px;
-    background-color: white;
-    color:black;
+    background-color: rgb(6, 10, 24);
+    color:rgb(184, 174, 174);
+    opacity:.9;
+    border-radius: 4px;
 }
 .welcome-box .welcome-message .one{
     color:rgb(224, 137, 24);
@@ -232,6 +234,7 @@ nav .hire-us-btn{
     width:90%; 
     margin:10px;
     box-sizing: border-box;
+    border-radius: 4px;
 }
 .welcome-box button:hover{
     border:2px solid rgb(255, 255, 255);
