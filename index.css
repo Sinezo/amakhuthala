@@ -212,10 +212,11 @@ nav .hire-us-btn{
     font-size: medium;
     text-align: start;
     padding:20px;
-    background-color: rgb(6, 10, 24);
-    color:rgb(184, 174, 174);
+    background-color: unset;
+    color:rgb(241, 233, 233);
     opacity:.9;
     border-radius: 4px;
+    margin:20px 10px;
 }
 .welcome-box .welcome-message .one{
     color:rgb(224, 137, 24);
@@ -232,7 +233,7 @@ nav .hire-us-btn{
     background-color: rgb(223, 161, 28);
     color:rgb(255, 255, 255);
     width:90%; 
-    margin:10px;
+    margin:25px 10px;
     box-sizing: border-box;
     border-radius: 4px;
 }
