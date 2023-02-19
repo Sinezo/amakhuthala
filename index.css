@@ -17,6 +17,7 @@ header{
     background-image: url('1.png') ;
     background-repeat: no-repeat;
     background-size: contain;
+    background-color: white;
 }
 header .website-name{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -143,8 +144,9 @@ nav .hire-us-btn{
     padding:40px;
     height:17px;
     transition: all 200ms linear;
-    background-color: rgb(250, 253, 255) ;
-    border:2px solid white;
+    background-color:unset;
+    margin: -120px -50px 0 0;
+
 }
 .bar-wrap{
     padding:10px 10px 5px 10px; 
@@ -157,7 +159,7 @@ nav .hire-us-btn{
     display:flex;
     justify-content: end;
     padding:20px;
-    background-color: rgb(240, 235, 235);
+    background-color: unset;
     margin-top: 10px;
 }
 .bar-wrap:hover{
