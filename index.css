@@ -53,9 +53,11 @@ nav .hire-us-btn{
 /*styling menu wrapper*/
 .menu-wrapper{
     height: 100%;
+    position:fixed;
     width:0;
     background-color: white;
     overflow: hidden;
+    transition: width 300ms linear;
 }
 .menu-wrapper .close{
     padding:5px;
@@ -83,7 +85,7 @@ nav .hire-us-btn{
     text-align: center;
     margin-top: 70px;
     border-top: 1px solid grey;
-
+    width:max-content;
 }
 /*styling content wrapper*/
 .content-wrapper{
