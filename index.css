@@ -5,9 +5,6 @@
 /*styling body*/
 body{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-image:url('Screenshot_20230216-140324_Gallery.jpg') ;
-    background-repeat:no-repeat;
-    background-size: cover;
     background-color: white;
 
 }
@@ -77,19 +74,21 @@ nav .hire-us-btn{
     cursor: pointer;
     border-bottom: 1px solid;
 }
-.menu .social-media{
-    padding:20px;
-    text-align: center;
-    margin-top: 70px;
-    border-top: 1px solid grey;
-    width:max-content;
-}
 /*styling content wrapper*/
 .content-wrapper{
     width:100%;
-    transition: margin 150ms ease-in-out;
+    transition: margin 200ms ease-in-out;
 }
 /*styling contact-us*/
+.social-media{
+    position:absolute;
+    bottom:0;
+    background-color: rgb(238, 210, 55);
+    width:100%; 
+    padding:20px;
+    text-align: center;
+    margin-left: -20px;
+}
 .social-media span{
     margin-right:10px;
     font-size:x-large;
@@ -139,9 +138,7 @@ nav .hire-us-btn{
 .menu-icon{
     padding:40px;
     height:17px;
-    transition: all 200ms linear;
-    background-color:unset;
-    margin: -120px 0px 0 0;
+    margin: -50px 0px 0 0;
 
 }
 .bar-wrap{
@@ -149,7 +146,7 @@ nav .hire-us-btn{
     background-color: unset;
     width:fit-content;
     box-shadow: 1px 1px 3px;
-    margin:0 -40px 0 0;
+    margin:-30px -40px 0 0;
    
 }
 .wrap-menu-bars{
@@ -165,23 +162,26 @@ nav .hire-us-btn{
 }
 .bar-one{
     width:15px;
-    padding:2px;
-    background-color: rgb(56, 55, 54);
+    padding:1px;
+    border:1px solid white;
     margin-bottom:3px;
     margin-top:-5px;
     transition: all 200ms linear;
+    border-radius: 10px;
 }
 .bar-two{
     width:15px;
-    padding:2px;
-    background-color: rgb(56, 55, 54);
+    padding:1px;
+    border:1px solid white;
     margin-bottom:3px;
+    border-radius: 10px;
 }
 .bar-three{
     width:15px;
-    padding:2px;
-    background-color: rgb(56, 55, 54);
+    padding:1px;
+    border:1px solid white;
     transition: margin 200ms linear;
+    border-radius: 10px;
 }
 
 /*styling welcome-box*/
@@ -189,7 +189,9 @@ nav .hire-us-btn{
     padding:10px;
     display:flex;
     color:white;
-    margin-top: 50px;
+    background-image:url('Screenshot_20230216-140324_Gallery.jpg') ;
+    background-repeat:no-repeat;
+    background-size: cover;
 }
 .welcome-box .welcome-media{
     width:600px;
@@ -355,23 +357,27 @@ nav .hire-us-btn{
 }
 /*styling services*/
 .services{
-    color:white;
-    padding:10px;
+    color:rgb(36, 35, 35);
+    
     margin-top: 50px;
     opacity:.9;
 }
 .services .content{
     padding:10px;
-    background-color:rgb(24, 53, 70);
+    background-color:rgb(255, 255, 255);
 }
 .services .content ul{
     list-style:decimal;
     list-style-position: inside;
 }
+
 .services .content ul li{
-    background-color: rgb(16, 46, 63);
+    background-color: unset;
     padding:20px;
     margin-bottom: 5px;
+    width:fit-content;
+    border:1px solid rgb(212, 173, 45);
+    border-radius: 10px;
 }
 .services .content ul li:hover{
     cursor: pointer;
@@ -383,30 +389,26 @@ nav .hire-us-btn{
     background-color: unset;
     padding:20px;
     margin-top: 50px;
-    color:rgb(236, 182, 33);
+    color:rgb(255, 255, 255);
 }
 .sum-1{
     padding:30px;
-    background-color: rgb(229, 237, 240);
+    background-color: rgb(88, 147, 168);
     margin-bottom: 30px;
-    opacity:.9;
 }
 .sum-2{
     padding:30px;
     background-color: rgb(114, 139, 132);
     margin-bottom: 30px;
-    opacity:.9;
 }
 .sum-3{
     padding:30px;
     background-color: rgb(202, 124, 79);
     margin-bottom: 30px;
-    opacity:.9;
 }
 .sum-4{
     padding:30px;
     background-color: rgb(50, 173, 101);
-    opacity:.9;
 }
 /*styling our-team*/
 .our-team{
