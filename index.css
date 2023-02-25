@@ -8,6 +8,7 @@ body{
     background-image:url('Screenshot_20230216-140324_Gallery.jpg') ;
     background-repeat:no-repeat;
     background-size: cover;
+    background-color: white;
 
 }
 /*styling header*/
@@ -18,11 +19,6 @@ header{
     background-repeat: no-repeat;
     background-size: contain;
     background-color: white;
-}
-header .website-name{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color:rgb(126, 95, 55);
-    font-size: x-large;
 }
 nav{
     float:right;
@@ -145,7 +141,7 @@ nav .hire-us-btn{
     height:17px;
     transition: all 200ms linear;
     background-color:unset;
-    margin: -120px -50px 0 0;
+    margin: -120px 0px 0 0;
 
 }
 .bar-wrap{
@@ -153,6 +149,7 @@ nav .hire-us-btn{
     background-color: unset;
     width:fit-content;
     box-shadow: 1px 1px 3px;
+    margin:0 -40px 0 0;
    
 }
 .wrap-menu-bars{
@@ -269,8 +266,8 @@ nav .hire-us-btn{
 }
 /*styling about-us*/
 .about-us{
-    background-color:rgb(255, 255, 255) ;
-    color:rgb(31, 30, 30);
+    color:rgb(41, 40, 40);
+    background-color: rgb(255, 255, 255);
     padding:10px;
     margin-top: 70px;
 }
@@ -278,7 +275,7 @@ nav .hire-us-btn{
     padding:10px;
 }
 .about-us .content h3{
-    border:1px dotted;
+    border:1px dotted rgb(241, 126, 18);
     padding:10px;
     border-top: 0;
     border-left: 0;
@@ -302,7 +299,6 @@ nav .hire-us-btn{
     background-color: rgb(255, 255, 255);
     margin:40px 5px;
     border-radius: 5px;
-    opacity:.9;
 }
 .electrical-design  h3{
     border:1px solid rgb(214, 117, 38);
@@ -348,7 +344,7 @@ nav .hire-us-btn{
     list-style: none;
 }
 .why-us  h3{
-    border:1px dotted;
+    border:1px dotted rgb(241, 126, 18);
     padding:10px;
     border-top: 0;
     border-left: 0;
@@ -382,14 +378,73 @@ nav .hire-us-btn{
     border-bottom: 1px solid;
     color:rgb(235, 152, 27);
 }
-
+/*styling summary*/
+.summary{
+    background-color: unset;
+    padding:20px;
+    margin-top: 50px;
+    color:rgb(236, 182, 33);
+}
+.sum-1{
+    padding:30px;
+    background-color: rgb(229, 237, 240);
+    margin-bottom: 30px;
+    opacity:.9;
+}
+.sum-2{
+    padding:30px;
+    background-color: rgb(114, 139, 132);
+    margin-bottom: 30px;
+    opacity:.9;
+}
+.sum-3{
+    padding:30px;
+    background-color: rgb(202, 124, 79);
+    margin-bottom: 30px;
+    opacity:.9;
+}
+.sum-4{
+    padding:30px;
+    background-color: rgb(50, 173, 101);
+    opacity:.9;
+}
+/*styling our-team*/
+.our-team{
+    background-color: rgb(255, 253, 253);
+    color:rgb(48, 47, 47);
+    padding:20px;
+    margin:50px 0;
+}
+.our-team h3{
+    text-align: center;
+    border-bottom: 1px solid rgb(218, 126, 51);
+}
+.our-team .founder{
+    width:100%;
+    margin:20px 0;
+    border:1px solid rgb(206, 202, 202);
+    border-radius: 10px;
+}
+.our-team .founder img{
+    width:100%;
+    border-radius: 10px 10px 0 0;
+}
+.our-team p{
+    padding:10px;
+    font-size: small;
+}
+.our-team a{
+    color:rgb(13, 129, 100);
+}
 /*styling footer*/
 footer{
     margin-top: 50px;
     padding:20px;
     color:rgb(255, 255, 255);
-    background-color: rgb(189, 118, 61);
+    background-image: linear-gradient(rgb(30, 63, 85),rgb(161, 100, 43));
     font-size: large;
+    text-align: center;
+    opacity:.9;
 }
 footer .address{
     margin-top: 10px;
@@ -399,7 +454,6 @@ footer .address{
 footer .about-company{
     border-top: 1px solid;
     padding: 10px;
-    font-size: small;
 }
 footer .copyright{
     text-align: center;

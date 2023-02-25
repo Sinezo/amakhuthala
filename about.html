@@ -17,25 +17,33 @@
             color:rgb(241, 216, 147);
             padding: 10px;
         }
+        .about-us a{
+            color:rgb(209, 144, 69);
+        }
     </style>
 </head>
 <body>
     <!--HEADER-->
     <header>
-        <span class="website-name" onclick="window.location='index.html'">Amakhuthala</span>
         <nav><span class="about">About</span> <span class="services">Services</span> <span class="e-learning">E-Learning</span> <span class="hire-us-btn">HIRE US</span></nav>
     </header>
 
-    <!--MENU ICON-->
-    <div class="menu-icon">
-        <div  style="text-align:center;">Electrical Design & Installation</div>
-       
-        <div class="wrap-menu-bars">
-            <div class="bar-wrap" onclick="MENU()">
-                <div class="bar-one"></div>
-                <div class="bar-two"></div>
-                <div class="bar-three"></div>
+    <!--MENU WRAPPER-->
+    <div class="menu-wrapper">
+        <div class="close" onclick="MENU()"><i class="fa-regular fa-circle-xmark"></i></div>
+        <div class="menu">
+            <ul>
+                <li onclick="window.location='about.html'">About</li>
+                <li onclick="window.location='ourteam.html'">Our Team</li>
+                <li onclick="window.location='ourprojects.html'">Our Projects</li>
+                <li onclick="window.location='ourclients.html'">Our Clients</li>
+                <li onclick="window.location='gallery.html'">Gallery</li>
+            </ul>
+
+            <div class="social-media">
+                <span class="facebook"><i class="fa-brands fa-facebook"></i></span> <span class="whatsapp"><i class="fa-brands fa-whatsapp"></i></span> <span class="instagram"><i class="fa-brands fa-instagram"></i></span> <span class="youtube"><i class="fa-brands fa-youtube"></i></span> <br><br><span class="twitter"><i class="fa-brands fa-twitter"></i></span> <span class="linkedin"><i class="fa-brands fa-linkedin"></i></span>
             </div>
+            <br><span style="font-size: smaller;width:max-content;">Thank You for visiting our website</span>
         </div>
     </div>
 
@@ -45,9 +53,11 @@
         <h3>About</h3>
     <section class="introduction">
         <div class="one">
-            Amakhuthala Electrical & Electronic Design and Installation (AEEDAI)
-            is an Electrical and Electronic bussiness that was founded by an Electrical Engineer, 
-            Sinethemba Lusawana on January 2023.
+           Amakhuthala Electrical Design & Installation (AEDI) is an electrical business that focuses 
+           on the design as well as installation of electrical systems. In every design we employ the 
+           proven electrical theories of the greatest physicists and electrical engineers, like NIKOLA TESLA.
+
+           <br><br> We value safety. In the process of designing and installation we follow <a href="#">NEC</a> and <a href="#b">IEC</a> standards.
             
             <br><br>
             Our main objective is to outstand within the industry with the best quality and significance of our designs.
@@ -55,5 +65,7 @@
         </div>
     </section>
     </div>
+
+    <script src="index.js"></script>
 </body>
 </html>
