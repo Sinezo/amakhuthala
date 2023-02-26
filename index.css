@@ -5,7 +5,8 @@
 /*styling body*/
 body{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: white;
+    background-color: rgb(32, 32, 32);
+    font-size: small;
 
 }
 /*styling header*/
@@ -46,8 +47,7 @@ nav .hire-us-btn{
 }
 /*styling menu wrapper*/
 .menu-wrapper{
-    height: 100%;
-    position:fixed;
+    height: 100vh;
     width:0;
     background-color: white;
     overflow: hidden;
@@ -81,8 +81,6 @@ nav .hire-us-btn{
 }
 /*styling contact-us*/
 .social-media{
-    position:absolute;
-    bottom:0;
     background-color: rgb(238, 210, 55);
     width:100%; 
     padding:20px;
@@ -138,14 +136,13 @@ nav .hire-us-btn{
 .menu-icon{
     padding:40px;
     height:17px;
-    margin: -50px 0px 0 0;
+    background-color: unset;
 
 }
 .bar-wrap{
     padding:10px 10px 5px 10px; 
     background-color: unset;
     width:fit-content;
-    box-shadow: 1px 1px 3px;
     margin:-30px -40px 0 0;
    
 }
@@ -156,39 +153,45 @@ nav .hire-us-btn{
     background-color: unset;
     margin-top: 10px;
 }
+.sign-in{
+    padding:5px;
+    margin:-40px 0 0 0;
+}
 .bar-wrap:hover{
     cursor:pointer;
     color:rgb(226, 94, 17);
 }
 .bar-one{
-    width:15px;
+    width:20px;
     padding:1px;
-    border:1px solid rgb(7, 7, 7);
+    background-color: white;
     margin-bottom:3px;
     margin-top:-5px;
     transition: all 200ms linear;
     border-radius: 10px;
 }
 .bar-two{
-    width:15px;
+    width:20px;
     padding:1px;
-    border:1px solid rgb(0, 0, 0);
+    background-color: white;
     margin-bottom:3px;
     border-radius: 10px;
+    transition: all 200ms linear;
 }
 .bar-three{
-    width:15px;
+    width:20px;
     padding:1px;
-    border:1px solid rgb(5, 5, 5);
+    background-color: white;
     transition: margin 200ms linear;
     border-radius: 10px;
+    transition: all 200ms linear;
 }
 
 /*styling welcome-box*/
 .welcome-box{
     padding:10px;
     display:flex;
-    color:white;
+    background-color: unset;
 }
 .welcome-box .welcome-media{
     width:600px;
@@ -197,7 +200,8 @@ nav .hire-us-btn{
     width:100%;
 }
 .welcome-box .welcome-message{
-    background-color: unset;
+    background-color: rgb(37, 37, 37);
+    padding:10px;
     height:fit-content;
     margin:170px 10px 20px 10px;
     font-size: xx-large;
@@ -209,7 +213,7 @@ nav .hire-us-btn{
     text-align: start;
     padding:20px;
     background-color: unset;
-    color:rgb(10, 10, 10);
+    color:rgb(212, 205, 205);
     opacity:.9;
     border-radius: 4px;
     margin:20px 10px;
@@ -241,33 +245,41 @@ nav .hire-us-btn{
 /*styling short-cut-info*/
 .short-cut-info{
     padding:20px;
-    background-color: rgb(43, 128, 161);
+    background-color: rgb(37, 37, 37);
     height:fit-content;
     margin:20px 10px 0 10px;
 }
 .short-cut-info .explore{
     padding:20px;
-    background-color: rgb(26, 99, 128);
+    background-color: rgb(42, 42, 43);
+    border-bottom: 1px solid;
+    color:rgb(235, 152, 27);
 }
 .short-cut-info .help{
     padding:20px;
-    background-color:  rgb(26, 99, 128);
+    background-color:  rgb(42, 42, 43);
+    border-bottom: 1px solid;
+    color:rgb(235, 152, 27);
 }
 .short-cut-info .faqs{
     padding:20px;
-    background-color:  rgb(26, 99, 128);
+    background-color:  rgb(42, 42, 43);
+    border-bottom: 1px solid;
+    color:rgb(235, 152, 27);
 }
 .short-cut-info div:hover{
     cursor: pointer;
     border-bottom: 1px solid;
-    color:rgb(235, 152, 27);
+    color:rgb(207, 182, 145);
 }
 /*styling about-us*/
 .about-us{
     color:rgb(41, 40, 40);
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(39, 38, 38);
     padding:10px;
     margin-top: 70px;
+    color:rgb(204, 196, 196);
+    margin:10px;
 }
 .about-us .content{
     padding:10px;
@@ -280,9 +292,9 @@ nav .hire-us-btn{
     border-right: 0;
 }
 .about-us .content .read-more{
-    background-color:rgb(40, 85, 77);
+    border:0; 
+    background-color:unset;
     padding:20px;
-    border:1px solid rgb(255, 255, 255);
     border-radius:4px; 
     color:white;
 }
@@ -293,15 +305,17 @@ nav .hire-us-btn{
 }
 /*styling electrical design*/
 .electrical-design{
-    color:rgb(0, 0, 0);
+    color:rgb(218, 215, 211);
     padding:10px;
     margin:40px 5px;
     border-radius: 5px;
-    box-shadow: 1px 1px 3px grey;
+    background-color: rgb(39, 38, 38);
 }
 .electrical-design  h5{
-    background-color: rgb(218, 96, 14);
-    color:rgb(255, 255, 255);
+    background-color: unset;
+    color:rgb(206, 203, 197);
+    border-bottom: 1px solid rgb(228, 130, 18);
+    width:fit-content;
     padding:20px;
     opacity:.9;
 }
@@ -314,15 +328,15 @@ nav .hire-us-btn{
     padding:10px
 }
 .electrical-design img{
-    width:250px;
+    width:270px;
     border-radius: 10px;
 }
 .electrical-design button{
     padding:20px;
-    background-color:rgb(13, 87, 136);
-    border:2px solid;
+    background-color:unset;
     color:rgb(255, 255, 255);
     border-radius: 5px;
+    border:0;
 }
 .electrical-design button:hover{
     cursor:pointer;
@@ -331,13 +345,12 @@ nav .hire-us-btn{
 }
 /*stylinf why-us*/
 .why-us{
-    color:rgb(39, 37, 37);
+    color:rgb(204, 196, 196);
     padding:50px 10px;
-    background-color: rgb(255, 255, 255);
+    background-color: unset;
 }
 .why-us div{
-    background-color: rgb(255, 255, 255);
-    border:1px solid rgb(212, 205, 197); 
+    background-color: rgb(41, 40, 40);
     padding:15px;
     border-radius: 10px;
 }
@@ -345,7 +358,7 @@ nav .hire-us-btn{
     list-style: none;
 }
 .why-us  h3{
-    border:1px dotted rgb(170, 170, 169);
+    border:1px dotted rgb(235, 159, 45);
     padding:10px;
     border-top: 0;
     border-left: 0;
@@ -354,22 +367,34 @@ nav .hire-us-btn{
 .why-us ul i{
     color:rgb(29, 67, 99);
 }
+.learn-more{
+    text-align:center;
+    padding:20px;
+}
+.learn-more-btn{
+    padding:10px;
+    width:100%;
+    border-radius: 20px;
+    background-color: rgb(107, 85, 25);
+    color:white;
+    border:0;
+}
 /*styling services*/
 .services{
-    color:rgb(27, 26, 26);
     margin-top: 50px;
-    opacity:.9;
 }
 .services .content{
-    padding:10px;
-    background-color:rgb(51, 51, 51);
-    box-shadow: 1px 1px 3px grey;
+    padding:30px;
+    background-color:rgb(39, 38, 38); 
+    border-radius: 10px;
+    margin:10px
 }
 .services .content ul{
     list-style: none;
 }
 .services h4{
     color:rgb(255, 255, 255);
+    text-align: center;
 }
 .services .content ul li{
     padding:3px;
@@ -391,38 +416,40 @@ nav .hire-us-btn{
 }
 .sum-1{
     padding:30px;
-    background-color: rgb(88, 147, 168);
+    background-color: rgb(32, 46, 51);
     margin-bottom: 30px;
 }
 .sum-2{
     padding:30px;
-    background-color: rgb(114, 139, 132);
+    background-color: rgb(40, 80, 69);
     margin-bottom: 30px;
 }
 .sum-3{
     padding:30px;
-    background-color: rgb(202, 124, 79);
+    background-color: rgb(65, 30, 10);
     margin-bottom: 30px;
 }
 .sum-4{
     padding:30px;
-    background-color: rgb(50, 173, 101);
+    background-color: rgb(14, 68, 37);
 }
 /*styling our-team*/
 .our-team{
-    background-color: rgb(255, 253, 253);
-    color:rgb(48, 47, 47);
+    background-color: rgb(41, 40, 40);
+    color:rgb(196, 192, 187);
     padding:20px;
-    margin:50px 0;
+    margin:50px 10px;
+    border-radius: 10px;
 }
 .our-team h3{
     text-align: center;
     border-bottom: 1px solid rgb(218, 126, 51);
+    padding:10px;
 }
 .our-team .founder{
     width:100%;
     margin:20px 0;
-    border:1px solid rgb(206, 202, 202);
+    border:1px solid rgb(56, 55, 55);
     border-radius: 10px;
 }
 .our-team .founder img{
@@ -434,15 +461,14 @@ nav .hire-us-btn{
     font-size: small;
 }
 .our-team a{
-    color:rgb(13, 129, 100);
+    color:rgb(177, 120, 67);
 }
 /*styling footer*/
 footer{
     margin-top: 50px;
     padding:20px;
     color:rgb(255, 255, 255);
-    background-image: linear-gradient(rgb(30, 63, 85),rgb(161, 100, 43));
-    font-size: large;
+    background-image: linear-gradient(rgb(35, 35, 36),rgb(53, 52, 52));
     text-align: center;
     opacity:.9;
 }
