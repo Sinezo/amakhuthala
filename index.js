@@ -38,7 +38,7 @@ var slide_position=0;
 function SLIDE(){
     if(slide_position==0){
         document.querySelector('.welcome-message').style.width='100%';
-        document.querySelector('.welcome-message').style.padding='10px';
+        document.querySelector('.welcome-message').style.padding='30px';
         document.querySelector('.welcome-message').style.opacity='1';
 
         document.querySelector('.design-installation').style.width='0';
@@ -48,7 +48,7 @@ function SLIDE(){
     }
     else if(slide_position==1){
         document.querySelector('.online-tuition').style.width='100%';
-        document.querySelector('.online-tuition').style.padding='20px';
+        document.querySelector('.online-tuition').style.padding='50px';
         document.querySelector('.online-tuition').style.opacity='1';
 
         document.querySelector('.welcome-message').style.width='0';
@@ -60,7 +60,7 @@ function SLIDE(){
     }
     else if(slide_position==2){
         document.querySelector('.design-installation').style.width='100%';
-        document.querySelector('.design-installation').style.padding='20px';
+        document.querySelector('.design-installation').style.padding='50px';
         document.querySelector('.design-installation').style.opacity='1';
         document.querySelector('.online-tuition').style.opacity='-1';
 
@@ -71,6 +71,23 @@ function SLIDE(){
         document.querySelector('.welcome-message').style.opacity='-1';
         slide_position=0;
     }
-    setTimeout('SLIDE()', 3000);
+    setTimeout('SLIDE()', 6000);
 }
 window.onload=SLIDE;
+
+//OUR TEAM MEMBERS
+function Ourteam(){
+    window.location='index.html#our-team';
+
+    document.querySelector('.content-wrapper').style.margin='0';
+        document.querySelector('.content-wrapper').style.opacity='1';
+        document.querySelector('.menu-wrapper').style.width='0';
+
+        document.querySelector('.bar-one').style.transform='rotate(0)';
+        document.querySelector('.bar-one').style.marginBottom='3px';
+        document.querySelector('.bar-two').style.display='block';
+        document.querySelector('.bar-three').style.transform='rotate(0)';
+        document.querySelector('.bar-three').style.marginTop='0';
+
+        menu_show=1;
+}

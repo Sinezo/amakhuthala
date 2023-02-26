@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/dd42663f14.js" crossorigin="anonymous"></script> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Gallery</title>
+    <style>
+        body{
+            background-color: rgb(32, 32, 32);
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .images{
+            display:flex;
+            flex-wrap: wrap;
+            height:fit-content;
+            background-color: rgb(36, 36, 36);
+        }
+        .images div{
+            width:80px;
+            margin:10px;
+        }
+        .images div img{
+            width:100%;
+            transition: width 300ms linear;
+        }
+    </style>
+</head>
+<body>
+    <div class="images">
+        <div><img src="images (3).jpeg" alt="image1" class="image1" onclick="IMAGE1()"></div>
+        <div><img src="images (5).jpeg" alt="image2" class="image2" onclick="IMAGE2()"></div>
+        <div><img src="Screenshot_20230216-140324_Gallery.jpg" alt="image3" class="image3" onclick="IMAGE3()"></div>
+        <div><img src="Screenshot_20230216-143956_Gallery.jpg" alt="image4" class="image4" onclick="IMAGE4()"></div>
+        
+        <div>
+            <div class="image5" onclick="IMAGE5()">
+                <img src="DSC_8533 (2).JPG" alt="image5">
+
+                <div class="info5" style="padding:0;color:rgb(199, 195, 195);width:0;overflow:hidden;height:0;font-size: smaller;margin-left:-10px;">
+                    <span><b>Sinethemba Lusawana</b></span>, the founder of Amakhuthala Electrical 
+                    Design & Installation.
+
+                    <br><span>Picture taken: East London Beach, 2022</span>
+                    <div class="close" onclick="MENU()"><i class="fa-regular fa-circle-xmark"></i></div>
+                </div>
+            </div>
+      </div>
+
+    </div>
+
+    <script>
+
+        //IMAGES
+        function IMAGE1(){
+            document.querySelector('.image1').style.position='absolute';
+            document.querySelector('.image1').style.top='20%';
+            document.querySelector('.image1').style.width='90%';
+
+        }
+
+        function IMAGE2(){
+            document.querySelector('.image2').style.position='absolute';
+            document.querySelector('.image2').style.top='20%';
+            document.querySelector('.image2').style.left='5%';
+            document.querySelector('.image2').style.width='90%';
+
+        }
+
+        function IMAGE3(){
+            document.querySelector('.image3').style.position='absolute';
+            document.querySelector('.image3').style.top='20%';
+            document.querySelector('.image3').style.left='5%';
+            document.querySelector('.image3').style.width='90%';
+
+        }
+
+        function IMAGE4(){
+            document.querySelector('.image4').style.position='absolute';
+            document.querySelector('.image4').style.top='20%';
+            document.querySelector('.image4').style.left='5%';
+            document.querySelector('.image4').style.width='90%';
+
+        }
+
+        function IMAGE5(){
+            document.querySelector('.image5').style.position='absolute';
+            document.querySelector('.image5').style.top='10%';
+            document.querySelector('.image5').style.width='90%';
+            document.querySelector('.image5').style.left='2%';
+            document.querySelector('.image5').style.backgroundColor='rgb(36, 36, 36)';
+
+            document.querySelector('.info5').style.width='100%';
+            document.querySelector('.info5').style.height='fit-content';
+            document.querySelector('.info5').style.padding='20px';
+
+
+        }
+    </script>
+</body>
+</html>

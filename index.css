@@ -60,8 +60,10 @@ nav .hire-us-btn{
     height: 100%;
     position:fixed;
     width:0;
-    background-color: white;
+    background-color: rgb(48, 47, 47);
     overflow: hidden;
+    font-size: large;
+    color:white;
 }
 .menu-wrapper .close{
     padding:15px;
@@ -211,7 +213,7 @@ nav .hire-us-btn{
     margin:10px 10px 20px 10px;
     width:500px;
     text-align: center;
-    transition: opacity 400ms linear;
+    transition: opacity 1000ms linear;
 }
 .welcome-box .welcome-message .bragging{
     text-align: start;
@@ -255,7 +257,7 @@ nav .hire-us-btn{
     width:0;
     overflow: hidden;
     opacity:-1;
-    transition: opacity 400ms linear;
+    transition: opacity 1000ms linear;
 }
 .online-tuition h2{
     text-align: center;
@@ -291,7 +293,7 @@ nav .hire-us-btn{
     width:0;
     overflow: hidden;
     opacity:-1;
-    transition: opacity 400ms linear;
+    transition: opacity 1000ms linear;
 }
 .design-installation h2{
     text-align: center;
@@ -329,7 +331,6 @@ nav .hire-us-btn{
     padding:20px;
     background-color: rgb(37, 37, 37);
     height:fit-content;
-    margin:20px 10px 0 10px;
     box-sizing: border-box;
 }
 .short-cut-info .explore{
