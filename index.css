@@ -88,6 +88,7 @@ nav .hire-us-btn{
 .content-wrapper{
     width:100%;
     transition: margin 200ms ease-in-out;
+    box-sizing: border-box;
 }
 /*styling contact-us*/
 .social-media{
@@ -203,32 +204,25 @@ nav .hire-us-btn{
     display:flex;
     background-color: unset;
 }
-.welcome-box .welcome-media{
-    width:600px;
-}
-.welcome-box .welcome-media img{
-    width:100%;
-}
 .welcome-box .welcome-message{
     background-color: rgb(37, 37, 37);
     padding:10px;
     height:fit-content;
     margin:170px 10px 20px 10px;
-    font-size: xx-large;
     width:500px;
     text-align: center;
 }
 .welcome-box .welcome-message .bragging{
-    font-size: medium;
     text-align: start;
     padding:20px;
     background-color: unset;
     color:rgb(212, 205, 205);
     opacity:.9;
     border-radius: 4px;
-    margin:20px 10px;
+    margin:10px 10px;
+    text-align: center;
 }
-.welcome-box .welcome-message .one{
+.welcome-box .welcome-message h2{
     color:rgb(224, 137, 24);
     padding:10px;
 }
@@ -237,20 +231,90 @@ nav .hire-us-btn{
     background-color: rgb(201, 194, 194);
     padding:10px;
 }
-.welcome-box button{
-    padding:20px;
+.welcome-box .welcome-message button{
+    padding:10px;
     border:0;
     background-color: rgb(223, 161, 28);
     color:rgb(255, 255, 255);
     width:90%; 
-    margin:25px 10px;
+    margin:10px 10px;
     box-sizing: border-box;
-    border-radius: 4px;
+    border-radius: 20px;
 }
-.welcome-box button:hover{
-    border:2px solid rgb(255, 255, 255);
+.welcome-box .welcome-message button:hover{
     border-radius: 5px;
     cursor: pointer;
+}
+/*styling online-tuition*/
+.online-tuition{
+    background-color: rgb(36, 36, 36);
+    color:white;
+    padding:20px;
+    text-align: center;
+}
+.online-tuition h2{
+    text-align: center;
+    color:rgb(216, 136, 44);
+}
+.online-tuition p{
+    padding:10px;
+}
+.online-tuition .icon{
+    font-size: xxx-large;
+    text-align: center;
+}
+.online-tuition .apply{
+    padding:10px;
+    background-color: rgb(196, 142, 27);
+    border:0;
+    border-radius: 20px;
+    width:50%;
+    color:rgb(231, 224, 224);
+}
+.online-tuition .image{
+    margin-top: 20px;;
+}
+.online-tuition .image img{
+    width:100%;
+}
+/**styling design-installation*/
+.design-installation{
+    background-color: rgb(36, 36, 36);
+    color:white;
+    padding:20px;
+    text-align: center;
+    margin-top: 10px;
+}
+.design-installation h2{
+    text-align: center;
+    color:rgb(216, 136, 44);
+}
+.design-installation .hire-us{
+    padding:10px;
+    background-color: rgb(196, 142, 27);
+    border:0;
+    border-radius: 20px;
+    width:50%;
+    color:rgb(231, 224, 224);
+}
+.design-installation p{
+    padding:10px;
+}
+.design-installation span{
+    font-size: smaller;
+    padding:10px;
+    color:rgb(197, 181, 138);
+}
+/*styling welcome-media*/
+.welcome-media-wrapper{
+    display:flex;
+    padding:10px;
+}
+.content-wrapper .welcome-media{
+    width:600px;
+}
+.content-wrapper .welcome-media img{
+    width:100%;
 }
 /*styling short-cut-info*/
 .short-cut-info{
@@ -258,6 +322,7 @@ nav .hire-us-btn{
     background-color: rgb(37, 37, 37);
     height:fit-content;
     margin:20px 10px 0 10px;
+    box-sizing: border-box;
 }
 .short-cut-info .explore{
     padding:20px;
@@ -310,8 +375,7 @@ nav .hire-us-btn{
 }
 .about-us .content .read-more:hover{
     cursor: pointer;
-    color:rgb(235, 152, 27);
-    border:1px solid rgb(235, 152, 27);
+    color:rgb(235, 152, 27); 
 }
 /*styling electrical design*/
 .electrical-design{
@@ -489,6 +553,18 @@ nav .hire-us-btn{
 }
 .our-team a{
     color:rgb(177, 120, 67);
+}
+.our-team .read-more{
+    border:0; 
+    background-color:unset;
+    padding:20px;
+    border-radius:4px; 
+    color:white;
+    font-size: smaller;
+}
+.our-team .read-more:hover{
+    cursor: pointer;
+    color:rgb(235, 152, 27);
 }
 /*styling footer*/
 footer{
