@@ -203,14 +203,15 @@ nav .hire-us-btn{
     padding:10px;
     display:flex;
     background-color: unset;
+    height:300px;
 }
 .welcome-box .welcome-message{
     background-color: rgb(37, 37, 37);
     padding:10px;
-    height:fit-content;
-    margin:170px 10px 20px 10px;
+    margin:10px 10px 20px 10px;
     width:500px;
     text-align: center;
+    transition: opacity 400ms linear;
 }
 .welcome-box .welcome-message .bragging{
     text-align: start;
@@ -245,12 +246,16 @@ nav .hire-us-btn{
     border-radius: 5px;
     cursor: pointer;
 }
+
 /*styling online-tuition*/
 .online-tuition{
     background-color: rgb(36, 36, 36);
     color:white;
-    padding:20px;
     text-align: center;
+    width:0;
+    overflow: hidden;
+    opacity:-1;
+    transition: opacity 400ms linear;
 }
 .online-tuition h2{
     text-align: center;
@@ -281,9 +286,12 @@ nav .hire-us-btn{
 .design-installation{
     background-color: rgb(36, 36, 36);
     color:white;
-    padding:20px;
     text-align: center;
     margin-top: 10px;
+    width:0;
+    overflow: hidden;
+    opacity:-1;
+    transition: opacity 400ms linear;
 }
 .design-installation h2{
     text-align: center;
@@ -590,11 +598,6 @@ footer .copyright{
 }
 /*at small screens*/
 @media screen and (max-width:1200px) {
-    .welcome-box{
-        flex-wrap: wrap;
-        justify-content: center;
-        margin-top: -110px;
-    }
     .short-cut-info{
         width:100%;
     }

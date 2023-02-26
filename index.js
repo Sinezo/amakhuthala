@@ -32,3 +32,44 @@ function MENU(){
         menu_show=1;
     }
 }
+
+//WELCOME SLIDING ANIMATION
+var slide_position=0;
+function SLIDE(){
+    if(slide_position==0){
+        document.querySelector('.welcome-message').style.width='100%';
+        document.querySelector('.welcome-message').style.padding='10px';
+        document.querySelector('.welcome-message').style.opacity='1';
+
+        document.querySelector('.design-installation').style.width='0';
+        document.querySelector('.design-installation').style.padding='0';
+        document.querySelector('.design-installation').style.opacity='-1';
+        slide_position=1;
+    }
+    else if(slide_position==1){
+        document.querySelector('.online-tuition').style.width='100%';
+        document.querySelector('.online-tuition').style.padding='20px';
+        document.querySelector('.online-tuition').style.opacity='1';
+
+        document.querySelector('.welcome-message').style.width='0';
+        document.querySelector('.welcome-message').style.padding='0';
+        document.querySelector('.welcome-message').style.overflow='hidden';
+        document.querySelector('.welcome-message').style.border='0';
+        
+        slide_position=2;
+    }
+    else if(slide_position==2){
+        document.querySelector('.design-installation').style.width='100%';
+        document.querySelector('.design-installation').style.padding='20px';
+        document.querySelector('.design-installation').style.opacity='1';
+
+        document.querySelector('.online-tuition').style.width='0';
+        document.querySelector('.online-tuition').style.padding='0';
+        document.querySelector('.online-tuition').style.overflow='hidden';
+        document.querySelector('.online-tuition').style.border='0';
+        document.querySelector('.welcome-message').style.opacity='-1';
+        slide_position=0;
+    }
+    setTimeout('SLIDE()', 3000);
+}
+window.onload=SLIDE;
