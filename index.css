@@ -11,12 +11,22 @@ body{
 }
 /*styling header*/
 header{
-    height:150px;
     padding:15px;
-    background-image: url('1.png') ;
     background-repeat: no-repeat;
     background-size: contain;
-    background-color: white;
+    background-color: unset;
+}
+header .website-name{
+    color:rgb(206, 202, 198); 
+    font-size: larger;
+    font-weight: 600;
+    background-color: rgb(37, 37, 37);
+    width:fit-content;
+    padding:10px;
+    position:absolute;
+    margin:15px 0 0 0;
+    border-radius: 3px;
+    box-shadow: 10px 11px 1px rgb(41, 40, 40);
 }
 nav{
     float:right;
@@ -47,15 +57,15 @@ nav .hire-us-btn{
 }
 /*styling menu wrapper*/
 .menu-wrapper{
-    height: 100vh;
+    height: 100%;
+    position:fixed;
     width:0;
     background-color: white;
     overflow: hidden;
-    transition: width 300ms linear;
 }
 .menu-wrapper .close{
-    padding:5px;
-    font-size: x-large;
+    padding:15px;
+    font-size: xx-large;
     width:fit-content;
 }
 .menu-wrapper .close:hover{
@@ -81,7 +91,7 @@ nav .hire-us-btn{
 }
 /*styling contact-us*/
 .social-media{
-    background-color: rgb(238, 210, 55);
+    background-color: rgb(238, 237, 232);
     width:100%; 
     padding:20px;
     text-align: center;
@@ -137,6 +147,7 @@ nav .hire-us-btn{
     padding:40px;
     height:17px;
     background-color: unset;
+    margin-top: -30px;
 
 }
 .bar-wrap{
@@ -167,7 +178,7 @@ nav .hire-us-btn{
     background-color: white;
     margin-bottom:3px;
     margin-top:-5px;
-    transition: all 200ms linear;
+    transition: all 500ms linear;
     border-radius: 10px;
 }
 .bar-two{
@@ -176,15 +187,14 @@ nav .hire-us-btn{
     background-color: white;
     margin-bottom:3px;
     border-radius: 10px;
-    transition: all 200ms linear;
+    transition: all 500ms linear;
 }
 .bar-three{
     width:20px;
     padding:1px;
     background-color: white;
-    transition: margin 200ms linear;
+    transition: all 500ms linear;
     border-radius: 10px;
-    transition: all 200ms linear;
 }
 
 /*styling welcome-box*/
@@ -406,6 +416,23 @@ nav .hire-us-btn{
     cursor: pointer;
     border-bottom: 1px solid;
     color:rgb(214, 144, 38);
+}
+.services-icon{
+    display:flex;
+    justify-content: center;
+    padding:10px;
+    color:rgb(223, 179, 35);
+}
+.services-icon div{
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    background-color: rgb(46, 46, 45);
+    display:flex;align-items: center;
+    justify-content: center;
+}
+.services-icon div i{
+    font-size: xx-large;
 }
 /*styling summary*/
 .summary{

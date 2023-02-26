@@ -5,6 +5,9 @@ function MENU(){
         document.querySelector('.content-wrapper').style.marginLeft='-250px';
         document.querySelector('.content-wrapper').style.opacity='.5';
         document.querySelector('.menu-wrapper').style.width='100%';
+        document.querySelector('.social-media').style.position='absolute';
+        document.querySelector('.social-media').style.bottom='0';
+
 
         document.querySelector('.bar-one').style.transform='rotate(45deg)';
         document.querySelector('.bar-one').style.marginBottom='1px';
