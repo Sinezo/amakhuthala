@@ -62,6 +62,7 @@ function SLIDE(){
         document.querySelector('.design-installation').style.width='100%';
         document.querySelector('.design-installation').style.padding='20px';
         document.querySelector('.design-installation').style.opacity='1';
+        document.querySelector('.online-tuition').style.opacity='-1';
 
         document.querySelector('.online-tuition').style.width='0';
         document.querySelector('.online-tuition').style.padding='0';
