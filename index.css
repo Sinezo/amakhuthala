@@ -205,7 +205,8 @@ nav .hire-us-btn{
     padding:10px;
     display:flex;
     background-color: unset;
-    height:320px;
+    height:470px;
+    font-size:20px;
 }
 .welcome-box .welcome-message{
     background-color: rgb(37, 37, 37);
@@ -332,24 +333,29 @@ nav .hire-us-btn{
     background-color: rgb(37, 37, 37);
     height:fit-content;
     box-sizing: border-box;
+    display:flex;
+    justify-content: center;
 }
 .short-cut-info .explore{
     padding:20px;
     background-color: rgb(42, 42, 43);
     border-bottom: 1px solid;
     color:rgb(235, 152, 27);
+    width:fit-content;
 }
 .short-cut-info .help{
     padding:20px;
     background-color:  rgb(42, 42, 43);
     border-bottom: 1px solid;
     color:rgb(235, 152, 27);
+    width:fit-content;
 }
 .short-cut-info .faqs{
     padding:20px;
     background-color:  rgb(42, 42, 43);
     border-bottom: 1px solid;
     color:rgb(235, 152, 27);
+    width:fit-content;
 }
 .short-cut-info div:hover{
     cursor: pointer;
@@ -369,8 +375,9 @@ nav .hire-us-btn{
     padding:10px;
 }
 .about-us .content h3{
-    border:1px dotted rgb(241, 126, 18);
-    padding:10px;
+    border:1px solid  rgb(206, 111, 23);
+    background-color: rgb(42, 42, 43);
+    padding:20px;
     border-top: 0;
     border-left: 0;
     border-right: 0;
@@ -380,7 +387,7 @@ nav .hire-us-btn{
     background-color:unset;
     padding:20px;
     border-radius:4px; 
-    color:white;
+    color:rgb(190, 109, 33);
 }
 .about-us .content .read-more:hover{
     cursor: pointer;
@@ -394,13 +401,19 @@ nav .hire-us-btn{
     border-radius: 5px;
     background-color: rgb(39, 38, 38);
 }
-.electrical-design  h5{
+.elec-des-heading{
+    width:100%;
+    background-color: rgb(44, 44, 44);
+    padding:10px;
+    box-sizing: border-box;
+}
+.electrical-design  h4{
     background-color: unset;
     color:rgb(206, 203, 197);
-    border-bottom: 1px solid rgb(228, 130, 18);
     width:fit-content;
     padding:20px;
     opacity:.9;
+    text-align: center;
 }
 .electrical-design p{
     padding:10px;
@@ -419,12 +432,14 @@ nav .hire-us-btn{
     background-color:unset;
     color:rgb(255, 255, 255);
     border-radius: 5px;
+    color:rgb(214, 111, 42);
     border:0;
 }
 .electrical-design button:hover{
     cursor:pointer;
     border-radius: 5px;
-    background-color: rgb(27, 85, 112);
+    background-color: rgb(45, 46, 46);
+    color:rgb(230, 142, 28);
 }
 /*stylinf why-us*/
 .why-us{
@@ -441,8 +456,9 @@ nav .hire-us-btn{
     list-style: none;
 }
 .why-us  h3{
-    border:1px dotted rgb(235, 159, 45);
-    padding:10px;
+    border:1px solid  rgb(206, 111, 23);
+    background-color: rgb(42, 42, 43);
+    padding:20px;
     border-top: 0;
     border-left: 0;
     border-right: 0;
@@ -461,6 +477,11 @@ nav .hire-us-btn{
     background-color: rgb(107, 85, 25);
     color:white;
     border:0;
+}
+.learn-more-btn:hover{
+    background-color: rgb(66, 53, 16);
+    color:white;
+    cursor: pointer;
 }
 /*styling services*/
 .services{
@@ -482,13 +503,12 @@ nav .hire-us-btn{
 .services .content ul li{
     padding:3px;
     width:fit-content;
-    border-radius: 4px;
     color:rgb(231, 226, 226);
 }
 .services .content ul li:hover{
     cursor: pointer;
     border-bottom: 1px solid;
-    color:rgb(214, 144, 38);
+    color:rgb(146, 144, 141);
 }
 .services-icon{
     display:flex;
@@ -512,26 +532,30 @@ nav .hire-us-btn{
     background-color: unset;
     padding:20px;
     margin-top: 50px;
-    color:rgb(255, 255, 255);
+    color:rgb(161, 132, 45);
+}
+.summary h3{
+    font-size: x-large;
+    color:rgb(163, 162, 161);
 }
 .sum-1{
     padding:30px;
-    background-color: rgb(32, 46, 51);
+    background-color: rgb(37, 37, 37);
     margin-bottom: 30px;
 }
 .sum-2{
     padding:30px;
-    background-color: rgb(40, 80, 69);
+    background-color: rgb(37, 37, 37);
     margin-bottom: 30px;
 }
 .sum-3{
     padding:30px;
-    background-color: rgb(65, 30, 10);
+    background-color: rgb(37, 37, 37);
     margin-bottom: 30px;
 }
 .sum-4{
     padding:30px;
-    background-color: rgb(14, 68, 37);
+    background-color: rgb(37, 37, 37);
 }
 /*styling our-team*/
 .our-team{
