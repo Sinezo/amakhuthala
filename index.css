@@ -60,10 +60,10 @@ nav .hire-us-btn{
     height: 100%;
     position:fixed;
     width:0;
-    background-color: rgb(48, 47, 47);
+    background-color: rgb(241, 235, 235);
     overflow: hidden;
     font-size: large;
-    color:white;
+    color:rgb(51, 50, 50);
 }
 .menu-wrapper .close{
     padding:15px;
@@ -209,6 +209,8 @@ nav .hire-us-btn{
     background-color: unset;
     height:470px;
     font-size:20px;
+    border:1px solid lightgrey;
+    margin:10px;
 }
 .welcome-box .welcome-message{
     background-color: rgb(255, 255, 255);
@@ -323,8 +325,16 @@ nav .hire-us-btn{
     display:flex;
     padding:10px;
 }
+.welcome-media-wrapper p{
+    padding:10px;
+}
+.welcome-media-wrapper .sub-text{
+    font-size: x-large;
+    font-weight: 600;
+}
 .content-wrapper .welcome-media{
     width:600px;
+    border:1px solid lightgrey;
 }
 .content-wrapper .welcome-media img{
     width:100%;
@@ -336,6 +346,7 @@ nav .hire-us-btn{
     height:fit-content;
     box-sizing: border-box;
     display:flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 .short-cut-info .explore{
@@ -397,14 +408,13 @@ nav .hire-us-btn{
 /*styling electrical design*/
 .electrical-design{
     color:rgb(49, 49, 48);
-    padding:10px;
-    margin:40px 5px;
-    border-radius: 5px;
+    margin:40px 10px;
     background-color: rgb(255, 255, 255);
+    border:1px solid lightgrey;
 }
 .elec-des-heading{
     width:100%;
-    background-color: rgb(245, 182, 66);
+    background-color: rgb(255, 255, 255);
     padding:10px;
     box-sizing: border-box;
 }
@@ -412,8 +422,7 @@ nav .hire-us-btn{
     background-color: unset;
     color:rgb(0, 0, 0);
     width:fit-content;
-    padding:20px;
-    opacity:.9;
+    font-size: x-large;
     text-align: center;
 }
 .electrical-design p{
@@ -422,16 +431,13 @@ nav .hire-us-btn{
 }
 .electrical-design .image{
     text-align: center;
-    padding:10px
 }
 .electrical-design img{
-    width:270px;
-    border-radius: 10px;
+    width:100%;
 }
 .electrical-design button{
     padding:20px;
-    background-color:unset;
-    color:rgb(255, 255, 255);
+    background-color:rgb(58, 56, 56);
     border-radius: 5px;
     color:rgb(214, 111, 42);
     border:0;
