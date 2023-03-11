@@ -26,7 +26,6 @@ header .website-name{
     position:absolute;
     margin:15px 0 0 0;
     border-radius: 3px;
-    box-shadow: 10px 11px 1px rgb(92, 91, 91);
 }
 nav{
     float:right;
@@ -204,17 +203,15 @@ nav .hire-us-btn{
 
 /*styling welcome-box*/
 .welcome-box{
-    padding:10px;
     display:flex;
     background-color: unset;
     height:470px;
     font-size:20px;
-    border:1px solid lightgrey;
     margin:10px;
 }
 .welcome-box .welcome-message{
-    background-color: rgb(255, 255, 255);
-    padding:10px;
+    background-image: url('Screenshot_20230311-230248_Gallery.jpg');
+    background-size: cover;
     margin:10px 10px 20px 10px;
     width:500px;
     text-align: center;
@@ -224,7 +221,7 @@ nav .hire-us-btn{
     text-align: start;
     padding:20px;
     background-color: unset;
-    color:rgb(41, 40, 40);
+    color:rgb(255, 255, 255);
     opacity:.9;
     border-radius: 4px;
     margin:10px 10px;
@@ -256,8 +253,9 @@ nav .hire-us-btn{
 
 /*styling online-tuition*/
 .online-tuition{
-    background-color: rgb(255, 253, 253);
-    color:rgb(41, 40, 40);
+    background-image: url('Screenshot_20230311-230243_Gallery.jpg');
+    background-size: cover;
+    color:rgb(255, 255, 255);
     text-align: center;
     width:0;
     overflow: hidden;
@@ -284,15 +282,16 @@ nav .hire-us-btn{
     color:rgb(231, 224, 224);
 }
 .online-tuition .image{
-    margin-top: 20px;;
+    margin-top: 20px;
 }
 .online-tuition .image img{
     width:100%;
 }
 /**styling design-installation*/
 .design-installation{
-    background-color: rgb(255, 255, 255);
-    color:rgb(41, 40, 40);
+    background-image: url('Screenshot_20230311-230235_Gallery.jpg');
+    background-size: cover;
+    color:rgb(0, 0, 0);
     text-align: center;
     margin-top: 10px;
     width:0;
@@ -319,6 +318,22 @@ nav .hire-us-btn{
     font-size: smaller;
     padding:10px;
     color:rgb(197, 181, 138);
+}
+.skip-sliding{
+    padding:20px;
+    text-align: end;
+}
+.skip-sliding i{
+    font-size: x-large;
+    color:rgb(73, 72, 72);
+}
+/*styling name-info*/
+.name-info{
+    padding:3px 3px 10px 3px;
+    color:rgb(44, 44, 44);
+    border-bottom: 10px solid;
+    width:fit-content;
+
 }
 /*styling welcome-media*/
 .welcome-media-wrapper{
@@ -387,12 +402,9 @@ nav .hire-us-btn{
     padding:10px;
 }
 .about-us .content h3{
-    border:1px solid  rgb(206, 111, 23);
-    background-color: rgb(239, 239, 247);
-    padding:20px;
-    border-top: 0;
-    border-left: 0;
-    border-right: 0;
+    width:fit-content;
+    padding:3px;
+    border-bottom: 10px solid;
 }
 .about-us .content .read-more{
     border:0; 
@@ -462,12 +474,9 @@ nav .hire-us-btn{
     list-style: none;
 }
 .why-us  h3{
-    border:1px solid  rgb(206, 111, 23);
-    background-color: rgb(245, 238, 238);
-    padding:20px;
-    border-top: 0;
-    border-left: 0;
-    border-right: 0;
+    padding:3px;
+    border-bottom: 10px solid;
+    width:fit-content;
 }
 .why-us ul i{
     color:rgb(29, 67, 99);
