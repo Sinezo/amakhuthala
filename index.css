@@ -209,7 +209,7 @@ nav .hire-us-btn{
 .welcome-box{
     display:flex;
     background-color: unset;
-    height:400px;
+    height:430px;
     font-size:20px;
     margin:10px;
 }
@@ -218,7 +218,6 @@ nav .hire-us-btn{
     background-size: cover;
     margin:10px 10px 20px 10px;
     width:500px;
-    text-align: center;
     transition: opacity 1000ms linear;
 }
 .welcome-box .welcome-message .bragging{
@@ -229,7 +228,6 @@ nav .hire-us-btn{
     opacity:.9;
     border-radius: 4px;
     margin:10px 10px;
-    text-align: center;
 }
 .welcome-box .welcome-message h2{
     color:rgb(224, 137, 24);
@@ -260,29 +258,23 @@ nav .hire-us-btn{
     background-image: url('Screenshot_20230311-230243_Gallery.jpg');
     background-size: cover;
     color:rgb(255, 255, 255);
-    text-align: center;
     width:0;
     overflow: hidden;
     opacity:-1;
     transition: opacity 1000ms linear;
 }
 .online-tuition h2{
-    text-align: center;
     color:rgb(216, 136, 44);
 }
 .online-tuition p{
     padding:10px;
-}
-.online-tuition .icon{
-    font-size: xxx-large;
-    text-align: center;
 }
 .online-tuition .apply{
     padding:20px;
     background-color: rgb(196, 142, 27);
     border:0;
     border-radius: 20px;
-    width:50%;
+    width:100%;
     color:rgb(231, 224, 224);
 }
 .online-tuition .image{
@@ -301,8 +293,7 @@ nav .hire-us-btn{
 .design-installation{
     background-image: url('Screenshot_20230311-230235_Gallery.jpg');
     background-size: cover;
-    color:rgb(236, 98, 5);
-    text-align: center;
+    color:rgb(196, 91, 22);
     margin-top: 10px;
     width:0;
     overflow: hidden;
@@ -310,7 +301,6 @@ nav .hire-us-btn{
     transition: opacity 1000ms linear;
 }
 .design-installation h2{
-    text-align: center;
     color:rgb(216, 136, 44);
 }
 .design-installation .hire-us{
@@ -318,7 +308,7 @@ nav .hire-us-btn{
     background-color: rgb(196, 142, 27);
     border:0;
     border-radius: 20px;
-    width:50%;
+    width:100%;
     color:rgb(231, 224, 224);
 }
 .design-installation p{
