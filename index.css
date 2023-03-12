@@ -484,18 +484,28 @@ nav .hire-us-btn{
     width:fit-content;
 }
 .why-us ul i{
-    color:rgb(29, 67, 99);
+    color:rgb(219, 130, 14);
+}
+.why-us button{
+    background-color: rgb(236, 236, 227);
+    padding:20px;
+    border-radius: 50%;
+    border:0;
+}
+.why-us p{
+    padding: 10px 0px 0 50px;
+    color:rgb(71, 71, 70);
 }
 .learn-more{
     text-align:center;
     padding:20px;
 }
-.learn-more-btn{
+.learn-more .learn-more-btn{
     padding:10px;
     width:100%;
-    border-radius: 20px;
-    background-color: rgb(107, 85, 25);
-    color:white;
+    border-radius: 20px ;
+    background-color: rgb(104, 98, 40);
+    color:rgb(255, 255, 255);
     border:0;
 }
 .learn-more-btn:hover{
