@@ -575,6 +575,9 @@ nav .hire-us-btn{
 .why-us p{
     padding: 10px 0px 0 50px;
 }
+.why-us span{
+    color:rgb(106, 180, 22);
+}
 .learn-more{
     text-align:center;
     padding:20px;
