@@ -4,10 +4,13 @@
 }
 /*styling body*/
 body{
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Concert One', cursive;
     background-color: rgb(255, 255, 255);
     
 
+}
+button{
+    font-family: 'Concert One', cursive;
 }
 /*styling header*/
 header{
@@ -237,7 +240,7 @@ nav .hire-us-btn{
     padding:10px;
 }
 .welcome-box .welcome-message button{
-    padding:10px;
+    padding:20px;
     border:0;
     background-color: rgb(223, 161, 28);
     color:rgb(255, 255, 255);
@@ -274,7 +277,7 @@ nav .hire-us-btn{
     text-align: center;
 }
 .online-tuition .apply{
-    padding:10px;
+    padding:20px;
     background-color: rgb(196, 142, 27);
     border:0;
     border-radius: 20px;
@@ -304,7 +307,7 @@ nav .hire-us-btn{
     color:rgb(216, 136, 44);
 }
 .design-installation .hire-us{
-    padding:10px;
+    padding:20px;
     background-color: rgb(196, 142, 27);
     border:0;
     border-radius: 20px;
@@ -392,11 +395,12 @@ nav .hire-us-btn{
 }
 /*styling about-us*/
 .about-us{
-    color:rgb(54, 53, 53);
-    background-color: rgb(255, 255, 255);
+    color:rgb(61, 60, 60);
+    background-color: rgb(247, 250, 252);
     padding:10px;
     margin-top: 70px;
     margin:10px;
+    box-shadow:1px 1px 3px;
 }
 .about-us .content{
     padding:10px;
@@ -449,10 +453,11 @@ nav .hire-us-btn{
 }
 .electrical-design button{
     padding:20px;
-    background-color:rgb(58, 56, 56);
+    background-color:rgb(44, 44, 44);
     border-radius: 5px;
-    color:rgb(214, 111, 42);
-    border:0;
+    color:rgb(218, 153, 34);
+    border:1px solid;
+
 }
 .electrical-design button:hover{
     cursor:pointer;
