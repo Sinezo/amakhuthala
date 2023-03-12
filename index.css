@@ -21,11 +21,10 @@ header{
 }
 header .website-name{
     color:rgb(158, 83, 8); 
-    font-size: larger;
+    font-size: x-large;
     font-weight: 600;
-    background-color: rgb(179, 173, 173);
     width:fit-content;
-    padding:10px;
+    padding:2px;
     position:absolute;
     margin:15px 0 0 0;
     border-radius: 3px;
@@ -452,10 +451,10 @@ nav .hire-us-btn{
     width:100%;
 }
 .electrical-design button{
-    padding:20px;
-    background-color:rgb(44, 44, 44);
-    border-radius: 5px;
-    color:rgb(218, 153, 34);
+    padding:15px;
+    background-color:rgb(36, 157, 187);
+    border-radius: 20px;
+    color:rgb(255, 255, 255);
     border:1px solid;
 
 }
@@ -633,10 +632,10 @@ nav .hire-us-btn{
 footer{
     margin-top: 50px;
     padding:20px;
-    color:rgb(255, 255, 255);
-    background-image: linear-gradient(rgb(35, 35, 36),rgb(53, 52, 52));
-    text-align: center;
+    color:rgb(56, 55, 54);
+    background-color:white;
     opacity:.9;
+    box-shadow: 1px 1px 3px;
 }
 footer .address{
     margin-top: 10px;
