@@ -105,9 +105,10 @@
         
         <!--short cut info-->
         <div class="short-cut-info">
-            <div class="explore">Explore <i class="fa-brands fa-sistrix"></i></div><br> <div class="help" onclick="POPUP_HELP()">Help <i class="fa-regular fa-comment"></i></div> <br><div class="faqs">Frequently Asked Questions <i class="fa-solid fa-question"></i></div>
+            <div class="explore">Explore <i class="fa-brands fa-sistrix"></i></div><br> <div class="help" onclick="POPUP_HELP()">Help <i class="fa-regular fa-comment"></i></div> <br><div class="faqs" onclick="FAQS_POPUP()">Frequently Asked Questions <i class="fa-solid fa-question"></i></div>
         </div>
 
+        <!--POPUP HELP-->
         <div class="pop-up-help">
             <p>You will be redirected to mails to be able to send us message via email. 
                 <ul>
@@ -121,6 +122,24 @@
             <div class="buttons"><button class="cancel" onclick="POPUP_HELP()">Cancel</button> <button class="go" onclick="MYMAIL()">Go</button></div>
         </div>
 
+        <!--FAQS POPUP-->
+        <div class="faqs-popup">
+            <ul>
+                <li onclick="LOCATION_ANSWER()">Where are you located?
+                    <ul class="location-answer">We are located in Engcobo in the Eastern Cape.</ul>
+                </li>
+
+                <li onclick="CONTACT_ANSWER()">How to get hold of you?
+                    <ul class="contact-answer">You can call us or send us a message to this number (078 605 2462). Alternatively you can write us an email at <a href="mailto:amakhuthala@gmail.com">amakhuthala@gmail.com</a> </ul>
+                </li>
+
+                <li onclick="OFFERS_ANSWER()">Besides electrical services, what else do you offer? 
+                    <ul class="offers-answer">We offer online lessons and Practical Training on electrical design and installation. </ul>
+                </li>
+            </ul>
+
+
+        </div>
         <!--ABOUT US-->
         <div class="about-us">
             <div class="content">
@@ -165,7 +184,7 @@
                         <p>Given time, there is no electrical problem we cannot tackle.<p>
                     </div>
 
-                    <div class="quality"><button><i class="fa-solid fa-2"></i> </button>Quality
+                    <div class="quality"><button><i class="fa-solid fa-2"></i> </button> Quality
                         <p> Our designs and systems are user-friendly and have good protection.</p>
                     </div>
                     

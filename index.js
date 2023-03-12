@@ -99,6 +99,7 @@ function POPUP_HELP(){
         document.querySelector('.pop-up-help').style.height='fit-content';
         document.querySelector('.pop-up-help').style.padding='20px';
         document.querySelector('.pop-up-help').style.margin='-150px 10px 10px 10px';
+        document.querySelector('.pop-up-help').style.opacity='1';
 
         pop_help=0;
     }
@@ -106,9 +107,39 @@ function POPUP_HELP(){
         document.querySelector('.pop-up-help').style.height='0';
         document.querySelector('.pop-up-help').style.padding='0';
         document.querySelector('.pop-up-help').style.margin='10px';
+        document.querySelector('.pop-up-help').style.opacity='-1';
         pop_help=1;
     }
 }
 function MYMAIL(){
     document.location='mailto:lusawanasinethemba@gmail.com';
+}
+//FAQS_POPUP BOX
+var pop_faqs=1;
+function FAQS_POPUP(){
+    if(pop_faqs==1){
+        document.querySelector('.faqs-popup').style.height='fit-content';
+        document.querySelector('.faqs-popup').style.padding='20px';
+        document.querySelector('.faqs-popup').style.margin='-150px 10px 10px 10px';
+        document.querySelector('.faqs-popup').style.opacity='1';
+
+        pop_faqs=0;
+    }
+    else{
+        document.querySelector('.faqs-popup').style.height='0';
+        document.querySelector('.faqs-popup').style.padding='0';
+        document.querySelector('.faqs-popup').style.margin='10px';
+        document.querySelector('.faqs-popup').style.opacity='-1';
+        pop_faqs=1;
+    }
+}
+
+function LOCATION_ANSWER(){
+    document.querySelector('.location-answer').style.display='block';
+}
+function CONTACT_ANSWER(){
+    document.querySelector('.contact-answer').style.display='block';
+}
+function OFFERS_ANSWER(){
+    document.querySelector('.offers-answer').style.display='block';
 }
