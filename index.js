@@ -91,3 +91,24 @@ function Ourteam(){
 
         menu_show=1;
 }
+
+//POUP HELP BOX
+var pop_help=1;
+function POPUP_HELP(){
+    if(pop_help==1){
+        document.querySelector('.pop-up-help').style.height='fit-content';
+        document.querySelector('.pop-up-help').style.padding='20px';
+        document.querySelector('.pop-up-help').style.margin='-150px 10px 10px 10px';
+
+        pop_help=0;
+    }
+    else{
+        document.querySelector('.pop-up-help').style.height='0';
+        document.querySelector('.pop-up-help').style.padding='0';
+        document.querySelector('.pop-up-help').style.margin='10px';
+        pop_help=1;
+    }
+}
+function MYMAIL(){
+    document.location='mailto:lusawanasinethemba@gmail.com';
+}

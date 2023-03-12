@@ -6,7 +6,6 @@
 body{
     font-family: 'Concert One', cursive;
     background-color: rgb(255, 255, 255);
-    
 
 }
 button{
@@ -207,7 +206,7 @@ nav .hire-us-btn{
 .welcome-box{
     display:flex;
     background-color: unset;
-    height:470px;
+    height:400px;
     font-size:20px;
     margin:10px;
 }
@@ -289,11 +288,17 @@ nav .hire-us-btn{
 .online-tuition .image img{
     width:100%;
 }
+.online-tuition .goto-class{
+    text-align: center;
+    font-size: small;
+    padding:20px;
+    text-decoration: underline;
+}
 /**styling design-installation*/
 .design-installation{
     background-image: url('Screenshot_20230311-230235_Gallery.jpg');
     background-size: cover;
-    color:rgb(0, 0, 0);
+    color:rgb(236, 98, 5);
     text-align: center;
     margin-top: 10px;
     width:0;
@@ -341,6 +346,7 @@ nav .hire-us-btn{
 .welcome-media-wrapper{
     display:flex;
     padding:10px;
+    color:rgb(49, 49, 48);
 }
 .welcome-media-wrapper p{
     padding:10px;
@@ -348,6 +354,7 @@ nav .hire-us-btn{
 .welcome-media-wrapper .sub-text{
     font-size: x-large;
     font-weight: 600;
+    color:rgb(27, 27, 27);
 }
 .content-wrapper .welcome-media{
     width:600px;
@@ -392,9 +399,50 @@ nav .hire-us-btn{
     border-bottom: 1px solid;
     color:rgb(207, 182, 145);
 }
+/*styling pop-up-help*/
+.pop-up-help{
+    box-shadow: 1px 3px 7px;
+    margin:10px;
+    color:rgb(31, 30, 30);
+    position: absolute;
+    background-color: white;
+    overflow:hidden;
+    height:0;
+    transition: margin 200ms ease-in-out;
+
+}
+.pop-up-help p{
+    color:rgb(241, 108, 19);
+}
+.pop-up-help ul{
+    list-style-position: inside;
+    padding:10px;
+}
+.pop-up-help h4{
+    border-bottom: 7px solid;
+    width:fit-content;
+    color:rgb(17, 104, 145);
+    font-size: x-large;
+}
+.pop-up-help .buttons{
+    padding:10px;
+    text-align: center;
+}
+.pop-up-help .cancel{
+    padding:10px;
+    background-color: rgb(199, 33, 33);
+    border:0;
+    color:white; 
+}
+.pop-up-help .go{
+    padding:10px;
+    background-color: rgb(26, 121, 26);
+    border:0;
+    color:white; 
+}
 /*styling about-us*/
 .about-us{
-    color:rgb(61, 60, 60);
+    color:rgb(49, 49, 48);
     background-color: rgb(247, 250, 252);
     padding:10px;
     margin-top: 70px;
@@ -631,13 +679,14 @@ nav .hire-us-btn{
 .services-icon div i{
     font-size: xx-large;
 }
+
+
 /*styling footer*/
 footer{
     margin-top: 50px;
     padding:20px;
     color:rgb(56, 55, 54);
     background-color:white;
-    opacity:.9;
     box-shadow: 1px 1px 3px;
 }
 footer .address{
