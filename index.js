@@ -151,6 +151,8 @@ function myfunction(){
         document.querySelector('.wrap-header').style.width='100%';
         document.querySelector('.wrap-header').style.backgroundColor='white';
         document.querySelector('.wrap-header').style.boxShadow='1px 1px 4px';
+        document.querySelector('.sign-in').style.backgroundColor='rgb(50, 146, 50)';
+        document.querySelector('.sign-in').style.color='white';
 
     }
     else{
@@ -159,5 +161,7 @@ function myfunction(){
         document.querySelector('.wrap-header').style.backgroundColor='white';
         document.querySelector('.wrap-header').style.boxShadow='0 0 0';
         document.querySelector('.wrap-header').style.backgroundColor='white';
+        document.querySelector('.sign-in').style.backgroundColor='unset';
+        document.querySelector('.sign-in').style.color='initial';
     }
 }
