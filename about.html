@@ -23,32 +23,37 @@
         .about-us a{
             color:rgb(209, 144, 69);
         }
+        .menu-wrapper-about{
+            box-shadow: 1px 1px 5px;
+            margin: 10px;
+            transition: all 300ms ease-in-out;
+            position:absolute;
+            width:90%;
+            background-color: white;
+            height: 0;
+            overflow: hidden;
+        }
     </style>
 </head>
 <body>
     <!--HEADER-->
     <header>
-        <nav><span class="about">About</span> <span class="services">Services</span> <span class="e-learning">E-Learning</span> <span class="hire-us-btn">HIRE US</span></nav>
+        <div class="website-name" onclick="window.location='index.html'"><i class="fa-brands fa-battle-net"></i> Amakhuthala</div>
     </header>
 
-    <!--MENU WRAPPER-->
-    <div class="menu-wrapper">
-        <div class="close" onclick="MENU()"><i class="fa-regular fa-circle-xmark"></i></div>
-        <div class="menu">
-            <ul>
-                <li onclick="window.location='about.html'">About</li>
-                <li onclick="window.location='ourteam.html'">Our Team</li>
-                <li onclick="window.location='ourprojects.html'">Our Projects</li>
-                <li onclick="window.location='ourclients.html'">Our Clients</li>
-                <li onclick="window.location='gallery.html'">Gallery</li>
-            </ul>
+    <!--MENU ICON-->
+    <div class="menu-icon">
+        <div class="wrap-menu-bars">
+            <button class="sign-in"><i class="fa-solid fa-user"></i> Sign In</button>
 
-            <div class="social-media">
-                <span class="facebook"><i class="fa-brands fa-facebook"></i></span> <span class="whatsapp"><i class="fa-brands fa-whatsapp"></i></span> <span class="instagram"><i class="fa-brands fa-instagram"></i></span> <span class="youtube"><i class="fa-brands fa-youtube"></i></span> <br><br><span class="twitter"><i class="fa-brands fa-twitter"></i></span> <span class="linkedin"><i class="fa-brands fa-linkedin"></i></span>
+            <div class="bar-wrap" onclick="MENU_ABOUT()">
+                <div class="bar-one"></div>
+                <div class="bar-two"></div>
+                <div class="bar-three"></div>
             </div>
-            <br><span style="font-size: smaller;width:max-content;">Thank You for visiting our website</span>
         </div>
     </div>
+
 
 <!--ABOUT US BOX-->
     <div class="about-us">
@@ -69,6 +74,34 @@
     </section>
     </div>
 
-    <script src="index.js"></script>
+    <!--MENU WRAPPER-->
+    <div class="menu-wrapper-about">
+        <div class="close" onclick="MENU_ABOUT()"><i class="fa-regular fa-circle-xmark"></i></div>
+        <div class="menu">
+            <ul>
+                <li onclick="window.location='about.html'">About</li>
+                <li onclick="window.location='index.html#our-team'">Our Team</li>
+                <li onclick="window.location='ourprojects.html'">Our Projects</li>
+                <li onclick="window.location='ourclients.html'">Our Clients</li>
+                <li onclick="window.location='ourgallery.html'">Gallery</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        var menus=1;
+        function MENU_ABOUT(){
+            if(menus==1){
+                document.querySelector('.menu-wrapper-about').style.height='50%';
+                document.querySelector('.menu-wrapper-about').style.top='10%';
+                
+                menus=0
+            }
+            else{
+                document.querySelector('.menu-wrapper-about').style.height='0';
+                menus=1;
+            }
+        }
+    </script>
 </body>
 </html>

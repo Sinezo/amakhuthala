@@ -29,8 +29,9 @@ header .website-name{
     position:absolute;
     margin:15px 0 0 0;
     border-radius: 3px;
-    font-family: 'Concert One', cursive;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
 nav{
     float:right;
     padding:5px;
@@ -63,7 +64,7 @@ nav .hire-us-btn{
     height: 100%;
     position:fixed;
     width:0;
-    background-color: rgb(241, 235, 235);
+    background-color: rgb(255, 255, 255);
     overflow: hidden;
     font-size: large;
     color:rgb(51, 50, 50);
@@ -84,10 +85,14 @@ nav .hire-us-btn{
     list-style: none;
     line-height: 40px;;
 }
+.menu ul li{
+    width: fit-content;
+}
 .menu ul li:hover{
     color:rgb(204, 103, 36);
     cursor: pointer;
     border-bottom: 1px solid;
+    width:fit-content;
 }
 /*styling content wrapper*/
 .content-wrapper{
@@ -176,6 +181,11 @@ nav .hire-us-btn{
     background-color: unset;
     border:solid 1px rgb(129, 128, 128);
 }
+.sign-in:hover{
+    cursor: pointer;
+    color:rgb(255, 255, 255);
+    background-color: rgb(50, 146, 50);
+}
 .bar-wrap:hover{
     cursor:pointer;
     color:rgb(226, 94, 17);
@@ -214,7 +224,7 @@ nav .hire-us-btn{
     margin:10px;
 }
 .welcome-box .welcome-message{
-    background-image: url('Screenshot_20230311-230248_Gallery.jpg');
+    background-image: url('Screenshot_20230314-122115_Gallery.jpg');
     background-size: cover;
     margin:10px 10px 20px 10px;
     width:500px;
@@ -277,6 +287,10 @@ nav .hire-us-btn{
     width:100%;
     color:rgb(231, 224, 224);
 }
+.online-tuition .apply:hover{
+    border-radius: 4px;
+    cursor: pointer;
+}
 .online-tuition .image{
     margin-top: 20px;
 }
@@ -293,7 +307,7 @@ nav .hire-us-btn{
 .design-installation{
     background-image: url('Screenshot_20230311-230235_Gallery.jpg');
     background-size: cover;
-    color:rgb(196, 91, 22);
+    color:rgb(231, 122, 19);
     margin-top: 10px;
     width:0;
     overflow: hidden;
@@ -301,7 +315,7 @@ nav .hire-us-btn{
     transition: opacity 1000ms linear;
 }
 .design-installation h2{
-    color:rgb(216, 136, 44);
+    color:rgb(202, 118, 22);
 }
 .design-installation .hire-us{
     padding:20px;
@@ -310,6 +324,10 @@ nav .hire-us-btn{
     border-radius: 20px;
     width:100%;
     color:rgb(231, 224, 224);
+}
+.design-installation .hire-us:hover{
+    cursor: pointer;
+    border-radius: 4px;
 }
 .design-installation p{
     padding:10px;
@@ -367,7 +385,7 @@ nav .hire-us-btn{
 }
 .short-cut-info .explore{
     padding:20px;
-    background-color: rgb(253, 253, 255);
+    background-color: unset;
     border-bottom: 1px solid;
     color:rgb(235, 152, 27);
     width:fit-content;
@@ -375,7 +393,7 @@ nav .hire-us-btn{
 }
 .short-cut-info .help{
     padding:20px;
-    background-color:  rgb(253, 253, 253);
+    background-color:  unset;
     border-bottom: 1px solid;
     color:rgb(235, 152, 27);
     width:fit-content;
@@ -383,9 +401,9 @@ nav .hire-us-btn{
 }
 .short-cut-info .faqs{
     padding:20px;
-    background-color:  rgb(255, 255, 255);
+    background-color:  rgb(214, 134, 30);
     border-bottom: 1px solid;
-    color:rgb(235, 152, 27);
+    color:rgb(235, 232, 232);
     width:fit-content;
     margin-top: 10px;
 }
@@ -464,6 +482,17 @@ nav .hire-us-btn{
 .faqs-popup ul li ul{
     display:none;
 }
+.faqs-popup .close{
+    text-align: end;
+}
+.faqs-popup .close i{
+    font-size: larger;
+    color:rgb(172, 29, 19);
+}
+.faqs-popup .close i:hover{
+    cursor: pointer;
+    color:rgb(236, 27, 12);
+}
 /*styling about-us*/
 .about-us{
 
@@ -484,9 +513,10 @@ nav .hire-us-btn{
 .about-us .content .read-more{
     border:0; 
     background-color:unset;
-    padding:20px;
+    padding:10px;
     border-radius:4px; 
     color:rgb(190, 109, 33);
+    font-size: large;
 }
 .about-us .content .read-more:hover{
     cursor: pointer;
@@ -524,7 +554,7 @@ nav .hire-us-btn{
 }
 .electrical-design button{
     padding:15px;
-    background-color:rgb(36, 157, 187);
+    background-color:rgb(123, 168, 39);
     border-radius: 20px;
     color:rgb(255, 255, 255);
     border:1px solid;
@@ -533,8 +563,8 @@ nav .hire-us-btn{
 .electrical-design button:hover{
     cursor:pointer;
     border-radius: 5px;
-    background-color: rgb(45, 46, 46);
-    color:rgb(230, 142, 28);
+    background-color: rgb(18, 99, 28);
+    color:rgb(255, 255, 255);
 }
 /*stylinf why-us*/
 .why-us{
@@ -587,10 +617,10 @@ nav .hire-us-btn{
 }
 /*styling summary*/
 .summary{
-    background-color: unset;
+    background-color: rgb(223, 231, 224);
     padding:20px;
     margin-top: 50px;
-    color:rgb(218, 146, 38);
+    color:rgb(199, 138, 24);
 }
 .summary h3{
     font-size: x-large;
@@ -614,48 +644,6 @@ nav .hire-us-btn{
 .sum-4{
     padding:30px;
     background-color: rgb(245, 241, 241);
-}
-/*styling our-team*/
-.our-team{
-    background-color: rgb(255, 255, 255);
-    color:rgb(46, 46, 45);
-    padding:20px;
-    margin:50px 10px;
-    border-radius: 10px;
-}
-.our-team h3{
-    text-align: center;
-    border-bottom: 1px solid rgb(218, 126, 51);
-    padding:10px;
-}
-.our-team .founder{
-    width:100%;
-    margin:20px 0;
-    border:1px solid rgb(206, 205, 205);
-    border-radius: 10px;
-}
-.our-team .founder img{
-    width:100%;
-    border-radius: 10px 10px 0 0;
-}
-.our-team p{
-    padding:10px;
-    font-size: small;
-}
-.our-team a{
-    color:rgb(177, 120, 67);
-}
-.our-team .read-more{
-    border:0; 
-    background-color:unset;
-    padding:20px;
-    border-radius:4px; 
-    color:white;
-    font-size: smaller;
-}
-.our-team .read-more:hover{
-    cursor: pointer;
-    color:rgb(235, 152, 27);
 }
 /*styling services*/
 .services{
@@ -703,13 +691,54 @@ nav .hire-us-btn{
 .services-icon div i{
     font-size: xx-large;
 }
-
+/*styling our-team*/
+.our-team{
+    background-color: rgb(255, 255, 255);
+    color:rgb(46, 46, 45);
+    padding:20px;
+    margin:50px 10px;
+    border-radius: 10px;
+}
+.our-team h3{
+    text-align: center;
+    border-bottom: 1px solid rgb(218, 126, 51);
+    padding:10px;
+}
+.our-team .founder{
+    width:100%;
+    margin:20px 0;
+    border:1px solid rgb(206, 205, 205);
+    border-radius: 10px;
+}
+.our-team .founder img{
+    width:100%;
+    border-radius: 10px 10px 0 0;
+}
+.our-team p{
+    padding:10px;
+    font-size: small;
+}
+.our-team a{
+    color:rgb(177, 120, 67);
+}
+.our-team .read-more{
+    border:0; 
+    background-color:unset;
+    padding:20px;
+    border-radius:4px; 
+    color:white;
+    font-size: smaller;
+}
+.our-team .read-more:hover{
+    cursor: pointer;
+    color:rgb(235, 152, 27);
+}
 
 /*styling footer*/
 footer{
     margin-top: 50px;
     padding:20px;
-    background-color:white;
+    background-color:rgb(207, 221, 224);
     box-shadow: 1px 1px 3px;
 }
 footer .address{

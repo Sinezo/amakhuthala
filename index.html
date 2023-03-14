@@ -22,20 +22,23 @@
         <!--CONTENT WRAPPER-->
     <div class="content-wrapper">
 
-        <!--HEADER-->
-       <header>
-            <div class="website-name"><i class="fa-brands fa-battle-net"></i> Amakhuthala</div>
-        </header>
+        <!--HEADER WRAPPER-->
+        <div class="wrap-header">
+                    <!--HEADER-->
+            <header>
+                <div class="website-name" onclick="window.location='index.html'"><i class="fa-brands fa-battle-net"></i> Amakhuthala</div>
+            </header>
 
-        <!--MENU ICON-->
-        <div class="menu-icon">
-            <div class="wrap-menu-bars">
-                <button class="sign-in"><i class="fa-solid fa-user"></i> Sign In</button>
+            <!--MENU ICON-->
+            <div class="menu-icon">
+                <div class="wrap-menu-bars">
+                    <button class="sign-in"><i class="fa-solid fa-user"></i> Sign In</button>
 
-                <div class="bar-wrap" onclick="MENU()">
-                    <div class="bar-one"></div>
-                    <div class="bar-two"></div>
-                    <div class="bar-three"></div>
+                    <div class="bar-wrap" onclick="MENU()">
+                        <div class="bar-one"></div>
+                        <div class="bar-two"></div>
+                        <div class="bar-three"></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -124,6 +127,7 @@
 
         <!--FAQS POPUP-->
         <div class="faqs-popup">
+            <div class="close" onclick="FAQS_POPUP()"><i class="fa-regular fa-circle-xmark"></i></div>
             <ul>
                 <li onclick="LOCATION_ANSWER()">Where are you located?
                     <ul class="location-answer">We are located in Engcobo in the Eastern Cape.</ul>
@@ -200,6 +204,7 @@
         </div>
 
     </div>
+    
     <!--MENU WRAPPER-->
     <div class="menu-wrapper">
         <div class="close" onclick="MENU()"><i class="fa-regular fa-circle-xmark"></i></div>
@@ -243,6 +248,20 @@
         </div>
     </div>
 
+    <!--OUR SERVICES-->
+    <div class="services">
+        <div class="content">
+            <div class="services-icon"><div><i class="fa-solid fa-screwdriver-wrench"></i></div><h4>Our Services Include:</h4></div>
+            <br>
+            <ul>
+                <li><i class="fa-solid fa-chevron-right"></i> General Electrical Maintenace</li>
+                <li><i class="fa-solid fa-chevron-right"></i> Domestic Installation</li>
+                <li><i class="fa-solid fa-chevron-right"></i> Electrical Design & Installation</li>
+                <li><i class="fa-solid fa-chevron-right"></i> Hands-on Training on Electrical Design and Installation</li>
+            </ul>
+        </div>
+    </div>
+
     <!--OUR TEAM-->
     <div class="our-team" id="our-team">
         <h3>OUR TEAM</h3>
@@ -260,21 +279,6 @@
         </div>
     </div>
 
-    <!--OUR SERVICES-->
-    <div class="services">
-        <div class="content">
-            <div class="services-icon"><div><i class="fa-solid fa-screwdriver-wrench"></i></div><h4>Our Services Include:</h4></div>
-            <br>
-            <ul>
-                <li><i class="fa-solid fa-chevron-right"></i> General Electrical Maintenace</li>
-                <li><i class="fa-solid fa-chevron-right"></i> Domestic Installation</li>
-                <li><i class="fa-solid fa-chevron-right"></i> Electrical Design & Installation</li>
-                <li><i class="fa-solid fa-chevron-right"></i> Hands-on Training on Electrical Design and Installation</li>
-            </ul>
-        </div>
-    </div>
-
-
     <!--FOOTER-->
     <footer>
         <contact-us>
@@ -291,14 +295,6 @@
             5050, 
             Eastern Cape
         </div>
-        <br> 
-        <div class="about-company">
-            <h4><i class="fa-solid fa-address-card"></i> About the company</h4>
-            Was founded in 2023 by Sinethemba Lusawana
-            <br>Not registered yet 
-            <br>Specializes on the electrical field
-        </div>
-
         <div class="copyright">Amakhuthala &copy;</div>
     </footer>
     <script src="index.js"></script>

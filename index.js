@@ -14,7 +14,6 @@ function MENU(){
         document.querySelector('.bar-two').style.display='none';
         document.querySelector('.bar-three').style.transform='rotate(-45deg)';
         document.querySelector('.bar-three').style.marginTop='-3px';
-        window.location="#";
 
         menu_show=0;
     }
@@ -142,4 +141,23 @@ function CONTACT_ANSWER(){
 }
 function OFFERS_ANSWER(){
     document.querySelector('.offers-answer').style.display='block';
+}
+
+//ONSCROLL
+window.onscroll=function(){myfunction()};
+function myfunction(){
+    if(document.documentElement.scrollTop >400){
+        document.querySelector('.wrap-header').style.position='fixed';
+        document.querySelector('.wrap-header').style.width='100%';
+        document.querySelector('.wrap-header').style.backgroundColor='white';
+        document.querySelector('.wrap-header').style.boxShadow='1px 1px 4px';
+
+    }
+    else{
+        document.querySelector('.wrap-header').style.position='relative';
+        document.querySelector('.wrap-header').style.width='100%';
+        document.querySelector('.wrap-header').style.backgroundColor='white';
+        document.querySelector('.wrap-header').style.boxShadow='0 0 0';
+        document.querySelector('.wrap-header').style.backgroundColor='white';
+    }
 }
