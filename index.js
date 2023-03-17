@@ -36,41 +36,61 @@ function MENU(){
 var slide_position=0;
 function SLIDE(){
     if(slide_position==0){
-        document.querySelector('.welcome-message').style.width='100%';
-        document.querySelector('.welcome-message').style.padding='30px';
-        document.querySelector('.welcome-message').style.opacity='1';
+        document.querySelector('.two').style.width='100%';
+        document.querySelector('.two').style.opacity='1';
 
-        document.querySelector('.design-installation').style.width='0';
-        document.querySelector('.design-installation').style.padding='0';
-        document.querySelector('.design-installation').style.opacity='-1';
+        document.querySelector('.one').style.width='0';
+        document.querySelector('.one').style.padding='0';
+        document.querySelector('.one').style.opacity='-1';
         slide_position=1;
     }
     else if(slide_position==1){
-        document.querySelector('.online-tuition').style.width='100%';
-        document.querySelector('.online-tuition').style.padding='50px';
-        document.querySelector('.online-tuition').style.opacity='1';
+        document.querySelector('.three').style.width='100%';
+        document.querySelector('.three').style.opacity='1';
 
-        document.querySelector('.welcome-message').style.width='0';
-        document.querySelector('.welcome-message').style.padding='0';
-        document.querySelector('.welcome-message').style.overflow='hidden';
-        document.querySelector('.welcome-message').style.border='0';
+        document.querySelector('.two').style.width='0';
+        document.querySelector('.two').style.padding='0';
+        document.querySelector('.two').style.overflow='hidden';
+        document.querySelector('.two').style.border='0';
         
         slide_position=2;
     }
     else if(slide_position==2){
-        document.querySelector('.design-installation').style.width='100%';
-        document.querySelector('.design-installation').style.padding='50px';
-        document.querySelector('.design-installation').style.opacity='1';
-        document.querySelector('.online-tuition').style.opacity='-1';
+        document.querySelector('.four').style.width='100%';
+        document.querySelector('.four').style.opacity='1';
+        document.querySelector('.three').style.opacity='-1';
 
-        document.querySelector('.online-tuition').style.width='0';
-        document.querySelector('.online-tuition').style.padding='0';
-        document.querySelector('.online-tuition').style.overflow='hidden';
-        document.querySelector('.online-tuition').style.border='0';
-        document.querySelector('.welcome-message').style.opacity='-1';
+        document.querySelector('.three').style.width='0';
+        document.querySelector('.three').style.padding='0';
+        document.querySelector('.three').style.overflow='hidden';
+        document.querySelector('.three').style.border='0';
+        document.querySelector('.two').style.opacity='-1';
+        slide_position=3;
+    }
+    else if(slide_position==3){
+        document.querySelector('.five').style.width='100%';
+        document.querySelector('.five').style.opacity='1';
+        document.querySelector('.four').style.opacity='-1';
+
+        document.querySelector('.four').style.width='0';
+        document.querySelector('.four').style.padding='0';
+        document.querySelector('.four').style.overflow='hidden';
+        document.querySelector('.four').style.border='0';
+        slide_position=4;
+
+    }
+    else if(slide_position==4){
+        document.querySelector('.one').style.width='100%';
+        document.querySelector('.one').style.opacity='1';
+        document.querySelector('.five').style.opacity='-1';
+
+        document.querySelector('.five').style.width='0';
+        document.querySelector('.five').style.padding='0';
+        document.querySelector('.five').style.overflow='hidden';
+        document.querySelector('.five').style.border='0';
         slide_position=0;
     }
-    setTimeout('SLIDE()', 6000);
+    setTimeout('SLIDE()', 10000);
 }
 window.onload=SLIDE;
 
@@ -97,7 +117,7 @@ function POPUP_HELP(){
     if(pop_help==1){
         document.querySelector('.pop-up-help').style.height='fit-content';
         document.querySelector('.pop-up-help').style.padding='20px';
-        document.querySelector('.pop-up-help').style.margin='-150px 10px 10px 10px';
+        document.querySelector('.pop-up-help').style.margin='-180px 10px 10px 10px';
         document.querySelector('.pop-up-help').style.opacity='1';
 
         pop_help=0;
@@ -146,7 +166,7 @@ function OFFERS_ANSWER(){
 //ONSCROLL
 window.onscroll=function(){myfunction()};
 function myfunction(){
-    if(document.documentElement.scrollTop >400){
+    if(document.documentElement.scrollTop >700){
         document.querySelector('.wrap-header').style.position='fixed';
         document.querySelector('.wrap-header').style.width='100%';
         document.querySelector('.wrap-header').style.backgroundColor='white';

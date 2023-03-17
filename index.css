@@ -217,126 +217,168 @@ nav .hire-us-btn{
 
 /*styling welcome-box*/
 .welcome-box{
+    background-color: unset;
     display:flex;
-    background-color: unset;
-    height:430px;
-    font-size:20px;
+    height:520px;
+    padding:10px;
+}
+.welcome-box .one{
+    background-color:unset;
+    color:rgb(15, 15, 15);
+    transition: opacity 300ms ease-in-out;
+    overflow: hidden;
+}
+.welcome-box .one p{
+    padding:20px;
+}
+.welcome-box .one button{
+    padding:10px;
+    width:80%;
     margin:10px;
-}
-.welcome-box .welcome-message{
-    background-image: url('Screenshot_20230314-122115_Gallery.jpg');
-    background-size: cover;
-    margin:10px 10px 20px 10px;
-    width:500px;
-    transition: opacity 1000ms linear;
-}
-.welcome-box .welcome-message .bragging{
-    text-align: start;
-    padding:20px;
-    background-color: unset;
-    color:rgb(255, 255, 255);
-    opacity:.9;
-    border-radius: 4px;
-    margin:10px 10px;
-}
-.welcome-box .welcome-message h2{
-    color:rgb(224, 137, 24);
-    padding:10px;
-}
-.welcome-box .welcome-message .two{
-    color: rgb(52, 71, 95);
-    background-color: rgb(201, 194, 194);
-    padding:10px;
-}
-.welcome-box .welcome-message button{
-    padding:20px;
+    background-color: rgb(118, 199, 52);
+    color:white;
     border:0;
-    background-color: rgb(223, 161, 28);
-    color:rgb(255, 255, 255);
-    width:90%; 
-    margin:10px 10px;
-    box-sizing: border-box;
-    border-radius: 20px;
 }
-.welcome-box .welcome-message button:hover{
-    border-radius: 5px;
+.welcome-box .one button:hover{
     cursor: pointer;
+    background-color: rgb(60, 116, 15);
+}
+.welcome-box img{
+    width:100%;
+    height:300px;
+    
 }
 
-/*styling online-tuition*/
-.online-tuition{
-    background-image: url('Screenshot_20230311-230243_Gallery.jpg');
-    background-size: cover;
-    color:rgb(255, 255, 255);
+.welcome-box .two{
+    background-color:rgb(255, 255, 255);
+    color:rgb(3, 3, 3);
     width:0;
     overflow: hidden;
     opacity:-1;
-    transition: opacity 1000ms linear;
+    transition: opacity 300ms ease-in-out;
 }
-.online-tuition h2{
-    color:rgb(216, 136, 44);
+.welcome-box .two p{
+    padding:0 10px;
 }
-.online-tuition p{
+.welcome-box .two h3{
     padding:10px;
+    color:rgb(228, 133, 25);
+    text-transform: uppercase;
 }
-.online-tuition .apply{
-    padding:20px;
-    background-color: rgb(196, 142, 27);
+.welcome-box .two button{
+    padding:10px;
+    width:80%;
+    margin:10px;
+    background-color: rgb(118, 199, 52);
+    color:white;
     border:0;
-    border-radius: 20px;
-    width:100%;
-    color:rgb(231, 224, 224);
 }
-.online-tuition .apply:hover{
-    border-radius: 4px;
+.welcome-box .two button:hover{
     cursor: pointer;
+    background-color: rgb(60, 116, 15);
 }
-.online-tuition .image{
-    margin-top: 20px;
-}
-.online-tuition .image img{
-    width:100%;
-}
-.online-tuition .goto-class{
-    text-align: center;
-    font-size: small;
-    padding:20px;
-    text-decoration: underline;
-}
-/**styling design-installation*/
-.design-installation{
-    background-image: url('Screenshot_20230311-230235_Gallery.jpg');
-    background-size: cover;
-    color:rgb(231, 122, 19);
-    margin-top: 10px;
+.welcome-box .three{
+    background-color:rgb(255, 255, 255);
+    color:rgb(3, 3, 3);
     width:0;
     overflow: hidden;
     opacity:-1;
-    transition: opacity 1000ms linear;
+    transition: opacity 300ms ease-in-out;
 }
-.design-installation h2{
-    color:rgb(202, 118, 22);
+.welcome-box .three p{
+    padding:0 10px;
 }
-.design-installation .hire-us{
-    padding:20px;
-    background-color: rgb(196, 142, 27);
+.welcome-box .three h3{
+    padding:10px;
+    color:rgb(228, 133, 25);
+    text-transform: uppercase;
+}
+.welcome-box .three button{
+    padding:10px;
+    width:80%;
+    margin:10px;
+    background-color: rgb(118, 199, 52);
+    color:white;
     border:0;
-    border-radius: 20px;
-    width:100%;
-    color:rgb(231, 224, 224);
 }
-.design-installation .hire-us:hover{
+.welcome-box .three button:hover{
     cursor: pointer;
-    border-radius: 4px;
+    background-color: rgb(60, 116, 15);
 }
-.design-installation p{
+
+.welcome-box .four{
+    background-color:rgb(255, 255, 255);
+    color:rgb(3, 3, 3);
+    width:0;
+    overflow: hidden;
+    opacity:-1;
+    transition: opacity 300ms ease-in-out;
+}
+.welcome-box .four p{
+    padding:0 10px;
+}
+.welcome-box .four h3{
     padding:10px;
+    color:rgb(228, 133, 25);
+    text-transform: uppercase;
 }
-.design-installation span{
-    font-size: smaller;
+.welcome-box .four button{
     padding:10px;
-    color:rgb(197, 181, 138);
+    width:80%;
+    margin:10px;
+    background-color: rgb(118, 199, 52);
+    color:white;
+    border:0;
 }
+.welcome-box .four button:hover{
+    cursor: pointer;
+    background-color: rgb(60, 116, 15);
+}
+.welcome-box .four .apply{
+    background-color: rgb(185, 124, 9);
+}
+.welcome-box .four .apply:hover{
+    cursor: pointer;
+    background-color: rgb(145, 97, 8);
+}
+
+.welcome-box .five{
+    background-color:rgb(255, 255, 255);
+    color:rgb(3, 3, 3);
+    width:0;
+    overflow: hidden;
+    opacity:-1;
+    transition: opacity 300ms ease-in-out;
+}
+.welcome-box .five p{
+    padding:0 10px;
+}
+.welcome-box .five h3{
+    padding:10px;
+    color:rgb(228, 133, 25);
+    text-transform: uppercase;
+}
+.welcome-box .five button{
+    padding:10px;
+    width:80%;
+    margin:10px;
+    background-color: rgb(118, 199, 52);
+    color:white;
+    border:0;
+}
+.welcome-box .five button:hover{
+    cursor: pointer;
+    background-color: rgb(60, 116, 15);
+}
+
+.welcome-box .five .apply{
+    background-color: rgb(185, 124, 9);
+}
+.welcome-box .five .apply:hover{
+    cursor: pointer;
+    background-color: rgb(145, 97, 8);
+}
+
 .skip-sliding{
     padding:20px;
     text-align: end;
@@ -347,9 +389,9 @@ nav .hire-us-btn{
 }
 /*styling name-info*/
 .name-info{
-    padding:3px 3px 10px 3px;
-    color:rgb(44, 44, 44);
-    border-bottom: 10px solid;
+    padding:3px 3px 1px 3px;
+    color:rgb(110, 108, 107);
+    border-bottom: 1px solid;
     width:fit-content;
 
 }
@@ -357,6 +399,7 @@ nav .hire-us-btn{
 .welcome-media-wrapper{
     display:flex;
     padding:10px;
+    margin-top: 0px;
 }
 .welcome-media-wrapper p{
     padding:10px;
@@ -496,7 +539,7 @@ nav .hire-us-btn{
 /*styling about-us*/
 .about-us{
 
-    background-color: rgb(247, 250, 252);
+    background-color: unset;
     padding:10px;
     margin-top: 70px;
     margin:10px;
@@ -507,16 +550,15 @@ nav .hire-us-btn{
 }
 .about-us .content h3{
     width:fit-content;
-    padding:3px 3px 10px 3px;
-    border-bottom: 10px solid rgb(226, 189, 86);
+    padding:3px 3px 10px 0px;
+    border-bottom: 1px solid rgb(226, 189, 86);
 }
 .about-us .content .read-more{
     border:0; 
     background-color:unset;
     padding:10px;
     border-radius:4px; 
-    color:rgb(190, 109, 33);
-    font-size: large;
+    color:rgb(130, 190, 33);
 }
 .about-us .content .read-more:hover{
     cursor: pointer;
@@ -579,8 +621,8 @@ nav .hire-us-btn{
     list-style: none;
 }
 .why-us  h3{
-    padding:3px 3px 10px 3px;
-    border-bottom: 10px solid rgb(226, 189, 86);
+    padding:3px 3px 10px 0px;
+    border-bottom: 1px solid rgb(226, 189, 86);
     width:fit-content;
 }
 .why-us ul i{
@@ -659,7 +701,7 @@ nav .hire-us-btn{
     list-style: none;
 }
 .services h4{
-    color:rgb(34, 33, 33);
+    color:rgb(255, 255, 255);
     text-align: center;
     padding:5px;
     margin-top: 7px;
@@ -678,7 +720,7 @@ nav .hire-us-btn{
     justify-content: center;
     padding:10px;
     color:rgb(223, 179, 35);
-    background-color: rgb(240, 238, 233);;
+    background-color: rgb(211, 180, 102);
 }
 .services-icon div{
     width:50px;
