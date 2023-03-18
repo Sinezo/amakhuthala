@@ -71,7 +71,7 @@ nav .hire-us-btn{
 }
 .menu-wrapper .close{
     padding:15px;
-    font-size: xx-large;
+    font-size: x-large;
     width:fit-content;
 }
 .menu-wrapper .close:hover{
@@ -93,6 +93,10 @@ nav .hire-us-btn{
     cursor: pointer;
     border-bottom: 1px solid;
     width:fit-content;
+}
+.menu ul li i{
+    font-size: small;
+    color:rgb(235, 198, 129);
 }
 /*styling content wrapper*/
 .content-wrapper{
@@ -125,7 +129,7 @@ nav .hire-us-btn{
     color:red;
 }
 .twitter{
-    color:lightblue;
+    color:rgb(19, 74, 92);
 }
 .linkedin{
     color:navy;
@@ -227,6 +231,9 @@ nav .hire-us-btn{
     color:rgb(15, 15, 15);
     transition: opacity 300ms ease-in-out;
     overflow: hidden;
+    border:1px solid lightgrey;
+    border-radius: 10px;
+    height:fit-content;
 }
 .welcome-box .one p{
     padding:20px;
@@ -256,6 +263,9 @@ nav .hire-us-btn{
     overflow: hidden;
     opacity:-1;
     transition: opacity 300ms ease-in-out;
+    border:1px solid lightgrey;
+    border-radius: 10px;
+    height:fit-content;
 }
 .welcome-box .two p{
     padding:0 10px;
@@ -284,6 +294,8 @@ nav .hire-us-btn{
     overflow: hidden;
     opacity:-1;
     transition: opacity 300ms ease-in-out;
+    border-radius: 10px;
+    height:fit-content;
 }
 .welcome-box .three p{
     padding:0 10px;
@@ -313,6 +325,8 @@ nav .hire-us-btn{
     overflow: hidden;
     opacity:-1;
     transition: opacity 300ms ease-in-out;
+    border-radius: 10px;
+    height:fit-content;
 }
 .welcome-box .four p{
     padding:0 10px;
@@ -349,6 +363,8 @@ nav .hire-us-btn{
     overflow: hidden;
     opacity:-1;
     transition: opacity 300ms ease-in-out;
+    border-radius: 10px;
+    height:fit-content;
 }
 .welcome-box .five p{
     padding:0 10px;
@@ -365,6 +381,8 @@ nav .hire-us-btn{
     background-color: rgb(118, 199, 52);
     color:white;
     border:0;
+    border-radius: 10px;
+    height:fit-content;
 }
 .welcome-box .five button:hover{
     cursor: pointer;
@@ -393,13 +411,14 @@ nav .hire-us-btn{
     color:rgb(110, 108, 107);
     border-bottom: 1px solid;
     width:fit-content;
+    margin-top: -30px;
 
 }
 /*styling welcome-media*/
 .welcome-media-wrapper{
     display:flex;
     padding:10px;
-    margin-top: 0px;
+    margin-top: 20px;
 }
 .welcome-media-wrapper p{
     padding:10px;
@@ -407,7 +426,7 @@ nav .hire-us-btn{
 .welcome-media-wrapper .sub-text{
     font-size: x-large;
     font-weight: 600;
-    color:rgb(39, 39, 38);
+    color:rgb(216, 169, 13);
 }
 .content-wrapper .welcome-media{
     width:600px;
@@ -419,7 +438,7 @@ nav .hire-us-btn{
 /*styling short-cut-info*/
 .short-cut-info{
     padding:20px;
-    background-color: rgb(44, 43, 43);
+    background-color: rgb(173, 214, 126);
     height:fit-content;
     box-sizing: border-box;
     display:flex;
@@ -430,7 +449,7 @@ nav .hire-us-btn{
     padding:20px;
     background-color: unset;
     border-bottom: 1px solid;
-    color:rgb(235, 152, 27);
+    color:rgb(255, 255, 255);
     width:fit-content;
     margin-top: 10px;
 }
@@ -438,22 +457,22 @@ nav .hire-us-btn{
     padding:20px;
     background-color:  unset;
     border-bottom: 1px solid;
-    color:rgb(235, 152, 27);
+    color:rgb(228, 119, 17);
     width:fit-content;
     margin-top: 10px;
 }
 .short-cut-info .faqs{
     padding:20px;
-    background-color:  rgb(214, 134, 30);
+    background-color:  rgb(202, 235, 141);
     border-bottom: 1px solid;
-    color:rgb(235, 232, 232);
+    color:rgb(192, 112, 20);
     width:fit-content;
     margin-top: 10px;
 }
 .short-cut-info div:hover{
     cursor: pointer;
     border-bottom: 1px solid;
-    color:rgb(207, 182, 145);
+    color:rgb(0, 0, 0);
 }
 /*styling pop-up-help*/
 .pop-up-help{
@@ -543,22 +562,25 @@ nav .hire-us-btn{
     padding:10px;
     margin-top: 70px;
     margin:10px;
-    box-shadow:1px 1px 3px;
 }
 .about-us .content{
     padding:10px;
 }
 .about-us .content h3{
-    width:fit-content;
     padding:3px 3px 10px 0px;
-    border-bottom: 1px solid rgb(226, 189, 86);
+    border-bottom: 1px solid rgb(255, 255, 255);
+    text-transform: uppercase;
+    background-color: rgb(221, 137, 27);
+    color:white;
+    padding:20px 5px;
 }
 .about-us .content .read-more{
     border:0; 
-    background-color:unset;
+    background-color:rgb(165, 157, 42);
     padding:10px;
     border-radius:4px; 
-    color:rgb(130, 190, 33);
+    color:rgb(248, 252, 243);
+    width:100%;
 }
 .about-us .content .read-more:hover{
     cursor: pointer;
@@ -579,7 +601,7 @@ nav .hire-us-btn{
 }
 .electrical-design  h4{
     background-color: unset;
-    color:rgb(0, 0, 0);
+    color:rgb(216, 169, 13);
     width:fit-content;
     font-size: x-large;
     text-align: center;
@@ -597,7 +619,7 @@ nav .hire-us-btn{
 .electrical-design button{
     padding:15px;
     background-color:rgb(123, 168, 39);
-    border-radius: 20px;
+    border-radius: 5px;
     color:rgb(255, 255, 255);
     border:1px solid;
 
@@ -622,8 +644,11 @@ nav .hire-us-btn{
 }
 .why-us  h3{
     padding:3px 3px 10px 0px;
-    border-bottom: 1px solid rgb(226, 189, 86);
-    width:fit-content;
+    border-bottom: 1px solid rgb(135, 206, 21);
+    text-transform: uppercase;
+    background-color: rgb(221, 137, 27);
+    padding:20px 5px;
+    color:rgb(255, 255, 255);
 }
 .why-us ul i{
     color:rgb(219, 130, 14);
@@ -647,7 +672,7 @@ nav .hire-us-btn{
 .learn-more .learn-more-btn{
     padding:10px;
     width:100%;
-    border-radius: 20px ;
+    border-radius: 5px ;
     background-color: rgb(104, 98, 40);
     color:rgb(255, 255, 255);
     border:0;

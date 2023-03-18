@@ -38,6 +38,7 @@ function SLIDE(){
     if(slide_position==0){
         document.querySelector('.two').style.width='100%';
         document.querySelector('.two').style.opacity='1';
+        document.querySelector('.two').style.border='1px solid lightgrey';
 
         document.querySelector('.one').style.width='0';
         document.querySelector('.one').style.padding='0';
@@ -47,6 +48,7 @@ function SLIDE(){
     else if(slide_position==1){
         document.querySelector('.three').style.width='100%';
         document.querySelector('.three').style.opacity='1';
+        document.querySelector('.three').style.border='1px solid lightgrey';
 
         document.querySelector('.two').style.width='0';
         document.querySelector('.two').style.padding='0';
@@ -58,6 +60,7 @@ function SLIDE(){
     else if(slide_position==2){
         document.querySelector('.four').style.width='100%';
         document.querySelector('.four').style.opacity='1';
+        document.querySelector('.four').style.border='1px solid lightgrey';
         document.querySelector('.three').style.opacity='-1';
 
         document.querySelector('.three').style.width='0';
@@ -70,6 +73,7 @@ function SLIDE(){
     else if(slide_position==3){
         document.querySelector('.five').style.width='100%';
         document.querySelector('.five').style.opacity='1';
+        document.querySelector('.five').style.border='1px solid lightgrey';
         document.querySelector('.four').style.opacity='-1';
 
         document.querySelector('.four').style.width='0';
@@ -82,6 +86,7 @@ function SLIDE(){
     else if(slide_position==4){
         document.querySelector('.one').style.width='100%';
         document.querySelector('.one').style.opacity='1';
+        document.querySelector('.one').style.border='1px solid lightgrey';
         document.querySelector('.five').style.opacity='-1';
 
         document.querySelector('.five').style.width='0';
@@ -90,7 +95,7 @@ function SLIDE(){
         document.querySelector('.five').style.border='0';
         slide_position=0;
     }
-    setTimeout('SLIDE()', 10000);
+    setTimeout('SLIDE()', 4000);
 }
 window.onload=SLIDE;
 
@@ -184,4 +189,46 @@ function myfunction(){
         document.querySelector('.sign-in').style.backgroundColor='unset';
         document.querySelector('.sign-in').style.color='initial';
     }
+}
+
+//ONSCROLL SUMMARY
+var services_number=0;
+var clients_number=0;
+var employees_number=0;
+var projects_number=0;
+
+
+window.onscroll=function(){scroll_summary()};
+function scroll_summary(){
+    if(document.documentElement.scrollTop >2900){
+        if(services_number<6){
+            services_number+=1;
+            document.querySelector('.services-number').innerHTML=services_number;
+        }
+        else if(services_number==6){
+            clients_number+=1;
+            document.querySelector('.clients-number').innerHTML=clients_number;
+
+            if(clients_number==27){
+                services_number=7;
+            }
+        }
+        else if(clients_number==27){
+            employees_number+=1;
+            document.querySelector('.employees-number').innerHTML=employees_number;
+
+            if(employees_number==56){
+                clients_number=28;
+            }
+        }
+        else if(employees_number==56){
+            projects_number+=1;
+            document.querySelector('.projects-number').innerHTML=projects_number;
+
+            if(projects_number==126){
+                employees_number=57;
+            }
+        }
+    }
+    setTimeout('scroll_summary()',100)
 }
