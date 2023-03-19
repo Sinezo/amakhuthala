@@ -38,7 +38,6 @@ function SLIDE(){
     if(slide_position==0){
         document.querySelector('.two').style.width='100%';
         document.querySelector('.two').style.opacity='1';
-        document.querySelector('.two').style.border='1px solid lightgrey';
 
         document.querySelector('.one').style.width='0';
         document.querySelector('.one').style.padding='0';
@@ -47,8 +46,7 @@ function SLIDE(){
     }
     else if(slide_position==1){
         document.querySelector('.three').style.width='100%';
-        document.querySelector('.three').style.opacity='1';
-        document.querySelector('.three').style.border='1px solid lightgrey';
+        document.querySelector('.three').style.opacity='.9';
 
         document.querySelector('.two').style.width='0';
         document.querySelector('.two').style.padding='0';
@@ -60,7 +58,6 @@ function SLIDE(){
     else if(slide_position==2){
         document.querySelector('.four').style.width='100%';
         document.querySelector('.four').style.opacity='1';
-        document.querySelector('.four').style.border='1px solid lightgrey';
         document.querySelector('.three').style.opacity='-1';
 
         document.querySelector('.three').style.width='0';
@@ -72,8 +69,7 @@ function SLIDE(){
     }
     else if(slide_position==3){
         document.querySelector('.five').style.width='100%';
-        document.querySelector('.five').style.opacity='1';
-        document.querySelector('.five').style.border='1px solid lightgrey';
+        document.querySelector('.five').style.opacity='.9';
         document.querySelector('.four').style.opacity='-1';
 
         document.querySelector('.four').style.width='0';
@@ -86,7 +82,6 @@ function SLIDE(){
     else if(slide_position==4){
         document.querySelector('.one').style.width='100%';
         document.querySelector('.one').style.opacity='1';
-        document.querySelector('.one').style.border='1px solid lightgrey';
         document.querySelector('.five').style.opacity='-1';
 
         document.querySelector('.five').style.width='0';
@@ -95,7 +90,7 @@ function SLIDE(){
         document.querySelector('.five').style.border='0';
         slide_position=0;
     }
-    setTimeout('SLIDE()', 4000);
+    setTimeout('SLIDE()', 10000);
 }
 window.onload=SLIDE;
 
