@@ -22,7 +22,7 @@ header{
     background-color: unset;
 }
 header .website-name{
-    color:rgb(158, 83, 8); 
+    color:rgb(22, 22, 21); 
     font-size: x-large;
     font-weight: 600;
     width:fit-content;
@@ -161,7 +161,7 @@ nav .hire-us-btn{
 .menu-icon{
     padding:40px;
     height:17px;
-    background-color: unset;
+    background-color:unset;
     margin-top: -30px;
 
 }
@@ -180,10 +180,11 @@ nav .hire-us-btn{
     margin-top: 10px;
 }
 .sign-in{
-    padding:5px;
-    margin:-40px 0 0 0;
+    padding:0 5px;
+    margin:-34px 0 0 0;
     background-color: unset;
     border:solid 1px rgb(129, 128, 128);
+    height:25px;
 }
 .sign-in:hover{
     cursor: pointer;
@@ -223,8 +224,13 @@ nav .hire-us-btn{
 .welcome-box{
     display:flex;
     justify-content: center;
+    align-items: center;
     height:210px;
     padding:10px;
+    background-image: url('Screenshot_20230314-122115_Gallery.jpg');
+    background-size: cover;
+    padding:20px;
+
 }
 .welcome-box .one{
     background-color: unset;
@@ -257,7 +263,7 @@ nav .hire-us-btn{
 
 .welcome-box .two{
     background-color: unset;
-    color:rgb(49, 48, 48);
+    color:rgb(255, 255, 255);
     width:0;
     overflow: hidden;
     opacity:-1;
@@ -287,7 +293,7 @@ nav .hire-us-btn{
 }
 .welcome-box .three{
     background-color: unset;
-    color:rgb(34, 33, 33);
+    color:rgb(255, 255, 255);
     width:0;
     overflow: hidden;
     opacity:-1;
@@ -318,7 +324,7 @@ nav .hire-us-btn{
 
 .welcome-box .four{
     background-color: unset;
-    color:rgb(44, 43, 43);
+    color:rgb(255, 255, 255);
     width:0;
     overflow: hidden;
     opacity:-1;
@@ -356,7 +362,7 @@ nav .hire-us-btn{
 
 .welcome-box .five{
     background-color: unset;
-    color:rgb(44, 42, 42);
+    color:rgb(255, 255, 255);
     width:0;
     overflow: hidden;
     opacity:-1;
