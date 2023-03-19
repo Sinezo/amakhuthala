@@ -4,20 +4,19 @@
 }
 /*styling body*/
 body{
-    font-family: cursive;
+    font-family: 'Concert One', cursive;
     background-color: rgb(255, 255, 255);
     color:rgb(65, 65, 64);
     line-height: 30px;
     font-size:small;
-
 }
 button{
-    font-family: cursive;
+    font-family:'Concert One', cursive;
 }
 /*font-family: 'Concert One', cursive;*/
 /*styling name-info*/
 .name-info{
-    padding:10px;
+    padding:9px;
     color:rgb(10, 10, 10);
     border-bottom: 1px solid;
     text-align:center;
