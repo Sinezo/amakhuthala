@@ -147,10 +147,30 @@
                 <p>
                     We specialize in designing electrical systems following NEC and ICE Standards for South Africa and we respect our mission to bring light to the world. 
                     <br><br>
-                    <button class="request-design">Request a Design</button> <button>See Projects</button>
+                    <button class="request-design" onclick="REQUEST_PROJECT()">Request a Design</button> <button onclick="window.location='ourprojects.html'">See Projects</button>
                 </p>
 
             </div>
+        </div>
+
+        <!--REQUEST DESIGN-->
+        <div class="request-design-box">
+            <h4>Request a Design</h4>
+            <form action="POST">
+                <input type="text" placeholder="Name of the design" class="inputs">
+                <br><textarea name="" id="" placeholder="Description of the design" class="inputs"></textarea>
+                <br><input type="tel" placeholder="Cell number" class="inputs">
+
+                <p>
+                    When do you need it?<br>
+                    <input type="radio" name="due"> In 2 days
+                    <br><input type="radio" name="due" id=""> In 5 days 
+                    <br><input type="radio" name="due" id=""> in 2 weeks
+                    <br><input type="radio" name="due" id=""> in 4 weeks
+                </p>
+                <br><button type="submit">Send</button>
+            </form>
+            <button class="cancel" onclick="REQUEST_PROJECT()">Cancel</button>
         </div>
 
         <!--WHY US-->
@@ -174,7 +194,7 @@
                 </ul>
             </p>
             <div class="learn-more">
-                <div class="learn-more-btn">Learn More</div>
+                <div class="learn-more-btn" onclick="MORE_ABOUT_US()">Learn More</div>
             </div>
             </div>
         </div>
@@ -193,14 +213,23 @@
                 <li onclick="window.location='ourgallery.html'"><i class="fa-solid fa-mountain-sun"></i> Gallery</li>
             </ul>
 
-            <div class="social-media">
-                <span class="facebook"><i class="fa-brands fa-facebook"></i></span> <span class="whatsapp"><i class="fa-brands fa-whatsapp"></i></span> <span class="instagram"><i class="fa-brands fa-instagram"></i></span> <span class="youtube"><i class="fa-brands fa-youtube"></i></span> <span class="twitter"><i class="fa-brands fa-twitter"></i></span>
-            </div>
-
         </div>
     </div>
     </div>
 
+    <div class="more-about-us">
+        <p>
+
+            In all that we do, we do it proffetionally. We do our research, perform calculations 
+            and experiments following safety procedures. <br><br>We know very well that electricity is <i>dangerous</i>, that is why in each and every design/installation
+            we employ electrical protection to protect the system as well as the user.
+            <br><br>
+            As Amakhuthala we are proud to say that we make use of recycling to bring the best 
+            out of old products. We use these recycled materials to build boxes and enclosures for our 
+            mini-projects.
+        </p><br>
+        <hr>
+    </div>
     <!--SUMMARY-->
     <div class="summary">
         <div class="sum-1">

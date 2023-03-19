@@ -60,13 +60,12 @@ nav .hire-us-btn{
 }
 /*styling menu wrapper*/
 .menu-wrapper{
-    height: 100%;
-    position:fixed;
+    height: 100vh;
     width:0;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
     overflow: hidden;
     font-size: large;
-    color:rgb(51, 50, 50);
+    color:rgb(177, 87, 27);
 }
 .menu-wrapper .close{
     padding:15px;
@@ -103,48 +102,6 @@ nav .hire-us-btn{
     transition: margin 200ms ease-in-out;
     box-sizing: border-box;
 }
-/*styling contact-us*/
-.social-media{
-    background-color: rgb(238, 237, 232);
-    width:100%; 
-    padding:20px;
-    text-align: center;
-    margin-left: -20px;
-}
-.social-media span{
-    margin-right:10px;
-    font-size:x-large;
-}
-.facebook{
-    color:blue;
-}
-.whatsapp{
-    color:green;
-}
-.instagram{
-    color:purple;
-}
-.youtube{
-    color:red;
-}
-.twitter{
-    color:rgb(19, 74, 92);
-}
-.linkedin{
-    color:navy;
-}
-.facebook,.whatsapp,.instagram,.youtube,.twitter,.linkedin{
-    background-color: rgb(245, 241, 241);
-    border-radius: 5px;
-    padding:5px;
-}
-.facebook:hover,.whatsapp:hover,.instagram:hover,.youtube:hover,.twitter:hover,.linkedin:hover{
-    box-shadow: 1px 2px 5px;
-    cursor: pointer;
-}
-.contact-us a{
-    color:rgb(0, 0, 0);
-}
 /*styling dropdown contact*/
 .drop-down-contact{
     padding:10px;
@@ -162,7 +119,6 @@ nav .hire-us-btn{
     height:17px;
     background-color:unset;
     margin-top: -30px;
-
 }
 .bar-wrap{
     padding:10px 10px 5px 10px; 
@@ -423,6 +379,53 @@ nav .hire-us-btn{
     color:rgb(75, 72, 72);
     border:1px solid;
 }
+/*styling pop-up-help*/
+.pop-up-help{
+    box-shadow: 1px 3px 7px;
+    margin:30px;
+    position: absolute;
+    background-color: white;
+    overflow:hidden;
+    height:0;
+    transition: margin 200ms ease-in-out;
+    
+    
+
+}
+.pop-up-help p{
+    color:rgb(204, 93, 29);
+    font-weight: 600;
+}
+.pop-up-help ul{
+    list-style-position: inside;
+    padding:10px;
+}
+.pop-up-help h4{
+    border-bottom: 7px solid;
+    width:fit-content;
+    color:rgb(17, 104, 145);
+    font-size: x-large;
+    padding:3px 3px 10px 3px;
+    
+}
+.pop-up-help .buttons{
+    padding:20px;
+    text-align: center;
+}
+.pop-up-help .cancel{
+    padding:10px;
+    background-color: rgb(196, 34, 34);
+    border:0;
+    border-radius: 4px;
+    color:white; 
+}
+.pop-up-help .go{
+    padding:10px;
+    background-color: rgb(26, 121, 26);
+    border-radius: 4px;
+    border:0;
+    color:white;
+}
 /*styling about-us*/
 .about-us{
 
@@ -437,7 +440,7 @@ nav .hire-us-btn{
 .about-us .content h3{
     padding:3px 3px 10px 0px;
     border-bottom: 1px solid rgb(255, 255, 255);
-    text-transform: uppercase;
+    text-transform:capitalize;
     background-color: rgb(241, 239, 235);
     color:rgb(92, 91, 89);
     padding:20px 5px;
@@ -493,87 +496,7 @@ nav .hire-us-btn{
     border-bottom: 1px solid;
     color:rgb(0, 0, 0);
 }
-/*styling pop-up-help*/
-.pop-up-help{
-    box-shadow: 1px 3px 7px;
-    margin:10px;
-    position: absolute;
-    background-color: white;
-    overflow:hidden;
-    height:0;
-    transition: margin 200ms ease-in-out;
 
-}
-.pop-up-help p{
-    color:rgb(241, 108, 19);
-}
-.pop-up-help ul{
-    list-style-position: inside;
-    padding:10px;
-}
-.pop-up-help h4{
-    border-bottom: 7px solid;
-    width:fit-content;
-    color:rgb(17, 104, 145);
-    font-size: x-large;
-    padding:3px 3px 10px 3px;
-}
-.pop-up-help .buttons{
-    padding:20px;
-    text-align: center;
-}
-.pop-up-help .cancel{
-    padding:20px;
-    background-color: rgb(199, 33, 33);
-    border:0;
-    border-radius: 4px;
-    color:white; 
-}
-.pop-up-help .go{
-    padding:20px;
-    background-color: rgb(26, 121, 26);
-    border-radius: 4px;
-    border:0;
-    color:white; 
-}
-/*styling faqs-popup*/
-.faqs-popup{
-    box-shadow: 1px 3px 7px;
-    margin:10px;
-    position: absolute;
-    background-color: rgb(255, 255, 255);
-    color:rgb(190, 128, 56); 
-    overflow:hidden;
-    height:0;
-    transition: margin 200ms ease-in-out;
-}
-.faqs-popup ul{
-    list-style: none;
-}
-.faqs-popup ul li:hover{
-    cursor:pointer;
-    color:rgb(231, 161, 30);
-}
-.faqs-popup ul li ul{
-    font-size:small;
-    color:rgb(61, 60, 60); 
-    padding:30px;
-    
-}
-.faqs-popup ul li ul{
-    display:none;
-}
-.faqs-popup .close{
-    text-align: end;
-}
-.faqs-popup .close i{
-    font-size: larger;
-    color:rgb(172, 29, 19);
-}
-.faqs-popup .close i:hover{
-    cursor: pointer;
-    color:rgb(236, 27, 12);
-}
 /*styling welcome-media*/
 .welcome-media-wrapper{
     display:flex;
@@ -642,9 +565,9 @@ nav .hire-us-btn{
 }
 .electrical-design button{
     padding:15px;
-    background-color:unset;
+    background-color:rgb(117, 204, 36);
     border-radius: 5px;
-    color:rgb(88, 88, 87);
+    color:rgb(255, 255, 255);
     border:1px solid;
     width:100%;
     margin-top: 5px;
@@ -656,9 +579,52 @@ nav .hire-us-btn{
     background-color: rgb(18, 99, 28);
     color:rgb(255, 255, 255);
 }
+/*styling request-design*/
+.request-design-box{
+    background-color: white;
+    margin:20px;
+    position:absolute;
+    width: 0;
+    overflow: hidden;
+    transition:margin 300ms ease-in-out
+}
+.request-design-box h4 {
+    padding:20px;
+    background-color: rgb(214, 143, 61);
+    color:white;
+}
+.request-design-box .inputs, .request-design-box textarea{
+    padding:10px;
+    margin:10px;
+    width:80%;
+}
+.request-design-box button{
+    padding:10px;
+    width:100%;
+    background-color: rgb(223, 255, 105);
+    border:0;
+    border-radius: 5px;
+}
+.request-design-box button{
+    background-color: rgb(158, 194, 27);
+    cursor: pointer;
+    
+}
+.request-design-box .cancel{
+    padding:10px;
+    width:100%;
+    border:0;
+    background-color: brown;
+    color:white;
+    margin:10px 0;
+}
+.request-design-box .cancel:hover{
+    background-color: rgb(121, 21, 21);
+    cursor:pointer;
+}
 /*stylinf why-us*/
 .why-us{
-    padding:10px 10px;
+    padding:0 10px;
 }
 .why-us div{
     background-color: rgb(255, 255, 255);
@@ -671,7 +637,7 @@ nav .hire-us-btn{
 .why-us  h3{
     padding:3px 3px 10px 0px;
     border-bottom: 1px solid rgb(135, 206, 21);
-    text-transform: uppercase;
+    text-transform:capitalize;
     background-color: rgb(241, 239, 237);
     padding:20px 5px;
     color:rgb(94, 91, 91);
@@ -693,7 +659,7 @@ nav .hire-us-btn{
 }
 .learn-more{
     text-align:center;
-    padding:20px;
+    padding:0 20px;
 }
 .learn-more .learn-more-btn{
     padding:10px;
@@ -737,6 +703,16 @@ nav .hire-us-btn{
 .sum-4{
     padding:30px;
     background-color: rgb(245, 241, 241);
+}
+/*styling more-about-us*/
+.more-about-us{
+    margin:0 20px;
+}
+.more-about-us{
+    display:none;
+}
+.more-about-us p{
+    padding:20px;
 }
 /*styling services*/
 .services{

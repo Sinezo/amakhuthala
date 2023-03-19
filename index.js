@@ -3,7 +3,6 @@ var menu_show =1;
 function MENU(){
     if(menu_show==1){
         document.querySelector('.content-wrapper').style.marginLeft='-250px';
-        document.querySelector('.content-wrapper').style.opacity='.5';
         document.querySelector('.menu-wrapper').style.width='100%';
         document.querySelector('.social-media').style.position='absolute';
         document.querySelector('.social-media').style.bottom='0';
@@ -116,8 +115,8 @@ var pop_help=1;
 function POPUP_HELP(){
     if(pop_help==1){
         document.querySelector('.pop-up-help').style.height='fit-content';
-        document.querySelector('.pop-up-help').style.padding='20px';
-        document.querySelector('.pop-up-help').style.margin='-180px 10px 10px 10px';
+        document.querySelector('.pop-up-help').style.padding='30px';
+        document.querySelector('.pop-up-help').style.margin='-300px 20px 10px 20px';
         document.querySelector('.pop-up-help').style.opacity='1';
 
         pop_help=0;
@@ -133,25 +132,7 @@ function POPUP_HELP(){
 function MYMAIL(){
     document.location='mailto:lusawanasinethemba@gmail.com';
 }
-//FAQS_POPUP BOX
-var pop_faqs=1;
-function FAQS_POPUP(){
-    if(pop_faqs==1){
-        document.querySelector('.faqs-popup').style.height='fit-content';
-        document.querySelector('.faqs-popup').style.padding='20px';
-        document.querySelector('.faqs-popup').style.margin='-150px 10px 10px 10px';
-        document.querySelector('.faqs-popup').style.opacity='1';
 
-        pop_faqs=0;
-    }
-    else{
-        document.querySelector('.faqs-popup').style.height='0';
-        document.querySelector('.faqs-popup').style.padding='0';
-        document.querySelector('.faqs-popup').style.margin='10px';
-        document.querySelector('.faqs-popup').style.opacity='-1';
-        pop_faqs=1;
-    }
-}
 
 function LOCATION_ANSWER(){
     document.querySelector('.location-answer').style.display='block';
@@ -164,29 +145,6 @@ function OFFERS_ANSWER(){
 }
 
 //ONSCROLL
-window.onscroll=function(){myfunction()};
-function myfunction(){
-    if(document.documentElement.scrollTop >700){
-        document.querySelector('.wrap-header').style.position='fixed';
-        document.querySelector('.wrap-header').style.width='100%';
-        document.querySelector('.wrap-header').style.backgroundColor='white';
-        document.querySelector('.wrap-header').style.boxShadow='1px 1px 4px';
-        document.querySelector('.sign-in').style.backgroundColor='rgb(50, 146, 50)';
-        document.querySelector('.sign-in').style.color='white';
-
-    }
-    else{
-        document.querySelector('.wrap-header').style.position='relative';
-        document.querySelector('.wrap-header').style.width='100%';
-        document.querySelector('.wrap-header').style.backgroundColor='white';
-        document.querySelector('.wrap-header').style.boxShadow='0 0 0';
-        document.querySelector('.wrap-header').style.backgroundColor='white';
-        document.querySelector('.sign-in').style.backgroundColor='unset';
-        document.querySelector('.sign-in').style.color='initial';
-    }
-}
-
-//ONSCROLL SUMMARY
 var services_number=0;
 var clients_number=0;
 var employees_number=0;
@@ -225,5 +183,58 @@ function scroll_summary(){
             }
         }
     }
+   /* else{
+        if(document.documentElement.scrollTop >400){
+            document.querySelector('.wrap-header').style.position='fixed';
+            document.querySelector('.wrap-header').style.filter='brigthness(100%)';
+            document.querySelector('.wrap-header').style.width='100%';
+            document.querySelector('.wrap-header').style.backgroundColor='white';
+            document.querySelector('.wrap-header').style.boxShadow='1px 1px 4px';
+            document.querySelector('.sign-in').style.backgroundColor='rgb(50, 146, 50)';
+            document.querySelector('.sign-in').style.color='white';
+    
+        }
+        else{
+            document.querySelector('.wrap-header').style.position='relative';
+            document.querySelector('.wrap-header').style.width='100%';
+            document.querySelector('.wrap-header').style.backgroundColor='white';
+            document.querySelector('.wrap-header').style.boxShadow='0 0 0';
+            document.querySelector('.wrap-header').style.backgroundColor='white';
+            document.querySelector('.sign-in').style.backgroundColor='unset';
+            document.querySelector('.sign-in').style.color='initial';
+        }
+    }*/
     setTimeout('scroll_summary()',100)
+}
+
+//MORE ABOUT US
+var more_state=1;
+function MORE_ABOUT_US(){
+    if(more_state==1){
+        document.querySelector('.more-about-us').style.display='block';
+        more_state=0;
+    }
+    else{
+        document.querySelector('.more-about-us').style.display='none';
+        more_state=1;
+    }
+}
+
+//REQUEST PROJECT
+var request_state=1;
+function REQUEST_PROJECT(){
+    if(request_state==1){
+        document.querySelector('.request-design-box').style.width='80%';
+        document.querySelector('.request-design-box').style.marginTop='-360px';
+        document.querySelector('.request-design-box').style.border="1px solid lightgrey";
+        document.querySelector('.request-design-box').style.padding='10px';
+        request_state=0;
+    }
+    else{
+        document.querySelector('.request-design-box').style.width='0';
+        document.querySelector('.request-design-box').style.marginTop='360px';
+        document.querySelector('.request-design-box').style.border="1px solid lightgrey";
+        document.querySelector('.request-design-box').style.padding='0';
+        request_state=1;
+    }
 }
