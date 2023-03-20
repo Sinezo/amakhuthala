@@ -4,9 +4,6 @@ function MENU(){
     if(menu_show==1){
         document.querySelector('.content-wrapper').style.marginLeft='-250px';
         document.querySelector('.menu-wrapper').style.width='100%';
-        document.querySelector('.social-media').style.position='absolute';
-        document.querySelector('.social-media').style.bottom='0';
-
 
         document.querySelector('.bar-one').style.transform='rotate(45deg)';
         document.querySelector('.bar-one').style.marginBottom='1px';
@@ -183,27 +180,6 @@ function scroll_summary(){
             }
         }
     }
-   /* else{
-        if(document.documentElement.scrollTop >400){
-            document.querySelector('.wrap-header').style.position='fixed';
-            document.querySelector('.wrap-header').style.filter='brigthness(100%)';
-            document.querySelector('.wrap-header').style.width='100%';
-            document.querySelector('.wrap-header').style.backgroundColor='white';
-            document.querySelector('.wrap-header').style.boxShadow='1px 1px 4px';
-            document.querySelector('.sign-in').style.backgroundColor='rgb(50, 146, 50)';
-            document.querySelector('.sign-in').style.color='white';
-    
-        }
-        else{
-            document.querySelector('.wrap-header').style.position='relative';
-            document.querySelector('.wrap-header').style.width='100%';
-            document.querySelector('.wrap-header').style.backgroundColor='white';
-            document.querySelector('.wrap-header').style.boxShadow='0 0 0';
-            document.querySelector('.wrap-header').style.backgroundColor='white';
-            document.querySelector('.sign-in').style.backgroundColor='unset';
-            document.querySelector('.sign-in').style.color='initial';
-        }
-    }*/
     setTimeout('scroll_summary()',100)
 }
 
@@ -233,7 +209,7 @@ function REQUEST_PROJECT(){
     else{
         document.querySelector('.request-design-box').style.width='0';
         document.querySelector('.request-design-box').style.marginTop='360px';
-        document.querySelector('.request-design-box').style.border="1px solid lightgrey";
+        document.querySelector('.request-design-box').style.border="0";
         document.querySelector('.request-design-box').style.padding='0';
         request_state=1;
     }

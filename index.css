@@ -388,9 +388,7 @@ nav .hire-us-btn{
     overflow:hidden;
     height:0;
     transition: margin 200ms ease-in-out;
-    
-    
-
+    font-size:small;
 }
 .pop-up-help p{
     color:rgb(204, 93, 29);
@@ -586,7 +584,8 @@ nav .hire-us-btn{
     position:absolute;
     width: 0;
     overflow: hidden;
-    transition:margin 300ms ease-in-out
+    transition:margin 300ms ease-in-out;
+    font-size:small;
 }
 .request-design-box h4 {
     padding:20px;
