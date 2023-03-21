@@ -50,6 +50,9 @@ button{
 #read-more{
     display:none;
 }
+.about-us a{
+    color:rgb(221, 125, 0);
+}
 /*styling header*/
 header{
     padding:15px;
@@ -175,14 +178,13 @@ nav .hire-us-btn{
     padding:0 5px;
     margin:-34px 0 0 0;
     background-color: unset;
-    border:solid 1px rgb(184, 182, 182);
     color:white;
-    height:25px;
+    height:30px;
+    border:0;
 }
 .sign-in:hover{
     cursor: pointer;
-    color:rgb(255, 255, 255);
-    background-color: rgb(30, 73, 30);
+    color:rgb(226, 160, 18);
 }
 .bar-wrap:hover{
     cursor:pointer;

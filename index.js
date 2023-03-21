@@ -3,10 +3,12 @@ var read=1;
 function READ_MORE_ABOUT(){
     if(read==1){
         document.querySelector('#read-more').style.display='block';
+        document.querySelector('.read-more').innerHTML='Show less';
         read=0;
     }
     else{
         document.querySelector('#read-more').style.display='none';
+        document.querySelector('.read-more').innerHTML='Read more'
         read=1;
     }
 }
