@@ -113,11 +113,18 @@ nav .hire-us-btn{
     color:rgb(255, 255, 255);
     text-align:center;
 }
+.menu-wrapper .wrap{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+}
 .menu-wrapper .close{
     padding:15px;
     font-size: x-large;
     width:fit-content;
     color:rgb(51, 49, 49);
+    position:absolute;
 }
 .menu-wrapper .close:hover{
     color:rgb(185, 15, 15);
