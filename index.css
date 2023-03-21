@@ -4,13 +4,13 @@
 }
 /*styling body*/
 body{
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Concert One', cursive;
     background-color: rgb(255, 255, 255);
-    color:rgb(65, 65, 64);
+    color:rgb(66, 66, 65);
     line-height: 30px;
 }
 button{
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Concert One', cursive;
 }
 /*font-family: 'Concert One', cursive;*/
 
