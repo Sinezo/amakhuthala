@@ -99,7 +99,7 @@ var projects_number=0;
 
 window.onscroll=function(){scroll_summary()};
 function scroll_summary(){
-    if(document.documentElement.scrollTop >500){
+    if(document.documentElement.scrollTop >500 && document.documentElement.scrollTop <1370){
         document.querySelector('.wrap-header').style.position='fixed';
         document.querySelector('.wrap-header').style.top='0';
     }
