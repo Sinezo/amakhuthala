@@ -54,6 +54,9 @@ button{
     color:rgb(221, 125, 0);
 }
 /*styling header*/
+.wrap-header{
+    width:100%;
+}
 header{
     padding:15px;
     background-repeat: no-repeat;
@@ -350,7 +353,6 @@ nav .hire-us-btn{
 .why-us button{
     background-color: unset;
     padding:20px;
-    transform:skewX(-5deg);
     border:1px solid rgb(236, 236, 227);
 }
 .why-us p{
@@ -517,23 +519,13 @@ nav .hire-us-btn{
 /*styling footer*/
 footer{
     margin-top: 50px;
-    padding:20px;
+    padding:10px;
     background-color:rgb(202, 157, 59);
     box-shadow: 1px 1px 3px;
-}
-footer .address{
-    margin-top: 10px;
-    border-top: 1px solid;
-    padding: 10px;
-}
-footer .about-company{
-    border-top: 1px solid;
-    padding: 10px;
-}
-footer .copyright{
     text-align: center;
-    font-size: small;
+    color:rgb(71, 71, 71);
 }
+
 /*at small screens*/
 @media screen and (max-width:1200px) {
     .short-cut-info{
