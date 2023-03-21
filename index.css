@@ -225,6 +225,13 @@ nav .hire-us-btn{
     border-radius: 10px;
 }
 
+/*styling video*/
+.video{
+    width:100%;
+}
+video{
+    width:100%;
+}
 /*styling ask-question*/
 .ask-question{
     padding:20px;
