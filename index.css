@@ -103,37 +103,37 @@ nav .hire-us-btn{
 }
 /*styling menu wrapper*/
 .menu-wrapper{
-    height: 100vh;
+    position:fixed;
+    top:0;
+    height:100%;
     width:0;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(66, 75, 69);;
     overflow: hidden;
     font-size: large;
-    color:rgb(177, 87, 27);
+    color:rgb(255, 255, 255);
+    text-align:center;
 }
 .menu-wrapper .close{
     padding:15px;
     font-size: x-large;
     width:fit-content;
+    color:rgb(51, 49, 49);
 }
 .menu-wrapper .close:hover{
-    color:rgb(231, 16, 16);
+    color:rgb(185, 15, 15);
     cursor: pointer;
 }
 .menu{
     padding:10px;
+    
 }
 .menu ul{
     list-style: none;
     line-height: 40px;;
 }
-.menu ul li{
-    width: fit-content;
-}
 .menu ul li:hover{
-    color:rgb(204, 103, 36);
+    color:rgb(126, 115, 17);
     cursor: pointer;
-    border-bottom: 1px solid;
-    width:fit-content;
 }
 .menu ul li i{
     font-size: small;

@@ -16,7 +16,6 @@ function READ_MORE_ABOUT(){
 var menu_show =1;
 function MENU(){
     if(menu_show==1){
-        document.querySelector('.content-wrapper').style.marginLeft='-250px';
         document.querySelector('.menu-wrapper').style.width='100%';
 
         document.querySelector('.bar-one').style.transform='rotate(45deg)';
@@ -28,8 +27,6 @@ function MENU(){
         menu_show=0;
     }
     else{
-        document.querySelector('.content-wrapper').style.margin='0';
-        document.querySelector('.content-wrapper').style.opacity='1';
         document.querySelector('.menu-wrapper').style.width='0';
 
         document.querySelector('.bar-one').style.transform='rotate(0)';
@@ -102,7 +99,7 @@ var projects_number=0;
 
 window.onscroll=function(){scroll_summary()};
 function scroll_summary(){
-    if(document.documentElement.scrollTop >400){
+    if(document.documentElement.scrollTop >500){
         document.querySelector('.wrap-header').style.position='fixed';
         document.querySelector('.wrap-header').style.top='0';
     }
