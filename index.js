@@ -1,3 +1,15 @@
+//READ MORE ABOUT
+var read=1;
+function READ_MORE_ABOUT(){
+    if(read==1){
+        document.querySelector('#read-more').style.display='block';
+        read=0;
+    }
+    else{
+        document.querySelector('#read-more').style.display='none';
+        read=1;
+    }
+}
 //MENU
 var menu_show =1;
 function MENU(){
@@ -150,7 +162,7 @@ var projects_number=0;
 
 window.onscroll=function(){scroll_summary()};
 function scroll_summary(){
-    if(document.documentElement.scrollTop >2900){
+    if(document.documentElement.scrollTop >1370){
         if(services_number<6){
             services_number+=1;
             document.querySelector('.services-number').innerHTML=services_number;
