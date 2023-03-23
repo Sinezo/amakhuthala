@@ -4,14 +4,14 @@
 }
 /*styling body*/
 body{
-    font-family: 'Edu SA Beginner', cursive;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: rgb(255, 255, 255);
     color:rgb(66, 66, 66);
     line-height: 30px;
     font-size: large;
 }
 button{
-    font-family: 'Edu SA Beginner', cursive;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: medium;
 }
 /*font-family: 'Concert One', cursive;*/
@@ -238,6 +238,8 @@ video{
 .ask-question{
     padding:20px;
     margin-top: 20px;
+    border:1px solid rgb(243, 239, 239);
+    margin:10px;
 }
 .ask-question p{
     padding:10px;

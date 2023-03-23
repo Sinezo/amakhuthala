@@ -6,17 +6,116 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Portal| Amakhuthala</title>
     <style>
-        body{
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        *{
+            margin:0;
+            padding:0;
         }
+        body{
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        h4{
+            background-color: rgb(233, 228, 228);
+            color:rgb(41, 40, 40);
+            margin-left: 10px;
+            padding:10px;
+            border-bottom: 1px solid rgb(73, 72, 72);
+        }
+        /*styling box1*/
+        .one{
+            margin:20px 20px;
+            box-shadow: 1px 1px 3px;
+        }
+        .one h4{
+            text-align: center;
+            font-weight: 300;
+            background-color: rgb(58, 109, 202);
+            padding:20px;
+            color:white;
+            margin:0;
+            border:0;
+        }
+        .one .p1{
+            padding:10px;
+        }
+        .one .p2{
+            text-align: center;
+            padding:10px;
+        }
+        span{
+            font-weight: 600;
+        }
+        label{
+            font-weight: 600;
+        }
+
+        /*styling box 2*/
+        .two{
+            margin:-20px 8px;
+            box-shadow: 1px 1px 3px;
+        }
+        .two h4{
+            text-align: center;
+            font-weight: 300;
+            background-color: rgb(58, 109, 202);
+            padding:20px;
+            color:white;
+            margin:0;
+            border:0;
+        }
+        .two .inputs{
+            width:100%;
+            padding:10px;
+            box-sizing: border-box;
+            border:0;
+            border-bottom: 1px solid rgb(204, 202, 202);
+        }
+        .two .p1{
+            padding:10px;
+        }
+        .two .p2{
+            padding:10px
+        }
+        .two button{
+            background-color: unset;
+            border: 1px solid lightgrey;
+            padding:5px;
+        }
+
     </style>
 </head>
 <body>
-    <div class="welcome-box">
-        <h4>We love leading you to the light.</h4>
-        <p>
-            We are still working on our portal. Sorry for the inconvenience.
-        </p>
-    </div>
+        <h4>AMAKHUTHALA E-LEARNING</h4>
+        <!--WRAPPER-->
+        <div class="wrapper">
+            <div class="one">
+                <h4>Prospective Students</h4>
+
+                <p class="p1">
+                    If you are a prospective student, not registered at this school, please select the following option:
+                </p>
+
+                <p class="p2">
+                    <span>Apply</span>, <span>Register</span>, <span>Help?</span>
+                </p>
+            </div>
+
+            <div class="two">
+                <h4>Registered Users: Login Credentials</h4>
+
+                <p class="p1">
+                    <span><input type="radio" name="title"></span><span>Student</span> <span><input type="radio" name="title"></span> <span>Personnel </span><span><input type="radio" name="title"></span> <span>Other</span> <span><input type="radio" name="title"></span> <span>Alumni</span>
+                    <br><br>
+                    <label>Student Number:</label>
+                    <br><input type="tel" class="inputs">
+                    <br><label>Pin:</label>
+                    <br><input type="tel" class="inputs"><br>
+                    (5 numeric digits.Do not start with a 0.)
+                </p>
+
+                <p class="p2">
+                    <button>Login</button> <button>Forgot Pin</button> <button>Change Pin</button> <button>Request A Pin</button> <button>Forgot Student Number</button>
+                </p>
+            </div>
+        </div>
 </body>
 </html>
