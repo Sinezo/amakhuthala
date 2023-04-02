@@ -4,14 +4,111 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Projects</title>
     <link rel="stylesheet" href="index.css">
+    <title>Our Projects</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        body{
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .wrapper{
+            padding:20px;
+        }
+        .wrapper h4 span{
+            color:rgb(211, 103, 30);
+        }
+        .projects{
+            padding:10px;
+        }
+        .projects li{
+            box-shadow: 1px 1px 7px lightgray;
+            padding:5px;
+            margin-bottom: 10px;
+        }
+        .projects .name{
+            color:rgb(211, 103, 30);
+        }
+        .projects p{
+            font-size: small;
+        }
+        .projects .apparatus{
+            font-size: 11px;
+            color:rgb(136, 134, 130);
+        }
+    </style>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h5>Sorry!! There's nothing to show at the moment...</h5>
+
+    <!--HEADER WRAPPER-->
+    <div class="wrap-header">
+        <!--HEADER-->
+<header>
+    <div class="website-name" onclick="window.location='index.html'"><i class="fa-brands fa-think-peaks"></i></i> Amakhuthala
+    <div class="full-info">Electrical Design & installation</div>
+    </div>
+</header>
+
+<!--MENU ICON-->
+<div class="menu-icon">
+    <div class="wrap-menu-bars">
+        <button class="sign-in" onclick="window.location='student_portal.html'"><i class="fa-solid fa-user"></i></button>
+
+        <div class="bar-wrap" onclick="MENU()">
+            <div class="bar-one"></div>
+            <div class="bar-two"></div>
+            <div class="bar-three"></div>
+        </div>
+    </div>
+</div>
+</div>
+    
+    <div class="wrapper">
+        <h4>Projects: <span>2</span></h4>
+        <div class="projects">
+            <ol>
+                <!--simple continuity tester-->
+                <li><span class="name">Simple Continuity Tester</span>
+                    <br><p>device used to test continuity between conductors.</p>
+
+                    <span class="apparatus"><b>Apparatus</b>:5V battery, 5-24V buzzer, wires.</span>
+                </li>
+
+                <!--smart continuity tester-->
+                <li><span class="name">Smart Continuity Tester</span>
+                    <br><p>device used to test continuity between conductors. Tells the user when it's
+                        short circuit or open circuit by displaying text on the LCD screen. </p>
+
+                    <span class="apparatus"><b>Apparatus</b>:5V battery, 5-24V buzzer, wires, 16x1 LCD, push buttons.</span>
+
+                </li>
+
+            </ol>
+        </div>
+    </div>
+
+    <!--MENU WRAPPER-->
+    <div class="menu-wrapper">
+        <div class="close" onclick="MENU()"><i class="fa-solid fa-xmark"></i></div>
+        <div class="wrap">
+            <div class="menu">
+                <ul>
+                    <li onclick="Ourteam()"> Our Team</li>
+                    <li onclick="window.location='ourprojects.html'"></i> Our Projects</li>
+                    <li onclick="window.location='e_learning.html'">E-Learning</li>
+                    <li onclick="window.location='ourclients.html'"> Our Clients</li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
 </body>
 </html>

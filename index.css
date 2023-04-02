@@ -4,60 +4,20 @@
 }
 /*styling body*/
 body{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: rgb(255, 255, 255);
-    color:rgb(66, 66, 66);
+    color:rgb(83, 82, 82);
     line-height: 30px;
-    font-size: large;
 }
 button{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: medium;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 /*font-family: 'Concert One', cursive;*/
 
-/*styling about-us*/
-.about-us{
-    background-color: unset;
-    padding:10px;
-    margin: 10px 10px 10px 10px;
-}
-.about-us .capital-letter{
-    color:rgb(206, 162, 16);
-    font-size: 50px;
-    background-color: unset;
-    border:0;
-}
-.about-us .content{
-    padding:10px;
-}
-.about-us .content h3{
-    text-transform:capitalize;
-    background-color: rgb(202, 161, 79);
-    color:rgb(54, 54, 53);
-    padding:0 0 0 10px;
-    width:fit-content;
-}
-.about-us .content .read-more{
-    border:0; 
-    background-color:unset;
-    padding:10px;
-    border-radius:4px; 
-    color:rgb(212, 167, 18);
-}
-.about-us .content .read-more:hover{
-    cursor: pointer;
-    color:rgb(121, 85, 15); 
-}
-#read-more{
-    display:none;
-}
-.about-us a{
-    color:rgb(221, 125, 0);
-}
 /*styling header*/
 .wrap-header{
     width:100%;
+    z-index:1;
 }
 header{
     padding:15px;
@@ -66,16 +26,20 @@ header{
     background-color: unset;
 }
 header .website-name{
-    color:rgb(212, 128, 17); 
+    color:rgb(252, 250, 249); 
     font-size: x-large;
     font-weight: 600;
     width:fit-content;
     padding:2px;
     position:absolute;
-    margin:15px 0 0 0;
+    margin:-5px 0 0 0;
     border-radius: 3px;
 }
-
+header .full-info{
+    font-size: x-small;
+    margin-top: -10px;
+    color:rgb(129, 26, 26);
+}
 nav{
     float:right;
     padding:5px;
@@ -105,15 +69,19 @@ nav .hire-us-btn{
 }
 /*styling menu wrapper*/
 .menu-wrapper{
-    position:fixed;
-    top:0;
+    position: fixed;
     height:100%;
+    right:0;
     width:0;
-    background-color: rgb(66, 75, 69);;
+    bottom:0;
+    top:0;
+    background-color: rgb(211, 103, 30);
     overflow: hidden;
-    font-size: large;
+    font-size: x-large;
     color:rgb(255, 255, 255);
     text-align:center;
+    transition: all 200ms ease-in-out;
+    z-index:2;
 }
 .menu-wrapper .wrap{
     display:flex;
@@ -138,10 +106,11 @@ nav .hire-us-btn{
 }
 .menu ul{
     list-style: none;
-    line-height: 40px;;
+    line-height: 40px;
+    width:max-content
 }
 .menu ul li:hover{
-    color:rgb(126, 115, 17);
+    color:rgb(41, 40, 40);
     cursor: pointer;
 }
 .menu ul li i{
@@ -167,9 +136,9 @@ nav .hire-us-btn{
 }
 /*styling menu-icon*/
 .menu-icon{
-    padding:40px;
+    padding:20px;
     height:17px;
-    background-color:rgb(66, 75, 69);
+    background-color:rgb(211, 103, 30);
     margin-top: -30px;
 }
 .bar-wrap{
@@ -204,80 +173,168 @@ nav .hire-us-btn{
 }
 .bar-one{
     width:20px;
-    padding:1px;
+    padding:2px;
     background-color: rgb(202, 206, 200);
     margin-bottom:3px;
     margin-top:-5px;
     transition: all 500ms linear;
-    border-radius: 10px;
 }
 .bar-two{
     width:20px;
-    padding:1px;
+    padding:2px;
     background-color: rgb(202, 206, 200);
     margin-bottom:3px;
-    border-radius: 10px;
     transition: all 500ms linear;
 }
 .bar-three{
     width:20px;
-    padding:1px;
+    padding:2px;
     background-color: rgb(202, 206, 200);
     transition: all 500ms linear;
-    border-radius: 10px;
 }
+/*styling us-container*/
+.us-container{
+    padding:20px;
+}
+.us-container .specialize{
+    color:rgb(224, 95, 21);
+}
+.us-container .us-message{
+    padding:10px;
+    color:rgb(65, 62, 62);
+    padding:10px;
+    font-weight: 600;
+    box-shadow:1px 1px 3px lightgrey;
+}
+.us-container .us-message img{
+    width:100%;
+}
+.us-message .decor{
+    color:chocolate;
+}
+.us-message .buttons{
+    padding:20px 0;
+    margin-top:30px;
+}
+.us-message .hire-us{
+    padding:10px;
+    width:40%;
+    border-radius: 4px;
+    font-weight: 600;
+    background-color: chocolate;
+    color:white;
+    border:1px solid;
+}
+.us-message .hire-us:hover{
+    cursor: pointer;
+    background-color: rgb(190, 94, 25);
+}
+.us-message .call{
+    padding:10px;
+    width:40%;
+    border-radius: 4px;
+    font-weight: 600;
+    background-color: unset;
+    color:rgb(243, 106, 14);
+    border:1px solid;
+}
+.us-message .call:hover{
+    cursor:pointer;
+    color:rgb(202, 91, 17);
+}
+/*styling hire-us-container*/
+.hire-us-container{
+    height:0;
+    overflow:hidden;
+    position:absolute;
+    background-color: white;
+    top:100px;
+    transition:top 300ms ease-in-out;
+}
+.hire-us-container input{
+    padding:10px;
+    margin-bottom: 10px;
+    width:90%;
+}
+.hire-us-container select{
+    padding:10px;
+    margin-bottom: 10px;
+}
+.hire-us-container textarea{
+    padding:10px;
+    width:90%;
 
+}
+.hire-us-container button{
+    padding:10px;
+    width:100%;
+    background-color: chocolate;
+    color:white;
+    border:0;
+    border-radius:3px;
+}
 /*styling video*/
 .video{
     width:100%;
+    background-color: rgb(202, 113, 24);
 }
 video{
-    width:100%;
+    width:95%;
+    margin:10px;
 }
 /*styling ask-question*/
 .ask-question{
-    padding:20px;
+    padding:5px;
     margin-top: 20px;
-    border:1px solid rgb(243, 239, 239);
-    margin:10px;
+    box-shadow: 1px 1px 3px lightgray;
 }
 .ask-question p{
     padding:10px;
 }
 .ask-question button{
-    width:100%;
+    width:50%;
     padding:10px;
     background-color: unset;
-    color:rgb(75, 72, 72);
+    color:rgb(212, 128, 49);
     border:1px solid;
+    border-radius: 3px;
+    font-weight: 600;
 }
 .ask-question .icon{
     text-align: center;
     font-size: 50px;
     color:rgb(179, 117, 59);
 }
+.ask-question .two{
+    font-size:smaller;
+    border-left: 3px solid rgb(233, 232, 229);
+    padding:5px;
+    border-radius: 0px;
+}
+
 /*styling pop-up-help*/
 .pop-up-help{
     margin:30px;
-    position: absolute;
-    background-color: white;
+    position: fixed;
+    background-color: rgb(255, 255, 255);
     overflow:hidden;
     height:0;
     transition: margin 200ms ease-in-out;
     font-size:small;
+    bottom:20px;
+    box-shadow: 1px 1px 3px;
+    z-index: 1;
 }
 .pop-up-help p{
-    color:rgb(204, 93, 29);
     font-weight: 600;
 }
 .pop-up-help ul{
     list-style-position: inside;
     padding:10px;
 }
-.pop-up-help h4{
+.pop-up-help .note{
     border-bottom: 7px solid;
     width:fit-content;
-    color:rgb(17, 104, 145);
     font-size: x-large;
     padding:3px 3px 10px 3px;
     
@@ -288,10 +345,16 @@ video{
 }
 .pop-up-help .cancel{
     padding:10px;
-    background-color: rgb(196, 34, 34);
-    border:0;
+    background-color: unset;
+    border:1px solid;
     border-radius: 4px;
-    color:white; 
+    color:rgb(248, 133, 2);
+    width:40%;
+    font-weight: 600;
+}
+.pop-up-help .cancel:hover{
+    cursor: pointer;
+    color:rgb(248, 10, 2);
 }
 .pop-up-help .go{
     padding:10px;
@@ -299,56 +362,62 @@ video{
     border-radius: 4px;
     border:0;
     color:white;
+    width:40%;
+    font-weight: 600;
 }
-
-
-/*styling request-design*/
-.request-design-box{
-    background-color: white;
-    margin:20px;
-    position:absolute;
-    width: 0;
-    overflow: hidden;
-    transition:margin 300ms ease-in-out;
-    font-size:small;
-}
-.request-design-box h4 {
-    padding:20px;
-    background-color: rgb(214, 143, 61);
-    color:white;
-}
-.request-design-box .inputs, .request-design-box textarea{
-    padding:10px;
-    margin:10px;
-    width:80%;
-}
-.request-design-box button{
-    padding:10px;
-    width:100%;
-    background-color: rgb(223, 255, 105);
-    border:0;
-    border-radius: 5px;
-}
-.request-design-box button{
-    background-color: rgb(158, 194, 27);
+.pop-up-help .go:hover{
     cursor: pointer;
-    
+    background-color: rgb(40, 170, 40);
 }
-.request-design-box .cancel{
+/*styling about-us*/
+.about-us{
+    background-color: unset;
     padding:10px;
-    width:100%;
-    border:0;
-    background-color: brown;
-    color:white;
-    margin:10px 0;
+    margin: 10px 10px 10px 10px;
+    box-shadow: 1px 1px 3px lightgray;
 }
-.request-design-box .cancel:hover{
-    background-color: rgb(121, 21, 21);
-    cursor:pointer;
+.about-us .capital-letter{
+    color:rgb(211, 103, 30);
+    background-color: unset;
+    border:0;
+    font-weight: 600;
+}
+.about-us .content{
+    padding:10px;
+}
+.about-us .content h3{
+    text-transform:capitalize;
+    background-color: rgb(202, 161, 79);
+    color:rgb(54, 54, 53);
+    padding:0 0 0 10px;
+    width:fit-content;
+}
+.about-us .content .read-more{
+    border:0; 
+    background-color:unset;
+    padding:10px;
+    border-radius:4px; 
+    color:rgb(211, 103, 30)
+}
+.about-us .content .read-more:hover{
+    cursor: pointer;
+    color:rgb(163, 79, 22); 
+}
+#read-more{
+    padding:10px;
+    box-shadow: 1px 1px 4px lightgrey;
+}
+#read-more{
+    display:none;
+}
+.about-us a{
+    color:rgb(221, 125, 0);
 }
 /*stylinf why-us*/
 .why-us{
     padding:0 10px;
+    box-shadow: 1px 1px 3px lightgray;
+    margin: 10px;
 }
 .why-us div{
     background-color: rgb(255, 255, 255);
@@ -361,7 +430,7 @@ video{
 .why-us  h3{
     text-transform:capitalize;
     background-color: unset;
-    color:rgb(206, 162, 16);
+    color:rgb(129, 128, 125);
     padding:0 0 0 5px;
     width:fit-content;
 }
@@ -377,7 +446,9 @@ video{
     padding: 10px 0px 0 50px;
 }
 .why-us span{
-    color:rgb(206, 162, 16);
+    color:rgb(211, 103, 30);
+    text-transform:uppercase;
+    font-weight:600;
 }
 .learn-more{
     text-align:center;
@@ -387,12 +458,12 @@ video{
     padding:10px;
     width:100%;
     border-radius: 5px ;
-    background-color: rgb(104, 98, 40);
+    background-color: rgb(184, 84, 26);
     color:rgb(255, 255, 255);
     border:0;
 }
 .learn-more-btn:hover{
-    background-color: rgb(66, 53, 16);
+    background-color: rgb(185, 82, 14);
     color:white;
     cursor: pointer;
 }
@@ -400,17 +471,18 @@ video{
 .summary{
     background-color: rgb(255, 255, 255);
     padding:20px;
-    margin-top: 50px;
+    margin: 50px 10px 10px 10px;
     color:rgb(61, 60, 59);
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
     text-align:center ;
     gap:10px;
+    box-shadow: 1px 1px 3px lightgray;
 }
 .summary h3{
     font-size: x-large;
-    color:rgb(83, 145, 42);
+    color:rgb(211, 103, 30);
 }
 .sum-1{
     padding:30px;
@@ -451,7 +523,8 @@ video{
 }
 /*styling services*/
 .services{
-    margin-top: 0px;
+    box-shadow: 1px 1px 3px lightgray;
+    margin:10px;
 }
 .services .content{
     padding:30px;
@@ -463,9 +536,10 @@ video{
     list-style: none;
 }
 .services h4{
-    color:rgb(180, 127, 48);
+    color:rgb(211, 90, 34);
     text-align: center;
     margin-top: 7px;
+    text-transform: uppercase;
 }
 .services .content ul li{
     padding:3px;
@@ -496,13 +570,13 @@ video{
 /*styling our-team*/
 .our-team{
     background-color: rgb(255, 255, 255);
-    color:rgb(46, 46, 45);
     padding:20px;
     margin:50px 10px;
     border-radius: 10px;
 }
 .our-team h3{
     text-align: center;
+    color:rgb(211, 90, 34);
 }
 .our-team .founder{
     width:100%;
@@ -541,7 +615,7 @@ footer{
     background-color:rgb(202, 157, 59);
     box-shadow: 1px 1px 3px;
     text-align: center;
-    color:rgb(71, 71, 71);
+    color:rgb(255, 255, 255);
 }
 
 /*at small screens*/

@@ -16,7 +16,8 @@ function READ_MORE_ABOUT(){
 var menu_show =1;
 function MENU(){
     if(menu_show==1){
-        document.querySelector('.menu-wrapper').style.width='100%';
+        document.querySelector('.menu-wrapper').style.width='70%';
+        document.querySelector('.menu-wrapper').style.borderLeft='2px solid';
 
         document.querySelector('.bar-one').style.transform='rotate(45deg)';
         document.querySelector('.bar-one').style.marginBottom='1px';
@@ -28,6 +29,7 @@ function MENU(){
     }
     else{
         document.querySelector('.menu-wrapper').style.width='0';
+        document.querySelector('.menu-wrapper').style.borderLeft='0';
 
         document.querySelector('.bar-one').style.transform='rotate(0)';
         document.querySelector('.bar-one').style.marginBottom='3px';
@@ -56,25 +58,39 @@ function Ourteam(){
         menu_show=1;
 }
 
-//POUP HELP BOX
+//ASK QUESTION BOX
+var pop_hire=1;
+function HIRE_US(){
+    if(pop_hire==1){
+        document.querySelector('.hire-us-container').style.height='fit-content';
+        document.querySelector('.hire-us-container').style.padding='20px';
+        document.querySelector('.hire-us-container').style.top="60px";
+        document.querySelector('.hire-us-container').style.border='1px solid rgb(231, 227, 227)';
+        pop_hire=0;
+    }
+    else{
+        document.querySelector('.hire-us-container').style.height='0';
+        document.querySelector('.hire-us-container').style.padding='0';
+        document.querySelector('.hire-us-container').style.border='0';
+        pop_hire=1;
+    }
+}
+
+//ASK QUESTION BOX
 var pop_help=1;
-function POPUP_HELP(){
+function ASK_QUESTION(){
     if(pop_help==1){
         document.querySelector('.pop-up-help').style.height='fit-content';
-        document.querySelector('.pop-up-help').style.padding='30px';
-        document.querySelector('.pop-up-help').style.margin='-300px 20px 10px 20px';
-        document.querySelector('.pop-up-help').style.opacity='1';
-
+        document.querySelector('.pop-up-help').style.padding='10px';
         pop_help=0;
     }
     else{
         document.querySelector('.pop-up-help').style.height='0';
         document.querySelector('.pop-up-help').style.padding='0';
-        document.querySelector('.pop-up-help').style.margin='10px';
-        document.querySelector('.pop-up-help').style.opacity='-1';
         pop_help=1;
     }
 }
+//GO BUTTON
 function MYMAIL(){
     document.location='mailto:lusawanasinethemba@gmail.com';
 }

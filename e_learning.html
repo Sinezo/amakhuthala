@@ -4,23 +4,445 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
     <title>E-Learning |Amakhuthala</title>
     <style>
+        *{
+            margin: 0;
+            padding:0;
+        }
         body{
-            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         }
-        button{
+        .picture{
+            background-image: url('Screenshot_20230401-105052_Gallery.jpg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            width:88%;
+            height:300px;
+            margin:20px;
+        }
+        .wrapper{
+            margin-top: -50px;
+        }
+        .wrapper .e-learning{
+            color:rgb(211, 103, 30);
+            font-size: larger;
+        }
+        .wrapper h3{
+            margin-top: -100px;
+            padding:5px;
+            color:rgb(43, 41, 39);
+        }
+        /*styling about*/
+        .about{
+            padding:20px;
+        }
+        .about .dashboard{
+            background-color: chocolate;
             padding:10px;
-            background-color: rgb(12, 86, 136);
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            border:0;
-            border-radius: 3px;
             color:white;
+            border:0;
+            box-shadow:1px 1px 3px lightgray;
         }
+        .about .dashboard:hover{
+            cursor: pointer;
+            background-color: rgb(138, 70, 22);
+        }
+        /*styling how*/
+        .how{
+            box-shadow: 1px 1px 3px lightgray;
+            padding:20px;
+            margin:10px;
+        }
+        .how ul{
+            list-style-position: inside;
+            margin:10px 0 10px 20px;
+        }
+        .how .apply{
+            background-color: chocolate;
+            padding:10px;
+            color:white;
+            border:0;
+            box-shadow:1px 1px 3px lightgray;
+            width:100px;
+        }
+        .how .apply:hover{
+            cursor: pointer;
+            background-color: rgb(138, 70, 22);
+        }
+        /*styling more-on-elearning*/
+        .more-on-elearning{
+            box-shadow: 1px 1px 3px lightgray;
+            padding:20px;
+            margin: 10px;
+        }
+        .more-on-elearning h5{
+            color:rgb(192, 92, 21);
+        }
+        .more-on-elearning button{
+            padding:10px;
+            width:200px;
+            background-color: goldenrod;
+            color:white;
+            border:0;
+            box-shadow: 1px 1px 3px lightgray;
+        }
+        .more-on-elearning button:hover{
+            cursor:pointer;
+            background-color: rgb(150, 115, 27);
+        }
+
+        /*styling application-container*/
+        .application-container{
+            height:0;
+            overflow:hidden;
+            position:absolute;
+            background-color: white;
+            top:100px;
+            transition:top 300ms ease-in-out;
+            margin:0 20px;
+        }
+        .application-container input{
+            padding:10px;
+            margin-bottom: 10px;
+            width:90%;
+        }
+        .application-container select{
+            padding:10px;
+            margin-bottom: 10px;
+        }
+        .application-container textarea{
+            padding:10px;
+            width:90%;
+
+        }
+        .application-container button{
+            padding:10px;
+            width:100%;
+            background-color: chocolate;
+            color:white;
+            border:0;
+            border-radius:3px;
+        }
+
+        /*styling tutor-container*/
+        .tutor-container{
+            height:0;
+            overflow:hidden;
+            position:absolute;
+            background-color: white;
+            top:100px;
+            transition:top 300ms ease-in-out;
+            margin:0 20px;
+        }
+        .tutor-container input{
+            padding:10px;
+            margin-bottom: 10px;
+            width:90%;
+        }
+        .tutor-container select{
+            padding:10px;
+            margin-bottom: 10px;
+        }
+        .tutor-container textarea{
+            padding:10px;
+            width:90%;
+
+        }
+        .tutor-container button{
+            padding:10px;
+            width:100%;
+            background-color: chocolate;
+            color:white;
+            border:0;
+            border-radius:3px;
+        }
+        /*styling footer*/
+footer{
+    margin-top: 50px;
+    padding:10px;
+    background-color:rgb(202, 157, 59);
+    box-shadow: 1px 1px 3px;
+    text-align: center;
+    color:rgb(255, 255, 255);
+}
+        
     </style>
 </head>
 <body>
-    <h4>E-LEARNING...</h4>
-    <button onclick="window.location='student_portal.html'">Go Class Room</button>
+
+    <!--HEADER WRAPPER-->
+    <div class="wrap-header">
+        <!--HEADER-->
+        <header>
+            <div class="website-name" onclick="window.location='index.html'"><i class="fa-brands fa-think-peaks"></i></i> Amakhuthala
+            <div class="full-info">Electrical Design & installation</div>
+            </div>
+        </header>
+
+            <!--MENU ICON-->
+            <div class="menu-icon">
+                <div class="wrap-menu-bars">
+                    <button class="sign-in" onclick="window.location='student_portal.html'"><i class="fa-solid fa-user"></i></button>
+
+                    <div class="bar-wrap" onclick="MENU()">
+                        <div class="bar-one"></div>
+                        <div class="bar-two"></div>
+                        <div class="bar-three"></div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <!--PICTURE-->
+    <div class="picture">
+
+    </div>
+
+    <div class="wrapper">
+        <div class="about">
+            <h3><span>E-LEARNING</span></h3><br>
+            <button class="dashboard" onclick="window.location='student_portal.html'">Student Dashboard</button><br><br>
+            <p>
+                  <span class="e-learning">Amakhuthala E-Learning</span> is the initiave aiming to help students get better grades. We want students to get to understand the theory behind every concept, understand its laws and principles and be able to apply them effectively.  
+            </p>
+
+            <p>
+                As stated above, our aim is not just to help students to pass with good grades. We want to help students 
+                digest what they are being taught in class and be able to apply that knowledge to solve real life problems.
+            </p>
+        </div>
+
+        <div class="how">
+            <h4>HOW?</h4><br>
+            <p>
+                We all know that learning can be overwhelming sometimes. We as Amakhuthala, tried our utmost to make the learning fun, less overwhelming and fruitful at the same time. 
+                
+                <ul>
+                    <li>We have cut our lessons into pieces that are easy to chew and swalow.</li>
+                    <li>After each and every lesson there is a short test.</li>
+                    <li>Students can ask for help anytime they encounter difficulties when studying.</li>
+                </ul>
+                <button class="apply" onclick="APPLICATION()">Apply</button>
+            </p>
+        </div>
+
+        <!--APPLICATION-->
+        <div class="application-container" id="application-container">
+            <p>
+                Hello. Thank You for showing interest in learning with us.
+                <br><br><span style="font-size:smaller;">Please fill out the form below. <br><b>Remember to 
+                    keep your student number and pin after submitting the form.
+                </b> </span>
+            </p>
+            <div class="form">
+                <form action="POST">
+                    <input type="text" placeholder="Name"> <input type="text" placeholder="Surname">
+                    <input type="email" name="email" id="email" placeholder="Email"> <input type="tel" name="tel" id="tel" placeholder="Contact Number">
+                    <br><input type="text" placeholder="Name of School (optional)">
+                    <br><label><b>Physical Address</b></label>
+                    <br><input type="text" placeholder="Street"> <input type="text" placeholder="Surbub">
+                    <br><input type="text" placeholder="Town"> 
+                    <select name="province" id="province">
+                        <option>Province ---</option>
+                        <option value="Eastern Cape">Eastern Cape</option>
+                        <option value="Western Cape">Western Cape</option>
+                        <option value="Gauteng">Gauteng</option>
+                        <option value="North West">North West</option>
+                        <option value="Mpumalanga">Mpumalanga</option>
+                        <option value="Free State">Free State</option>
+                        <option value="Northen Cape">Northen Cape</option>
+                        <option value="Limpopo">Limpopo</option>
+                        <option value="Eastern Cape">Eastern Cape</option>
+                    </select>
+
+                    <br>
+                    <label><i>Tell us which subject you would like to apply for and what level or percentage you would like 
+                        to achieve in your final examination.
+                    </i></label><br>
+                    <textarea name="description" placeholder="Write here..."></textarea>
+                    <br><br><button type="submit" class="send">Send Request</button>
+                </form>
+            </div>
+        </div>
+
+        <!--MORE ON E-LEARNING-->
+        <div class="more-on-elearning">
+            <h4>MORE ON E-LEARNING</h4><br>
+            <h5>TUITION</h5><br>
+            <p>
+                If you happen to need special attention. Our <span>Tutors</span> would really love to assist you with your <b>electrical engineering</b> subjects.
+            </p><br>
+            <button class="tutor" onclick="TUTOR()">Get a Tutor</button>
+        </div>
+    </div>
+
+        <!--TUTOR-->
+        <div class="tutor-container" id="tutor-container">
+            <p>
+                Hello. Thank You for showing interest in learning with us.
+                <br><br><span style="font-size:smaller;">Please fill out the form below.</span>
+            </p>
+            <div class="form">
+                <form action="POST">
+                    <input type="text" placeholder="Name"> <input type="text" placeholder="Surname">
+                    <input type="email" name="email" id="email" placeholder="Email"> <input type="tel" name="tel" id="tel" placeholder="Contact Number">
+                    <br><input type="text" placeholder="Name of School (optional)">
+                    <br><label><b>Physical Address</b></label>
+                    <br><input type="text" placeholder="Street"> <input type="text" placeholder="Surbub">
+                    <br><input type="text" placeholder="Town"> 
+                    <select name="province" id="province">
+                        <option>Province ---</option>
+                        <option value="Eastern Cape">Eastern Cape</option>
+                        <option value="Western Cape">Western Cape</option>
+                        <option value="Gauteng">Gauteng</option>
+                        <option value="North West">North West</option>
+                        <option value="Mpumalanga">Mpumalanga</option>
+                        <option value="Free State">Free State</option>
+                        <option value="Northen Cape">Northen Cape</option>
+                        <option value="Limpopo">Limpopo</option>
+                        <option value="Eastern Cape">Eastern Cape</option>
+                    </select>
+
+                    <br>
+                    <label><i>Tell us which subject you would like us to assist you in and what makes you think you need assistance? </i></label><br>
+                    <textarea name="description" placeholder="Write here..."></textarea>
+                    <br><br><button type="submit" class="send">Send Request</button>
+                </form>
+            </div>
+        </div>
+
+    <!--MENU WRAPPER-->
+    <div class="menu-wrapper">
+        <div class="close" onclick="MENU()"><i class="fa-solid fa-xmark"></i></div>
+        <div class="wrap">
+            <div class="menu">
+                <ul>
+                    <li onclick="Ourteam()"> Our Team</li>
+                    <li onclick="window.location='ourprojects.html'"></i> Our Projects</li>
+                    <li onclick="window.location='e_learning.html'">E-Learning</li>
+                    <li onclick="window.location='ourclients.html'"> Our Clients</li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+
+    <!--FOOTER-->
+    <footer>
+        Copyright &copy; Amakhuthala -  2023
+    </footer>
+
+    <script>
+        //MENU
+var menu_show =1;
+function MENU(){
+    if(menu_show==1){
+        document.querySelector('.menu-wrapper').style.width='70%';
+        document.querySelector('.menu-wrapper').style.borderLeft='2px solid'
+        document.querySelector('.bar-one').style.transform='rotate(45deg)';
+        document.querySelector('.bar-one').style.marginBottom='1px';
+        document.querySelector('.bar-two').style.display='none';
+        document.querySelector('.bar-three').style.transform='rotate(-45deg)';
+        document.querySelector('.bar-three').style.marginTop='-3px';
+
+        menu_show=0;
+    }
+    else{
+        document.querySelector('.menu-wrapper').style.width='0';
+        document.querySelector('.menu-wrapper').style.borderLeft='0';
+
+        document.querySelector('.bar-one').style.transform='rotate(0)';
+        document.querySelector('.bar-one').style.marginBottom='3px';
+        document.querySelector('.bar-two').style.display='block';
+        document.querySelector('.bar-three').style.transform='rotate(0)';
+        document.querySelector('.bar-three').style.marginTop='0';
+
+        menu_show=1;
+    }
+}
+
+//ONSCROLL
+window.onscroll=function(){scroll_summary()};
+function scroll_summary(){
+    if(document.documentElement.scrollTop >500 && document.documentElement.scrollTop <1370){
+        document.querySelector('.wrap-header').style.position='fixed';
+        document.querySelector('.wrap-header').style.top='0';
+    }
+    else if(document.documentElement.scrollTop <400){
+        document.querySelector('.wrap-header').style.position='relative';
+    }
+    setTimeout('scroll_summary()',100)
+}
+
+//OUR TEAM MEMBERS
+function Ourteam(){
+    window.location='index.html#our-team';
+
+    document.querySelector('.content-wrapper').style.margin='0';
+        document.querySelector('.content-wrapper').style.opacity='1';
+        document.querySelector('.menu-wrapper').style.width='0';
+
+        document.querySelector('.bar-one').style.transform='rotate(0)';
+        document.querySelector('.bar-one').style.marginBottom='3px';
+        document.querySelector('.bar-two').style.display='block';
+        document.querySelector('.bar-three').style.transform='rotate(0)';
+        document.querySelector('.bar-three').style.marginTop='0';
+
+        menu_show=1;
+}
+
+//APPLICATION BOX
+var pop_application=1;
+function APPLICATION(){
+    if(pop_application==1){
+        document.querySelector('.application-container').style.height='fit-content';
+        document.querySelector('.application-container').style.padding='20px';
+        document.querySelector('.application-container').style.top="60px";
+        document.querySelector('.application-container').style.border='1px solid rgb(231, 227, 227)';
+        window.location='#';
+        pop_application=0;
+
+        document.querySelector('.tutor-container').style.height='0';
+        document.querySelector('.tutor-container').style.padding='0';
+        document.querySelector('.tutor-container').style.border='0';
+        pop_tutor=1;
+    }
+    else{
+        document.querySelector('.application-container').style.height='0';
+        document.querySelector('.application-container').style.padding='0';
+        document.querySelector('.application-container').style.border='0';
+        document.querySelector('.application-container').style.top="100px";
+        window.location='e_learning.html#application-container';
+        pop_application=1;
+    }
+}
+
+//TUTOR BOX
+var pop_tutor=1;
+function TUTOR(){
+    if(pop_tutor==1){
+        document.querySelector('.tutor-container').style.height='fit-content';
+        document.querySelector('.tutor-container').style.padding='20px';
+        document.querySelector('.tutor-container').style.top="60px";
+        document.querySelector('.tutor-container').style.border='1px solid rgb(231, 227, 227)';
+        window.location='#';
+        pop_tutor=0;
+
+        document.querySelector('.application-container').style.height='0';
+        document.querySelector('.application-container').style.padding='0';
+        document.querySelector('.application-container').style.border='0';
+        pop_application=1;
+    }
+    else{
+        document.querySelector('.tutor-container').style.height='0';
+        document.querySelector('.tutor-container').style.padding='0';
+        document.querySelector('.tutor-container').style.border='0';
+        document.querySelector('.tutor-container').style.top="100px";
+        window.location='e_learning.html#tutor-container';
+        pop_tutor=1;
+    }
+}
+    </script>
 </body>
 </html>

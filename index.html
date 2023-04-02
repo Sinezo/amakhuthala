@@ -21,28 +21,6 @@
     <title>Home | Amakhuthala</title>
 </head>
 <body>
-
-    <!--ABOUT US-->
-    <div class="about-us">
-        <div class="content">
-           <button class="capital-letter">W</button> e are an electrical bussiness whose focus is on the design and installation 
-            of electrical systems. We employ laws and principles of Electrical Engineering to 
-            safely design and improve devices and systems out there. Through our thorough planning and necessary
-            experiments, we guarantee to satisfy our customers with quality products and services. 
-
-            <div id="read-more">  
-                In every design we employ the 
-           proven electrical theories of the greatest physicists and electrical engineers, like NIKOLA TESLA.
-
-           <br><br> We value safety. In the process of designing and installation we follow <a href="#">NEC</a> and <a href="#b">IEC</a> standards.
-            
-            <br><br>
-            Our main objective is to outstand within the industry with the best quality and significance of our designs.
-            </div>
-            <button class="read-more" onclick="READ_MORE_ABOUT()">Read more</button>
-        </div>
-    </div>
-
     <!--WRAP ALL BOX-->
     <div class="wrap-all">
         <!--CONTENT WRAPPER-->
@@ -52,7 +30,9 @@
         <div class="wrap-header">
                     <!--HEADER-->
             <header>
-                <div class="website-name" onclick="window.location='index.html'"><i class="fa-brands fa-think-peaks"></i></i> Amakhuthala</div>
+                <div class="website-name" onclick="window.location='index.html'"><i class="fa-brands fa-think-peaks"></i></i> Amakhuthala
+                <div class="full-info">Electrical Design & installation</div>
+                </div>
             </header>
 
             <!--MENU ICON-->
@@ -69,54 +49,111 @@
             </div>
         </div>
 
-        <div class="video">
-            <video src="Green Light Green Bold Shapes Explainer Educational Video.mp4" autoplay muted loop></video>
-        </div>
-        
-        <!--ASK A QUESTION-->
-        <div class="ask-question">
-            <div class="icon"> <i class="fa-solid fa-rocket"></i>
+        <!--US CONTAINER-->
+        <div class="us-container">
+            <div class="us-message">
+                <!--on top of us-message-->
+                <h2>We are the specialists in</h2>
+                <h2 class="specialize">Electrical Design</h2><br>
+                <img src="nicolas-thomas-3GZi6OpSDcY-unsplash.jpg" alt="">
+
+                <p>We have proved ourselves more than <span class="decor">once</span>. 
+                    <br>Wherever we go we leave a <span class="decor">mark</span>. 
+                    <br>Whatever we touch turns into <span class="decor">magic</span>.
+                </p>
+                <div class="buttons"><button class="hire-us" onclick="HIRE_US()">Hire us </button> <button class="call">Call us</button></div> 
             </div>
-            <p>
-                We would really love to answer your electrical engineering questions.
-            </p>
-            <button onclick="POPUP_HELP()">Ask a question</button>
+
+            <!--HIRE US-->
+            <div class="hire-us-container">
+                <p>
+                    Hello. Thank You for showing interest in hiring us to have the best of 
+                    our services.
+                </p>
+                <div class="form">
+                    <form action="POST">
+                        <input type="text" placeholder="Name"> <input type="text" placeholder="Surname">
+                        <br><input type="text" placeholder="Name of Company (optional) ">
+                        <br><label><b>Address</b></label>
+                        <br><input type="text" placeholder="Street"> <input type="text" placeholder="Surbub">
+                        <br><input type="text" placeholder="Town"> 
+                        <select name="province" id="province">
+                            <option>Province ---</option>
+                            <option value="Eastern Cape">Eastern Cape</option>
+                            <option value="Western Cape">Western Cape</option>
+                            <option value="Gauteng">Gauteng</option>
+                            <option value="North West">North West</option>
+                            <option value="Mpumalanga">Mpumalanga</option>
+                            <option value="Free State">Free State</option>
+                            <option value="Northen Cape">Northen Cape</option>
+                            <option value="Limpopo">Limpopo</option>
+                            <option value="Eastern Cape">Eastern Cape</option>
+                        </select>
+
+                        <br>
+                        <label><b>Decription of the project/task</b></label>
+                        <textarea name="description" placeholder="Write here..."></textarea>
+                        <br><br><button type="submit" class="send">Send Request</button>
+                    </form>
+                </div>
+            </div>
+            
+
+            <!--ASK A QUESTION-->
+            <div class="ask-question">
+                <div class="icon"> <i class="fa-solid fa-rocket"></i>
+                </div>
+                <p>
+                    <h3 class="specialize">Free your curiosity</h3>
+                    We would really love answering your <span class="specialize">electrical engineering</span> questions.
+                    <div class="two">
+                        Let us help you in solving your electrical problems. <br> 
+                        We can accompany you in this journey as electrical engineering enthusiast.
+                    </div>
+                </p>
+                
+                <button onclick="ASK_QUESTION()">Ask a question</button>
+            </div>
         </div>
 
         <!--POPUP HELP-->
-        <div class="pop-up-help">
-            <p>You will be redirected to mails to be able to send us message via email. 
+        <div class="pop-up-help"><span class="note">Note:</span><br><br>
+            <p> You will be redirected to mails to be able to send us message via email. 
                 <ul>
                     <li>Write a detailed problem statement. </li>
                     <li>Send references where applicable</li>
                     <li>You will get response within 24 hours </li>
                 </ul>
             </p>
-            <h4>Note:</h4>
             <hr>
-            <div class="buttons"><button class="cancel" onclick="POPUP_HELP()">Cancel</button> <button class="go" onclick="MYMAIL()">Go</button></div>
+            <div class="buttons"><button class="cancel" onclick="ASK_QUESTION()">Cancel</button> <button class="go" onclick="MYMAIL()">Go</button></div>
         </div>
 
-        <!--REQUEST DESIGN-->
-        <div class="request-design-box">
-            <h4>Request a Design</h4>
-            <form action="POST">
-                <input type="text" placeholder="Name of the design" class="inputs">
-                <br><textarea name="" id="" placeholder="Description of the design" class="inputs"></textarea>
-                <br><input type="tel" placeholder="Cell number" class="inputs">
-
-                <p>
-                    When do you need it?<br>
-                    <input type="radio" name="due"> In 2 days
-                    <br><input type="radio" name="due" id=""> In 5 days 
-                    <br><input type="radio" name="due" id=""> in 2 weeks
-                    <br><input type="radio" name="due" id=""> in 4 weeks
-                </p>
-                <br><button type="submit">Send</button>
-            </form>
-            <button class="cancel" onclick="REQUEST_PROJECT()">Cancel</button>
+        <div class="video">
+            <video src="Green Light Green Bold Shapes Explainer Educational Video.mp4" autoplay muted loop></video>
         </div>
 
+        <!--ABOUT US-->
+    <div class="about-us">
+        <div class="content">
+           <button class="capital-letter">W</button>e are an electrical bussiness whose focus is on the design and installation 
+            of electrical systems. We employ laws and principles of Electrical Engineering to 
+            safely design and improve devices and systems out there. Through our thorough planning and necessary
+            experiments, we guarantee to satisfy our customers with quality products and services. 
+
+            <div id="read-more">  
+                In every design we employ the 
+           proven electrical theories of the greatest physicists and electrical engineers, like NIKOLA TESLA.
+
+           <br><br> We value safety. In the process of designing and installation we follow <a href="#">NEC</a> and <a href="#b">IEC</a> standards.
+            
+            <br><br>
+            Our main objective is to outstand within the industry with the best quality and significance of our designs.
+            </div>
+            <button class="read-more" onclick="READ_MORE_ABOUT()">Read more</button>
+        </div>
+    </div>
+        
         <!--WHY US-->
         <div class="why-us">
             <div>
@@ -208,6 +245,7 @@
                 <li><i class="fa-solid fa-chevron-right"></i> Domestic Installation</li>
                 <li><i class="fa-solid fa-chevron-right"></i> Electrical Design & Installation</li>
                 <li><i class="fa-solid fa-chevron-right"></i> Hands-on Training on Electrical Design and Installation</li>
+                <li><i class="fa-solid fa-chevron-right"></i> E-Learning</li>
             </ul>
         </div>
     </div>
@@ -229,7 +267,7 @@
         </div>
     </div>
     <footer>
-        Amakhuthala &copy; copyright -  2023
+        Copyright &copy; Amakhuthala -  2023
     </footer>
 
     <script src="index.js"></script>
