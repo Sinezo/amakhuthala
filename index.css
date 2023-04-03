@@ -4,17 +4,17 @@
 }
 /*styling body*/
 body{
-    font-family: 'Comic Neue', cursive;
+    font-family: 'Fredoka', sans-serif;
     background-color: rgb(255, 255, 255);
     color:rgb(0, 0, 0);
     line-height: 30px;
 }
 button{
-    font-family: 'Comic Neue', cursive;
+    font-family: 'Fredoka', sans-serif;
     font-weight: 100;
 }
 input{
-    font-family: 'Comic Neue', cursive;
+    font-family: 'Fredoka', sans-serif;
 }
 /*font-family: 'Concert One', cursive;*/
 
