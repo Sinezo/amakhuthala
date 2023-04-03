@@ -12,6 +12,7 @@ body{
 }
 button{
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 100;
 }
 /*font-family: 'Concert One', cursive;*/
 
@@ -252,6 +253,16 @@ nav .hire-us-btn{
     top:100px;
     transition:top 300ms ease-in-out;
 }
+.hire-us-container .close{
+    text-align: end;
+    font-size: large;
+    padding:5px;
+    margin:-5px 0 0 0;
+}
+.hire-us-container .close i:hover{
+    cursor: pointer;
+    color: rgb(221, 53, 11);
+}
 .hire-us-container input{
     padding:10px;
     margin-bottom: 10px;
@@ -299,7 +310,7 @@ video{
     color:rgb(212, 128, 49);
     border:1px solid;
     border-radius: 3px;
-    font-weight: 600;
+    font-weight: 300;
 }
 
 /*styling pop-up-help*/
@@ -321,6 +332,16 @@ video{
 .pop-up-help ul{
     list-style-position: inside;
     padding:10px;
+}
+.pop-up-help .close{
+        text-align: end;
+        font-size: large;
+        padding:5px;
+        margin:-5px 0 0 0;
+}
+.pop-up-help .close i:hover{
+    color:rgb(190, 51, 16);
+    cursor: pointer;
 }
 .pop-up-help .note{
     border-bottom: 7px solid;

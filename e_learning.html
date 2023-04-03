@@ -109,6 +109,16 @@
             transition:top 300ms ease-in-out;
             margin:0 20px;
         }
+        .application-container .close{
+            text-align: end;
+            font-size: large;
+            padding:5px;
+            margin:-5px 0 0 0;
+        }
+        .application-container .close i:hover{
+            cursor: pointer;
+            color: rgb(221, 53, 11);
+        }
         .application-container input{
             padding:10px;
             margin-bottom: 10px;
@@ -141,6 +151,16 @@
             top:100px;
             transition:top 300ms ease-in-out;
             margin:0 20px;
+        }
+        .tutor-container .close{
+            text-align: end;
+            font-size: large;
+            padding:5px;
+            margin:-5px 0 0 0;
+        }
+        .tutor-container .close i:hover{
+            cursor: pointer;
+            color: rgb(221, 53, 11);
         }
         .tutor-container input{
             padding:10px;
@@ -213,8 +233,8 @@ footer{
                   <span class="e-learning">Amakhuthala E-Learning</span> is the initiave aiming to help students get better grades. We want students to get to understand the theory behind every concept, understand its laws and principles and be able to apply them effectively.  
             </p>
 
-            <p>
-                As stated above, our aim is not just to help students to pass with good grades. We want to help students 
+            <p><br>
+               Our aim is not just to help students to pass with good grades. We want to help students 
                 digest what they are being taught in class and be able to apply that knowledge to solve real life problems.
             </p>
         </div>
@@ -236,6 +256,7 @@ footer{
         <!--APPLICATION-->
         <div class="application-container" id="application-container">
             <p>
+                <div class="close" onclick="APPLICATION()"><i class="fa-solid fa-xmark"></i></div>
                 Hello. Thank You for showing interest in learning with us.
                 <br><br><span style="font-size:smaller;">Please fill out the form below. <br><b>Remember to 
                     keep your student number and pin after submitting the form.
@@ -285,6 +306,7 @@ footer{
 
         <!--TUTOR-->
         <div class="tutor-container" id="tutor-container">
+            <div class="close" onclick="TUTOR()"><i class="fa-solid fa-xmark"></i></div>
             <p>
                 Hello. Thank You for showing interest in learning with us.
                 <br><br><span style="font-size:smaller;">Please fill out the form below.</span>

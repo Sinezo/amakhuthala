@@ -72,6 +72,7 @@ function HIRE_US(){
         document.querySelector('.hire-us-container').style.height='0';
         document.querySelector('.hire-us-container').style.padding='0';
         document.querySelector('.hire-us-container').style.border='0';
+        document.querySelector('.hire-us-container').style.top="100px";
         pop_hire=1;
     }
 }
@@ -81,7 +82,7 @@ var pop_help=1;
 function ASK_QUESTION(){
     if(pop_help==1){
         document.querySelector('.pop-up-help').style.height='fit-content';
-        document.querySelector('.pop-up-help').style.padding='10px';
+        document.querySelector('.pop-up-help').style.padding='20px';
         pop_help=0;
     }
     else{
@@ -122,7 +123,7 @@ function scroll_summary(){
     else if(document.documentElement.scrollTop <70){
         document.querySelector('.wrap-header').style.position='relative';
     }
-    else if(document.documentElement.scrollTop >1370){
+    else if(document.documentElement.scrollTop >1670){
             if(services_number<6){
                 services_number+=1;
                 document.querySelector('.services-number').innerHTML=services_number;
