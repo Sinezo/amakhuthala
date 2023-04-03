@@ -37,7 +37,7 @@ header .website-name{
 }
 header .full-info{
     font-size: x-small;
-    margin-top: -10px;
+    margin: -10px 0 0 34px;
     color:rgb(129, 26, 26);
 }
 nav{
@@ -157,11 +157,12 @@ nav .hire-us-btn{
 }
 .sign-in{
     padding:0 5px;
-    margin:-34px 0 0 0;
+    margin:-32px 0 0 0;
     background-color: unset;
     color:white;
     height:30px;
     border:0;
+    font-size: large;
 }
 .sign-in:hover{
     cursor: pointer;
@@ -203,7 +204,7 @@ nav .hire-us-btn{
     padding:10px;
     color:rgb(65, 62, 62);
     padding:10px;
-    font-weight: 600;
+    font-weight: 100;
     box-shadow:1px 1px 3px lightgrey;
 }
 .us-container .us-message img{
@@ -284,7 +285,7 @@ video{
 }
 /*styling ask-question*/
 .ask-question{
-    padding:5px;
+    padding:20px;
     margin-top: 20px;
     box-shadow: 1px 1px 3px lightgray;
 }
@@ -299,17 +300,6 @@ video{
     border:1px solid;
     border-radius: 3px;
     font-weight: 600;
-}
-.ask-question .icon{
-    text-align: center;
-    font-size: 50px;
-    color:rgb(179, 117, 59);
-}
-.ask-question .two{
-    font-size:smaller;
-    border-left: 3px solid rgb(233, 232, 229);
-    padding:5px;
-    border-radius: 0px;
 }
 
 /*styling pop-up-help*/
@@ -372,16 +362,11 @@ video{
 /*styling about-us*/
 .about-us{
     background-color: unset;
-    padding:10px;
+    padding:20px;
     margin: 10px 10px 10px 10px;
     box-shadow: 1px 1px 3px lightgray;
 }
-.about-us .capital-letter{
-    color:rgb(211, 103, 30);
-    background-color: unset;
-    border:0;
-    font-weight: 600;
-}
+
 .about-us .content{
     padding:10px;
 }
@@ -441,6 +426,9 @@ video{
     background-color: unset;
     padding:20px;
     border:1px solid rgb(236, 236, 227);
+    border-radius: 50%;
+    margin:10px;
+    background-color: rgb(241, 245, 241);
 }
 .why-us p{
     padding: 10px 0px 0 50px;
@@ -488,27 +476,27 @@ video{
     padding:30px;
     background-color: rgb(255, 255, 255);
     margin-bottom: 30px;
-    width:70px;
+    width:200px;
     border:1px solid rgb(245, 242, 242);
 }
 .sum-2{
     padding:30px;
     background-color: rgb(255, 255, 255);
     margin-bottom: 30px;
-    width:70px;
+    width:200px;
     border:1px solid rgb(245, 242, 242);
 }
 .sum-3{
     padding:30px;
     background-color: rgb(255, 255, 255);
     margin-bottom: 30px;
-    width:70px;
+    width:200px;
     border:1px solid rgb(245, 242, 242);
 }
 .sum-4{
     padding:30px;
     background-color: rgb(255, 255, 255);
-    width:70px;
+    width:200px;
     border:1px solid rgb(245, 242, 242);
 }
 /*styling more-about-us*/
