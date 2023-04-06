@@ -382,15 +382,27 @@ video{
     padding:20px;
     margin-top: 20px;
     box-shadow: 1px 1px 3px lightgray;
+    background-image: url('undraw_Questions_re_1fy7.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    height:250px
 }
 .ask-question p{
     padding:10px;
 }
+.ask-question h3{
+    color:rgb(231, 133, 40);
+}
 .ask-question button{
     width:50%;
     padding:10px;
-    background-color: unset;
-    color:rgb(212, 128, 49);
+    background-color: rgb(192, 115, 51);
+    color:rgb(255, 255, 255);
     border:1px solid;
     border-radius: 3px;
     font-weight: 300;
