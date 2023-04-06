@@ -598,8 +598,8 @@ nav .hire-us-btn{
 }
 /*styling services*/
 .services{
-    box-shadow: 1px 1px 3px lightgray;
     margin:10px;
+    font-weight: 600;
 }
 .services .content{
     padding:30px;
@@ -607,41 +607,26 @@ nav .hire-us-btn{
     border-radius: 10px;
     margin:10px
 }
-.services .content ul{
-    list-style: none;
+.services img{
+    width:100%;
 }
-.services h4{
-    color:rgb(211, 90, 34);
-    text-align: center;
-    margin-top: 7px;
-    text-transform: uppercase;
+.services .elec-maintenance{
+    box-shadow: 1px 1px 3px lightgray;
+    margin-bottom: 20px;
 }
-.services .content ul li{
-    padding:3px;
-    width:fit-content;
+.services .elec-design{
+    box-shadow: 1px 1px 3px lightgray;
+    margin-bottom: 20px;
 }
-.services .content ul li:hover{
-    cursor: pointer;
-    border-bottom: 1px solid;
-    color:rgb(146, 144, 141);
+.services .electronic-design{
+    box-shadow: 1px 1px 3px lightgray;
+    margin-bottom: 20px;
 }
-.services-icon{
-    display:flex;
-    justify-content: center;
-    color:rgb(52, 118, 121);
-    
+.services .domestic-installation{
+    box-shadow: 1px 1px 3px lightgray;
+    margin-bottom: 20px;
 }
-.services-icon div{
-    width:50px;
-    height:50px;
-    border-radius: 50%;
-    
-    display:flex;align-items: center;
-    justify-content: center;
-}
-.services-icon div i{
-    font-size: x-large;
-}
+
 /*styling our-team*/
 .our-team{
     background-color: rgb(255, 255, 255);
