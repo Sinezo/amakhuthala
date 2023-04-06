@@ -8,6 +8,7 @@ body{
     background-color: rgb(255, 255, 255);
     color:rgb(53, 52, 52);
     line-height: 30px;
+    font-weight:100;
 }
 button{
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -23,26 +24,8 @@ input{
     width:100%;
     z-index:1;
 }
-header{
-    padding:15px;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-color: unset;
-}
-header .website-name{
-    color:rgb(252, 250, 249); 
-    font-size: x-large;
-    font-weight: 600;
-    width:fit-content;
-    padding:2px;
-    position:absolute;
-    margin:-5px 0 0 0;
-    border-radius: 3px;
-}
-header .full-info{
-    font-size: x-small;
-    margin: -10px 0 0 34px;
-    color:rgb(129, 26, 26);
+header img{
+    width:100%;
 }
 nav{
     float:right;
@@ -142,8 +125,7 @@ nav .hire-us-btn{
 .menu-icon{
     padding:20px;
     height:17px;
-    background-color:rgb(211, 103, 30);
-    margin-top: -30px;
+    background-color:unset;
 }
 .bar-wrap{
     padding:10px 10px 5px 10px; 
@@ -163,7 +145,7 @@ nav .hire-us-btn{
     padding:0 5px;
     margin:-32px 0 0 0;
     background-color: unset;
-    color:white;
+    color:rgb(167, 158, 158);
     height:30px;
     border:0;
     font-size: large;
@@ -207,7 +189,6 @@ nav .hire-us-btn{
 .us-container .us-message{
     padding:10px;
     padding:10px;
-    box-shadow:1px 1px 3px lightgrey;
 }
 .us-container .us-message img{
     width:100%;
@@ -392,12 +373,13 @@ video{
 .about-us .content{
     padding:10px;
 }
-.about-us .content h3{
+.about-us .content h4{
     text-transform:capitalize;
-    background-color: rgb(202, 161, 79);
-    color:rgb(54, 54, 53);
-    padding:0 0 0 10px;
+    color:rgb(185, 116, 26);
     width:fit-content;
+    text-align:center;
+    font-size:x-large;
+    padding:10px;
 }
 .about-us .content .read-more{
     border:0; 

@@ -119,9 +119,11 @@ function scroll_summary(){
     if(document.documentElement.scrollTop >100 && document.documentElement.scrollTop <1370){
         document.querySelector('.wrap-header').style.position='fixed';
         document.querySelector('.wrap-header').style.top='0';
+        document.querySelector('.menu-icon').style.backgroundColor='rgb(40, 37, 54)';
     }
     else if(document.documentElement.scrollTop <70){
         document.querySelector('.wrap-header').style.position='relative';
+        document.querySelector('.menu-icon').style.backgroundColor='unset';
     }
     else if(document.documentElement.scrollTop >1670){
             if(services_number<6){
