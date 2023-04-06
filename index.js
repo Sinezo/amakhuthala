@@ -3,12 +3,10 @@ var read=1;
 function READ_MORE_ABOUT(){
     if(read==1){
         document.querySelector('#read-more').style.display='block';
-        document.querySelector('.read-more').innerHTML='Show less';
         read=0;
     }
     else{
         document.querySelector('#read-more').style.display='none';
-        document.querySelector('.read-more').innerHTML='Read more'
         read=1;
     }
 }
@@ -116,7 +114,7 @@ var projects_number=0;
 
 window.onscroll=function(){scroll_summary()};
 function scroll_summary(){
-    if(document.documentElement.scrollTop >100 && document.documentElement.scrollTop <1370){
+    if(document.documentElement.scrollTop >200 && document.documentElement.scrollTop <1370){
         document.querySelector('.wrap-header').style.position='fixed';
         document.querySelector('.wrap-header').style.top='0';
         document.querySelector('.menu-icon').style.backgroundColor='rgb(40, 37, 54)';

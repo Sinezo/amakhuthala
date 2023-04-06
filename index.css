@@ -184,17 +184,23 @@ nav .hire-us-btn{
     padding:20px;
 }
 .us-container .specialize{
-    color:rgb(224, 95, 21);
+    color:chocolate;
 }
 .us-container .us-message{
     padding:10px;
-    padding:10px;
+}
+.us-container .period{
+    font-size: small;
+    padding:10px 2px;
+    width:100%;
+    font-weight: 600;
+    color:rgb(139, 138, 138);
 }
 .us-container .us-message img{
     width:100%;
 }
 .us-message .decor{
-    color:rgb(230, 127, 31);
+    color:chocolate;
 }
 .us-message .buttons{
     padding:20px 0;
@@ -205,7 +211,7 @@ nav .hire-us-btn{
     width:40%;
     border-radius: 4px;
     font-weight: 600;
-    background-color: chocolate;
+    background-color:chocolate;
     color:white;
     border:1px solid;
 }
@@ -226,6 +232,102 @@ nav .hire-us-btn{
     cursor:pointer;
     color:rgb(202, 91, 17);
 }
+
+/*styling about-us*/
+.about-us{
+    background-color: unset;
+    padding:20px;
+    margin: 10px 10px 10px 10px;
+    box-shadow: 1px 1px 3px lightgray;
+}
+.about-us .spanel{
+    font-size:small;
+    color:rgb(139, 138, 138);
+}
+.about-us .content{
+    padding:10px;
+}
+.about-us .content h4{
+    text-transform:capitalize;
+    color:chocolate;
+    width:fit-content;
+    font-size:larger;
+    padding:10px 0;
+}
+.about-us .content .read-more{
+    border:0; 
+    background-color:unset;
+    padding:10px;
+    border-radius:4px; 
+    color:rgb(211, 103, 30);
+    font-weight: 600;
+}
+.about-us .content .read-more:hover{
+    cursor: pointer;
+    color:rgb(163, 79, 22); 
+}
+#read-more{
+    padding:10px;
+    box-shadow: 1px 1px 4px lightgrey;
+}
+#read-more{
+    display:none;
+}
+.about-us a{
+    color:rgb(221, 125, 0);
+}
+
+/*styling brag-box*/
+.brag-box{
+    padding:20px;
+    text-align: center;
+}
+
+.brag-box .once{
+    border:1px solid rgb(241, 238, 238);
+    margin-bottom: 40px;
+}
+.brag-box .once-icon{
+    border-bottom:1px solid rgb(241, 238, 238);
+    padding:30px;
+    font-size: 50px;
+    color:chocolate;
+}
+.brag-box .once-message{
+    padding:20px;
+}
+
+
+
+.brag-box .mark{
+    border:1px solid rgb(241, 238, 238);
+    margin-bottom: 40px;
+}
+.brag-box .mark-icon{
+    border-bottom:1px solid rgb(241, 238, 238);
+    padding:30px;
+    font-size: 50px;
+    color:rgb(102, 210, 30);
+}
+.brag-box .mark-message{
+    padding:20px;
+}
+
+
+.brag-box .magic{
+    border:1px solid rgb(241, 238, 238);
+    margin-bottom: 40px;
+}
+.brag-box .magic-icon{
+    border-bottom:1px solid rgb(241, 238, 238);
+    padding:30px;
+    font-size: 50px;
+    color:rgb(71, 103, 145);
+}
+.brag-box .magic-message{
+    padding:20px;
+}
+
 /*styling hire-us-container*/
 .hire-us-container{
     height:0;
@@ -361,47 +463,7 @@ video{
     cursor: pointer;
     background-color: rgb(40, 170, 40);
 }
-/*styling about-us*/
-.about-us{
-    background-color: unset;
-    padding:20px;
-    margin: 10px 10px 10px 10px;
-    box-shadow: 1px 1px 3px lightgray;
-}
 
-.about-us .content{
-    padding:10px;
-}
-.about-us .content h4{
-    text-transform:capitalize;
-    color:rgb(185, 116, 26);
-    width:fit-content;
-    text-align:center;
-    font-size:x-large;
-    padding:10px;
-}
-.about-us .content .read-more{
-    border:0; 
-    background-color:unset;
-    padding:10px;
-    border-radius:4px; 
-    color:rgb(211, 103, 30);
-    font-weight: 600;
-}
-.about-us .content .read-more:hover{
-    cursor: pointer;
-    color:rgb(163, 79, 22); 
-}
-#read-more{
-    padding:10px;
-    box-shadow: 1px 1px 4px lightgrey;
-}
-#read-more{
-    display:none;
-}
-.about-us a{
-    color:rgb(221, 125, 0);
-}
 /*stylinf why-us*/
 .why-us{
     padding:0 10px;
