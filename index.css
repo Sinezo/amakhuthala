@@ -62,7 +62,7 @@ nav .hire-us-btn{
     width:0;
     bottom:0;
     top:0;
-    background-color: rgb(211, 103, 30);
+    background-color: rgb(40, 37, 54);
     overflow: hidden;
     font-size: x-large;
     color:rgb(255, 255, 255);
@@ -80,7 +80,7 @@ nav .hire-us-btn{
     padding:15px;
     font-size: x-large;
     width:fit-content;
-    color:rgb(51, 49, 49);
+    color:rgb(223, 210, 210);
     position:absolute;
 }
 .menu-wrapper .close:hover{
@@ -97,7 +97,7 @@ nav .hire-us-btn{
     width:max-content
 }
 .menu ul li:hover{
-    color:rgb(41, 40, 40);
+    color:rgb(226, 191, 77);
     cursor: pointer;
 }
 .menu ul li i{
@@ -194,7 +194,7 @@ nav .hire-us-btn{
     width:100%;
 }
 .us-message .decor{
-    color:chocolate;
+    color:rgb(230, 127, 31);
 }
 .us-message .buttons{
     padding:20px 0;
@@ -270,7 +270,6 @@ nav .hire-us-btn{
 /*styling video*/
 .video{
     width:100%;
-    background-color: rgb(202, 113, 24);
 }
 video{
     width:95%;
