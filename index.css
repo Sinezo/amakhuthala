@@ -614,19 +614,30 @@ nav .hire-us-btn{
     box-shadow: 1px 1px 3px lightgray;
     margin-bottom: 20px;
 }
+.services .elec-maintenance div{
+    padding: 0 5px;
+}
 .services .elec-design{
     box-shadow: 1px 1px 3px lightgray;
     margin-bottom: 20px;
+}
+.services .elec-design div{
+    padding: 0 5px;
 }
 .services .electronic-design{
     box-shadow: 1px 1px 3px lightgray;
     margin-bottom: 20px;
 }
+.services .electronic-design div{
+    padding:0 5px;
+}
 .services .domestic-installation{
     box-shadow: 1px 1px 3px lightgray;
     margin-bottom: 20px;
 }
-
+.services .domestic-installation div{
+    padding:0 5px;
+}
 /*styling our-team*/
 .our-team{
     background-color: rgb(255, 255, 255);
