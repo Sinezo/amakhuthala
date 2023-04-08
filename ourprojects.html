@@ -18,6 +18,11 @@
             margin:0;
             padding:0;
         }
+        .menu .our-projects{
+            padding:10px;
+            border-bottom: 2px solid grey;
+            color:rgb(226, 191, 77);
+        }
         .wrapper{
             padding:20px;
         }
@@ -52,13 +57,7 @@
 
     <!--HEADER WRAPPER-->
     <div class="wrap-header">
-        <!--HEADER-->
-<header>
-    <div class="website-name" onclick="window.location='index.html'"><i class="fa-brands fa-think-peaks"></i></i> Amakhuthala
-    <div class="full-info">Electrical Design & installation</div>
-    </div>
-</header>
-
+    
 <!--MENU ICON-->
 <div class="menu-icon">
     <div class="wrap-menu-bars">
@@ -103,8 +102,10 @@
         <div class="wrap">
             <div class="menu">
                 <ul>
+                
+                    <li onclick="window.location='index.html'">Home</li>
                     <li onclick="Ourteam()"> Our Team</li>
-                    <li onclick="window.location='ourprojects.html'"></i> Our Projects</li>
+                    <li onclick="window.location='ourprojects.html'" class="our-projects"></i> OUR PROJECTS</li>
                     <li onclick="window.location='e_learning.html'">E-Learning</li>
                     <li onclick="window.location='ourclients.html'"> Our Clients</li>
                 </ul>

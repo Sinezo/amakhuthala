@@ -83,6 +83,11 @@ nav .hire-us-btn{
     color:rgb(223, 210, 210);
     position:absolute;
 }
+.menu .home{
+    padding:10px;
+    border-bottom: 2px solid grey;
+    color:rgb(226, 191, 77);
+}
 .menu-wrapper .close:hover{
     color:rgb(185, 15, 15);
     cursor: pointer;
@@ -97,7 +102,7 @@ nav .hire-us-btn{
     width:max-content
 }
 .menu ul li:hover{
-    color:rgb(226, 191, 77);
+    color:rgb(226, 119, 77);
     cursor: pointer;
 }
 .menu ul li i{
@@ -275,6 +280,50 @@ nav .hire-us-btn{
 }
 .about-us a{
     color:rgb(221, 125, 0);
+}
+
+
+/*styling services*/
+.services{
+    margin:10px;
+    font-weight: 600;
+}
+.services .content{
+    padding:30px;
+    background-color:rgb(255, 255, 255); 
+    border-radius: 10px;
+    margin:10px
+}
+.services img{
+    width:100%;
+}
+.services .elec-maintenance{
+    box-shadow: 1px 1px 3px lightgray;
+    margin-bottom: 20px;
+}
+.services .elec-maintenance div{
+    padding: 0 5px;
+}
+.services .elec-design{
+    box-shadow: 1px 1px 3px lightgray;
+    margin-bottom: 20px;
+}
+.services .elec-design div{
+    padding: 0 5px;
+}
+.services .electronic-design{
+    box-shadow: 1px 1px 3px lightgray;
+    margin-bottom: 20px;
+}
+.services .electronic-design div{
+    padding:0 5px;
+}
+.services .domestic-installation{
+    box-shadow: 1px 1px 3px lightgray;
+    margin-bottom: 20px;
+}
+.services .domestic-installation div{
+    padding:0 5px;
 }
 
 /*styling brag-box*/
@@ -551,40 +600,74 @@ nav .hire-us-btn{
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
-    text-align:center ;
     gap:10px;
-    box-shadow: 1px 1px 3px lightgray;
 }
 .summary h3{
     font-size: x-large;
     color:rgb(211, 103, 30);
+}
+.summary i{
+    color:rgb(206, 204, 201);
+    font-size:x-large;
+}
+.summary div div{
+    float:right;
+    margin-top:-70px;
+}
+.summary div div i{
+    font-size:50px;
+    color:rgb(212, 190, 147);
 }
 .sum-1{
     padding:30px;
     background-color: rgb(255, 255, 255);
     margin-bottom: 30px;
     width:200px;
-    border:1px solid rgb(245, 242, 242);
+    box-shadow:1px 1px 3px lightgray;
+    transform:skew(20deg);
+}
+.sum-1:hover{
+    box-shadow:1px 1px 3px rgb(168, 165, 165);
+    transform:skew(0deg);
+    cursor: pointer;
 }
 .sum-2{
     padding:30px;
     background-color: rgb(255, 255, 255);
     margin-bottom: 30px;
     width:200px;
-    border:1px solid rgb(245, 242, 242);
+    box-shadow:1px 1px 3px lightgray;
+    transform:skew(-20deg);
+}
+.sum-2:hover{
+    box-shadow:1px 1px 3px rgb(168, 165, 165);
+    transform:skew(0deg);
+    cursor: pointer;
 }
 .sum-3{
     padding:30px;
     background-color: rgb(255, 255, 255);
     margin-bottom: 30px;
     width:200px;
-    border:1px solid rgb(245, 242, 242);
+    box-shadow:1px 1px 3px lightgray;
+    transform:skew(20deg);
+}
+.sum-3:hover{
+    box-shadow:1px 1px 3px rgb(168, 165, 165);
+    transform:skew(0deg);
+    cursor: pointer;
 }
 .sum-4{
     padding:30px;
     background-color: rgb(255, 255, 255);
     width:200px;
-    border:1px solid rgb(245, 242, 242);
+    box-shadow:1px 1px 3px lightgray;
+    transform:skew(-20deg);
+}
+.sum-4:hover{
+    box-shadow:1px 1px 3px rgb(168, 165, 165);
+    transform:skew(0deg);
+    cursor: pointer;
 }
 /*styling more-about-us*/
 .more-about-us{
@@ -596,48 +679,7 @@ nav .hire-us-btn{
 .more-about-us p{
     padding:20px;
 }
-/*styling services*/
-.services{
-    margin:10px;
-    font-weight: 600;
-}
-.services .content{
-    padding:30px;
-    background-color:rgb(255, 255, 255); 
-    border-radius: 10px;
-    margin:10px
-}
-.services img{
-    width:100%;
-}
-.services .elec-maintenance{
-    box-shadow: 1px 1px 3px lightgray;
-    margin-bottom: 20px;
-}
-.services .elec-maintenance div{
-    padding: 0 5px;
-}
-.services .elec-design{
-    box-shadow: 1px 1px 3px lightgray;
-    margin-bottom: 20px;
-}
-.services .elec-design div{
-    padding: 0 5px;
-}
-.services .electronic-design{
-    box-shadow: 1px 1px 3px lightgray;
-    margin-bottom: 20px;
-}
-.services .electronic-design div{
-    padding:0 5px;
-}
-.services .domestic-installation{
-    box-shadow: 1px 1px 3px lightgray;
-    margin-bottom: 20px;
-}
-.services .domestic-installation div{
-    padding:0 5px;
-}
+
 /*styling our-team*/
 .our-team{
     background-color: rgb(255, 255, 255);

@@ -18,6 +18,11 @@
             margin: 0;
             padding:0;
         }
+        .menu .online-learning{
+        padding:10px;
+        border-bottom: 2px solid grey;
+        color:rgb(226, 191, 77);
+        }
         .picture{
             background-image: url('Screenshot_20230401-105052_Gallery.jpg');
             background-size: contain;
@@ -198,13 +203,6 @@ footer{
 
     <!--HEADER WRAPPER-->
     <div class="wrap-header">
-        <!--HEADER-->
-        <header>
-            <div class="website-name" onclick="window.location='index.html'"><i class="fa-brands fa-think-peaks"></i></i> Amakhuthala
-            <div class="full-info">Electrical Design & installation</div>
-            </div>
-        </header>
-
             <!--MENU ICON-->
             <div class="menu-icon">
                 <div class="wrap-menu-bars">
@@ -344,9 +342,10 @@ footer{
         <div class="wrap">
             <div class="menu">
                 <ul>
+                    <li onclick="window.location='index.html'">Home</li>
                     <li onclick="Ourteam()"> Our Team</li>
                     <li onclick="window.location='ourprojects.html'"></i> Our Projects</li>
-                    <li onclick="window.location='e_learning.html'">E-Learning</li>
+                    <li onclick="window.location='e_learning.html'" class="online-learning">E-LEARNING</li>
                     <li onclick="window.location='ourclients.html'"> Our Clients</li>
                 </ul>
 
@@ -391,12 +390,14 @@ function MENU(){
 //ONSCROLL
 window.onscroll=function(){scroll_summary()};
 function scroll_summary(){
-    if(document.documentElement.scrollTop >500 && document.documentElement.scrollTop <1370){
+    if(document.documentElement.scrollTop >100 && document.documentElement.scrollTop <1370){
         document.querySelector('.wrap-header').style.position='fixed';
         document.querySelector('.wrap-header').style.top='0';
+        document.querySelector('.menu-icon').style.backgroundColor='rgb(40, 37, 54)';
     }
-    else if(document.documentElement.scrollTop <400){
+    else if(document.documentElement.scrollTop <200){
         document.querySelector('.wrap-header').style.position='relative';
+        document.querySelector('.menu-icon').style.backgroundColor='unset';
     }
     setTimeout('scroll_summary()',100)
 }
