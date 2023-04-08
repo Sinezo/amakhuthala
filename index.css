@@ -34,6 +34,7 @@ input{
     border:0;
     font-weight: 600;
     box-shadow:1px 1px 3px lightgray;
+    text-align: start;
 }
 .wrap-header .request-design:hover{
     cursor: pointer;
