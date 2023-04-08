@@ -24,6 +24,21 @@ input{
     width:100%;
     z-index:1;
 }
+.wrap-header .request-design{
+    padding:10px;
+    width:50%;
+    float:left;
+    margin:12px 0 0 10px;
+    background-color: rgb(12, 129, 184);
+    color:white;
+    border:0;
+    font-weight: 600;
+    box-shadow:1px 1px 3px lightgray;
+}
+.wrap-header .request-design:hover{
+    cursor: pointer;
+    background-color: rgb(18, 117, 163);
+}
 header img{
     width:100%;
 }
