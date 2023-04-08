@@ -702,7 +702,7 @@ nav .hire-us-btn{
 .our-team{
     background-color: rgb(255, 255, 255);
     padding:20px;
-    margin:50px 10px;    
+    margin:50px 10px;
 }
 .our-team h3{
     text-align: center;
@@ -718,10 +718,12 @@ nav .hire-us-btn{
 }
 .our-team p{
     padding:10px;
-    font-size: medium;
 }
 .our-team a{
     color:rgb(177, 120, 67);
+}
+.our-team b{
+    color:rgb(156, 156, 156);
 }
 .our-team .read-more{
     border:0; 
