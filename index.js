@@ -118,8 +118,8 @@ function scroll_summary(){
         document.querySelector('.wrap-header').style.position='fixed';
         document.querySelector('.wrap-header').style.top='0';
         document.querySelector('.menu-icon').style.backgroundColor='rgb(40, 37, 54)';
-        document.querySelector('.request-design').style.boxShadow='0 0 0 0';
-        document.querySelector('.request-design').style.backgroundColor='chocolate';
+        document.querySelector('.request-design').style.boxShadow='1px 1px 3px grey';
+        document.querySelector('.request-design').style.backgroundColor='unset';
     }
     else if(document.documentElement.scrollTop <70){
         document.querySelector('.wrap-header').style.position='relative';

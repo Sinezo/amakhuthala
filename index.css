@@ -4,20 +4,20 @@
 }
 /*styling body*/
 body{
-    font-family: 'Roboto', sans-serif;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: rgb(255, 255, 255);
     color:rgb(85, 84, 84);
     line-height: 30px;
     font-weight:100;
 }
 button{
-    font-family: 'Roboto', sans-serif;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 100;
 }
 input{
-    font-family: 'Roboto', sans-serif;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-/*font-family: 'Fredoka', sans-serif;*/
+/*font-family: 'Roboto', sans-serif;*/
 
 /*styling header*/
 .wrap-header{
@@ -87,6 +87,7 @@ nav .hire-us-btn{
     text-align:center;
     transition: all 200ms ease-in-out;
     z-index:2;
+    font-family: 'Roboto', sans-serif;
 }
 .menu-wrapper .wrap{
     display:flex;
@@ -213,7 +214,7 @@ nav .hire-us-btn{
     padding:10px;
 }
 .us-container .period{
-    font-size: small;
+    font-size: 11px;
     padding:10px 2px;
     width:100%;
     font-weight: 600;
@@ -225,57 +226,71 @@ nav .hire-us-btn{
 .us-message .decor{
     color:chocolate;
 }
+.us-message h2{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
 .us-message .buttons{
     padding:20px 0;
     margin-top:30px;
 }
 .us-message .hire-us{
-    padding:10px;
+    padding:13px;
     width:40%;
     border-radius: 4px;
     font-weight: 600;
-    background-color:chocolate;
+    background-color:rgb(109, 209, 78);
     color:white;
     border:1px solid;
 }
 .us-message .hire-us:hover{
     cursor: pointer;
-    background-color: rgb(190, 94, 25);
+    background-color: rgb(113, 190, 25);
 }
 .us-message .call{
-    padding:10px;
     width:40%;
     border-radius: 4px;
     font-weight: 600;
     background-color: unset;
     color:rgb(243, 106, 14);
     border:1px solid;
+    padding:10px 0;
 }
 .us-message .call:hover{
     cursor:pointer;
     color:rgb(202, 91, 17);
 }
-
+.us-message .icon{
+    color:white;
+    background-color: chocolate;
+    padding:10px
+}
+.us-message .number{
+    padding:10px;
+}
 /*styling about-us*/
 .about-us{
     background-color: unset;
-    padding:20px;
-    margin: 10px 10px 10px 10px;
-    box-shadow: 1px 1px 3px lightgray;
 }
-.about-us .spanel{
-    font-size:small;
-    color:rgb(139, 138, 138);
+.about-us-header{
+    background-color: rgb(43, 43, 44);
 }
-.about-us .content{
-    padding:10px;
-}
-.about-us .content h4{
-    text-transform:capitalize;
+.about-us-header h4{
     color:chocolate;
     width:fit-content;
     font-size:larger;
-    padding:10px 0;
+    text-align: center;
+    padding:0px 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+.about-us-header .spanel{
+    font-size:small;
+    color:rgb(139, 138, 138);
+    padding:20px 10px;
+}
+.about-us .content{
+    padding:10px;
 }
 .about-us .content .read-more{
     border:0; 
@@ -436,106 +451,8 @@ nav .hire-us-btn{
     border:0;
     border-radius:3px;
 }
-/*styling ask-question*/
-.ask-question{
-    padding:20px;
-    margin-top: 20px;
-    box-shadow: 1px 1px 3px lightgray;
-    background-image: url('undraw_Questions_re_1fy7.png');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: 400;
-    height:250px
-}
-.ask-question p{
-    padding:10px;
-}
-.ask-question h3{
-    color:rgb(231, 133, 40);
-}
-.ask-question button{
-    width:50%;
-    padding:10px;
-    background-color: rgb(192, 115, 51);
-    color:rgb(255, 255, 255);
-    border:1px solid;
-    border-radius: 3px;
-    font-weight: 300;
-}
 
-/*styling pop-up-help*/
-.pop-up-help{
-    margin:30px;
-    position: fixed;
-    background-color: rgb(255, 255, 255);
-    overflow:hidden;
-    height:0;
-    transition: margin 200ms ease-in-out;
-    font-size:small;
-    bottom:20px;
-    box-shadow: 1px 1px 3px;
-    z-index: 1;
-}
-.pop-up-help p{
-    font-weight: 600;
-}
-.pop-up-help ul{
-    list-style-position: inside;
-    padding:10px;
-}
-.pop-up-help .close{
-        text-align: end;
-        font-size: large;
-        padding:5px;
-        margin:-5px 0 0 0;
-}
-.pop-up-help .close i:hover{
-    color:rgb(190, 51, 16);
-    cursor: pointer;
-}
-.pop-up-help .note{
-    border-bottom: 7px solid;
-    width:fit-content;
-    font-size: x-large;
-    padding:3px 3px 10px 3px;
-    
-}
-.pop-up-help .buttons{
-    padding:20px;
-    text-align: center;
-}
-.pop-up-help .cancel{
-    padding:10px;
-    background-color: unset;
-    border:1px solid;
-    border-radius: 4px;
-    color:rgb(248, 133, 2);
-    width:40%;
-    font-weight: 600;
-}
-.pop-up-help .cancel:hover{
-    cursor: pointer;
-    color:rgb(248, 10, 2);
-}
-.pop-up-help .go{
-    padding:10px;
-    background-color: rgb(26, 121, 26);
-    border-radius: 4px;
-    border:0;
-    color:white;
-    width:40%;
-    font-weight: 600;
-}
-.pop-up-help .go:hover{
-    cursor: pointer;
-    background-color: rgb(40, 170, 40);
-}
-
-/*stylinf why-us*/
+/*styling why-us*/
 .why-us{
     padding:0 10px;
     box-shadow: 1px 1px 3px lightgray;
@@ -564,6 +481,7 @@ nav .hire-us-btn{
     padding:0 0 0 5px;
     text-align: center;
     background-color: rgb(133, 130, 134);
+    font-family: 'Roboto', sans-serif;
 }
 .why-us .choose-brief{
     color:rgb(230, 227, 223);
@@ -614,7 +532,7 @@ nav .hire-us-btn{
     background-color: rgb(255, 255, 255);
     padding:20px;
     margin: 50px 10px 10px 10px;
-    color:rgb(61, 60, 59);
+    color:rgb(109, 209, 78);
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -630,11 +548,10 @@ nav .hire-us-btn{
 }
 .summary div div{
     float:right;
-    margin-top:-70px;
 }
 .summary div div i{
     font-size:50px;
-    color:rgb(212, 190, 147);
+    color:rgb(238, 233, 223);
 }
 .sum-1{
     padding:30px;
@@ -642,7 +559,11 @@ nav .hire-us-btn{
     margin-bottom: 30px;
     width:200px;
     box-shadow:1px 1px 3px lightgray;
-    transform:skew(20deg);
+    transform:skew(10deg);
+}
+.summary p{
+    font-size: smaller;
+    color:rgb(126, 125, 123);
 }
 .sum-1:hover{
     box-shadow:1px 1px 3px rgb(168, 165, 165);
@@ -655,7 +576,7 @@ nav .hire-us-btn{
     margin-bottom: 30px;
     width:200px;
     box-shadow:1px 1px 3px lightgray;
-    transform:skew(-20deg);
+    transform:skew(-10deg);
 }
 .sum-2:hover{
     box-shadow:1px 1px 3px rgb(168, 165, 165);
@@ -668,7 +589,7 @@ nav .hire-us-btn{
     margin-bottom: 30px;
     width:200px;
     box-shadow:1px 1px 3px lightgray;
-    transform:skew(20deg);
+    transform:skew(10deg);
 }
 .sum-3:hover{
     box-shadow:1px 1px 3px rgb(168, 165, 165);
@@ -680,7 +601,7 @@ nav .hire-us-btn{
     background-color: rgb(255, 255, 255);
     width:200px;
     box-shadow:1px 1px 3px lightgray;
-    transform:skew(-20deg);
+    transform:skew(-10deg);
 }
 .sum-4:hover{
     box-shadow:1px 1px 3px rgb(168, 165, 165);
@@ -716,14 +637,27 @@ nav .hire-us-btn{
 .our-team .founder img{
     width:100%;
 }
-.our-team p{
+.our-team  .text{
     padding:10px;
+    font-size:small;
 }
 .our-team a{
-    color:rgb(177, 120, 67);
+    color:rgb(172, 202, 61);
+}
+.our-team .member {
+    border:1px solid rgb(240, 234, 234);
+    padding:10px 10px 10px 0;
+    color:rgb(226, 177, 41);
+}
+.our-team .member span{
+    padding-left: 10px;
 }
 .our-team b{
     color:rgb(156, 156, 156);
+    border:1px solid rgb(240, 234, 234);
+    border-left:0;
+    padding:10px 10px;
+    font-family:monospace;
 }
 .our-team .read-more{
     border:0; 
