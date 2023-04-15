@@ -42,8 +42,18 @@ input{
 .wrap-header .request-design i{
     margin:2px 1px 0 5px;
 }
+header{
+    display:flex;
+    position:absolute;
+    padding:10px;
+    margin-top: 10px;
+}
+header .web-name{
+    font-family: 'Roboto', sans-serif;
+    font-size: larger;
+}
 header img{
-    width:100%;
+    width:25px;
 }
 nav{
     float:right;
@@ -150,6 +160,7 @@ nav .hire-us-btn{
     padding:20px;
     height:17px;
     background-color:unset;
+    box-shadow:1px 1px 3px;
 }
 .bar-wrap{
     padding:10px 10px 5px 10px; 
@@ -319,7 +330,7 @@ nav .hire-us-btn{
 /*styling services*/
 .services{
     margin:10px;
-    font-weight: 600;
+    font-weight: 300;
 }
 .services .content{
     padding:30px;
@@ -457,22 +468,18 @@ nav .hire-us-btn{
     padding:0 10px;
     box-shadow: 1px 1px 3px lightgray;
     margin: 10px;
+
 }
-.why-us div{
-    background-color: rgb(255, 255, 255);
-    padding:15px;
-}
+
 .reliability,.quality,.protection{
-    box-shadow:1px 1px 3px lightgray;
     margin-bottom: 20px;
-}
-.why-us button img{
-    width:100%;
-    height: 100%;
-    border-radius:50%;
 }
 .why-us ul{
     list-style: none;
+}
+.why-us h2{
+    font-weight:100;
+    color:rgb(34, 202, 34);
 }
 .why-us  h3{
     text-transform:capitalize;
@@ -480,7 +487,7 @@ nav .hire-us-btn{
     color:rgb(235, 238, 231);
     padding:0 0 0 5px;
     text-align: center;
-    background-color: rgb(133, 130, 134);
+    background-color: rgb(228, 170, 104);
     font-family: 'Roboto', sans-serif;
 }
 .why-us .choose-brief{
@@ -488,27 +495,10 @@ nav .hire-us-btn{
     font-size: small;
     text-transform:unset;
     text-align: center;
-    background-color: rgb(133, 130, 134);
+    background-color: rgb(228, 170, 104);
 }
 .why-us ul i{
     color:rgb(85, 84, 82);
-}
-.why-us button{
-    height:40px;
-    width:40px;
-    background-color: unset;
-    border:1px solid rgb(236, 236, 227);
-    border-radius: 50%;
-    margin:10px;
-    background-color: rgb(241, 245, 241);
-}
-.why-us p{
-    padding: 0px 0px 0 72px;
-}
-.why-us span{
-    color:rgb(211, 103, 30);
-    text-transform:uppercase;
-    font-weight:600;
 }
 .learn-more{
     text-align:center;
@@ -518,12 +508,12 @@ nav .hire-us-btn{
     padding:10px;
     width:100%;
     border-radius: 5px ;
-    background-color: rgb(184, 84, 26);
+    background-color: rgb(103, 194, 42);
     color:rgb(255, 255, 255);
     border:0;
 }
 .learn-more-btn:hover{
-    background-color: rgb(185, 82, 14);
+    background-color: rgb(28, 185, 14);
     color:white;
     cursor: pointer;
 }
