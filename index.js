@@ -64,6 +64,7 @@ function HIRE_US(){
         document.querySelector('.hire-us-container').style.padding='20px';
         document.querySelector('.hire-us-container').style.top="60px";
         document.querySelector('.hire-us-container').style.border='1px solid rgb(231, 227, 227)';
+        window.location='#';
         pop_hire=0;
     }
     else{
@@ -165,24 +166,5 @@ function MORE_ABOUT_US(){
     else{
         document.querySelector('.more-about-us').style.display='none';
         more_state=1;
-    }
-}
-
-//REQUEST PROJECT
-var request_state=1;
-function REQUEST_PROJECT(){
-    if(request_state==1){
-        document.querySelector('.request-design-box').style.width='80%';
-        document.querySelector('.request-design-box').style.marginTop='-360px';
-        document.querySelector('.request-design-box').style.border="1px solid lightgrey";
-        document.querySelector('.request-design-box').style.padding='10px';
-        request_state=0;
-    }
-    else{
-        document.querySelector('.request-design-box').style.width='0';
-        document.querySelector('.request-design-box').style.marginTop='360px';
-        document.querySelector('.request-design-box').style.border="0";
-        document.querySelector('.request-design-box').style.padding='0';
-        request_state=1;
     }
 }

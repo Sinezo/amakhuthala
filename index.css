@@ -524,7 +524,7 @@ nav .hire-us-btn{
     padding:10px;
     width:100%;
     border-radius: 5px ;
-    background-color: rgb(54, 63, 48);
+    background-color: rgb(54, 54, 53);
     color:chocolate;
     border:0;
 }
@@ -544,7 +544,7 @@ nav .hire-us-btn{
     gap:10px;
 }
 .summary span{
-    color:rgb(109, 209, 78);
+    color:rgb(131, 192, 113);
     font-family: 'Roboto', sans-serif;
 }
 .summary h3{
