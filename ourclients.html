@@ -4,8 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" href="index.css">
+
+    <script src="https://kit.fontawesome.com/dd42663f14.js" crossorigin="anonymous"></script> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,15 +19,65 @@
     <style>
         body{
             background-color: rgb(255, 255, 255);
-            color:rgb(224, 95, 21);
         }
-        h1{
-            background-color: rgb(255, 255, 255);
-            padding:10px;
+        .menu .our-clients{
+        padding:10px;
+        border-bottom: 2px solid grey;
+        color:rgb(226, 191, 77);
+        }
+        p{
+            text-align: center;
+            padding:30px;
+        }
+        p i{
+            font-size: 40px;
         }
     </style>
 </head>
 <body>
-    <h1>Sorry!! There's nothing to show at the moment...</h1>
+    <!--header-->
+    <header onclick="window.location='index.html'">
+        <div class="image"><img src="Picture1.png" alt=""></div> <div class="web-name">Amakhuthala</div>
+     </header>
+
+     <!--HEADER WRAPPER-->
+     <div class="wrap-header">
+        <!--MENU ICON-->
+        <div class="menu-icon">
+            <div class="wrap-menu-bars">
+                <button class="sign-in" onclick="window.location='student_portal.html'"><i class="fa-regular fa-user"></i></button>
+
+                <div class="bar-wrap" onclick="MENU()">
+                    <div class="bar-one"></div>
+                    <div class="bar-two"></div>
+                    <div class="bar-three"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   <p>
+    <i class="fa-solid fa-road-circle-exclamation"></i><br>
+    There's nothing to show at the moment.
+   </p>
+
+   <!--MENU WRAPPER-->
+   <div class="menu-wrapper">
+    <div class="close" onclick="MENU()"><i class="fa-solid fa-xmark"></i></div>
+    <div class="wrap">
+        <div class="menu">
+            <ul>
+                <li>Home</li>
+                <li onclick="Ourteam()"> Our Team</li>
+                <li onclick="window.location='ourprojects.html'"></i> Our Projects</li>
+                <li onclick="window.location='e_learning.html'">E-Learning</li>
+                <li onclick="window.location='ourclients.html'" class="our-clients"> Our Clients</li>
+            </ul>
+
+        </div>
+    </div>
+</div>
+
+<script src="index.js"></script>
 </body>
 </html>
