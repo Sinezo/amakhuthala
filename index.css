@@ -384,9 +384,10 @@ nav .hire-us-btn{
 .brag-box .once{
     box-shadow: 1px 1px 3px lightgray;
     margin-bottom: 40px;
+    display:flex;
+    align-items: center;
 }
 .brag-box .once-icon{
-    border-bottom:1px solid rgb(241, 238, 238);
     padding:30px;
     font-size: 50px;
     color:chocolate;
@@ -400,9 +401,10 @@ nav .hire-us-btn{
 .brag-box .mark{
     box-shadow: 1px 1px 3px lightgray;
     margin-bottom: 40px;
+    display:flex;
+    align-items: center;
 }
 .brag-box .mark-icon{
-    border-bottom:1px solid rgb(241, 238, 238);
     padding:30px;
     font-size: 50px;
     color:rgb(102, 210, 30);
@@ -415,9 +417,10 @@ nav .hire-us-btn{
 .brag-box .magic{
     box-shadow: 1px 1px 3px lightgray;
     margin-bottom: 40px;
+    display:flex;
+    align-items: center;
 }
 .brag-box .magic-icon{
-    border-bottom:1px solid rgb(241, 238, 238);
     padding:30px;
     font-size: 50px;
     color:rgb(71, 103, 145);
