@@ -656,7 +656,8 @@ nav .hire-us-btn{
 .our-team .member {
     border:1px solid rgb(240, 234, 234);
     padding:10px 10px 10px 0;
-    color:rgb(226, 177, 41);
+    color:rgb(106, 192, 57);
+    font-weight:600;
 }
 .our-team .member span{
     padding-left: 10px;
@@ -680,7 +681,25 @@ nav .hire-us-btn{
     cursor: pointer;
     color:rgb(235, 152, 27);
 }
-
+.our-team .social{
+    padding: 0 20px;
+    text-align: center;
+}
+.our-team .social i{
+    font-size:30px;
+}
+.our-team .social .facebook{
+    color:rgb(49, 49, 194);
+}
+.our-team .social .call{
+    color:rgb(49, 153, 194);
+}
+.our-team .social .youtube{
+    color:rgb(196, 23, 32);
+}
+.our-team .social .whatsapp{
+    color:rgb(49, 194, 68);
+}
 /*styling footer*/
 footer{
     margin-top: 50px;
