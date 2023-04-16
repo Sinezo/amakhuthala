@@ -333,7 +333,7 @@ nav .hire-us-btn{
     font-weight: 300;
 }
 .services .content{
-    padding:30px;
+    padding:20px;
     background-color:rgb(255, 255, 255); 
     border-radius: 10px;
     margin:10px
@@ -341,33 +341,38 @@ nav .hire-us-btn{
 .services img{
     width:100%;
 }
+.services i{
+    font-size: 25px;
+    padding:10px 0;
+    color:chocolate;
+}
 .services .elec-maintenance{
     box-shadow: 1px 1px 3px lightgray;
     margin-bottom: 20px;
 }
 .services .elec-maintenance div{
-    padding: 0 5px;
+    padding: 0 20px;
 }
 .services .elec-design{
     box-shadow: 1px 1px 3px lightgray;
     margin-bottom: 20px;
 }
 .services .elec-design div{
-    padding: 0 5px;
+    padding: 0 20px;
 }
 .services .electronic-design{
     box-shadow: 1px 1px 3px lightgray;
     margin-bottom: 20px;
 }
 .services .electronic-design div{
-    padding:0 5px;
+    padding:0 20px;
 }
 .services .domestic-installation{
     box-shadow: 1px 1px 3px lightgray;
     margin-bottom: 20px;
 }
 .services .domestic-installation div{
-    padding:0 5px;
+    padding:0 20px;
 }
 
 /*styling brag-box*/
