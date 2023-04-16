@@ -110,11 +110,14 @@ nav .hire-us-btn{
     height:100%;
 }
 .menu-wrapper .close{
-    padding:15px;
-    font-size: x-large;
+    padding:10px;
+    font-size: 30px;
     width:fit-content;
     color:rgb(223, 210, 210);
     position:absolute;
+    border:2px solid;
+    border-left:0;
+
 }
 .menu .home{
     padding:10px;
