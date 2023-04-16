@@ -117,17 +117,10 @@ function scroll_summary(){
     if(document.documentElement.scrollTop >200 && document.documentElement.scrollTop <1370){
         document.querySelector('.wrap-header').style.position='fixed';
         document.querySelector('.wrap-header').style.top='0';
-        document.querySelector('.web-name').style.color='white';
-        document.querySelector('.menu-icon').style.backgroundColor='rgb(40, 37, 54)';
         document.querySelector('.request-design').style.boxShadow='1px 1px 3px grey';
-        document.querySelector('.request-design').style.backgroundColor='unset';
     }
     else if(document.documentElement.scrollTop <70){
         document.querySelector('.wrap-header').style.position='relative';
-        document.querySelector('.web-name').style.color='rgb(85, 84, 84)';
-        document.querySelector('.menu-icon').style.backgroundColor='unset';
-        document.querySelector('.request-design').style.backgroundColor='rgb(12, 129, 184)';
-        document.querySelector('.request-design').style.boxShadow='1px 1px 3px lightgray';
     }
     else if(document.documentElement.scrollTop >1670){
             if(services_number<6){

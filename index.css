@@ -54,6 +54,7 @@ header{
 header .web-name{
     font-family: 'Roboto', sans-serif;
     font-size: larger;
+    color:white; 
 }
 header img{
     width:25px;
@@ -162,7 +163,7 @@ nav .hire-us-btn{
 .menu-icon{
     padding:20px;
     height:17px;
-    background-color:unset;
+    background-color:rgb(40, 37, 54);
     box-shadow:1px 1px 3px;
 }
 .bar-wrap{
