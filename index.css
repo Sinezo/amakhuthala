@@ -473,56 +473,57 @@ nav .hire-us-btn{
 
 /*styling why-us*/
 .why-us{
-    padding:0 10px;
+    padding:0 20px;
     box-shadow: 1px 1px 3px lightgray;
     margin: 10px;
 
 }
 
 .reliability,.quality,.protection{
-    margin-bottom: 20px;
+    margin:20px 0;
+    box-shadow: 1px 1px 3px lightgray;
+    padding:20px;
 }
 .why-us ul{
     list-style: none;
 }
-.why-us h2{
+.why-us ul h2{
     font-weight:100;
-    color:rgb(34, 202, 34);
-}
-.why-us  h3{
-    text-transform:capitalize;
-    background-color: unset;
-    color:rgb(235, 238, 231);
-    padding:0 0 0 5px;
-    text-align: center;
-    background-color: rgb(228, 170, 104);
+    color:chocolate;
     font-family: 'Roboto', sans-serif;
 }
+
 .why-us .choose-brief{
-    color:rgb(230, 227, 223);
-    font-size: small;
+    color:rgb(182, 181, 178);
+    font-size: larger;
     text-transform:unset;
-    text-align: center;
-    background-color: rgb(228, 170, 104);
+    background-color: rgb(255, 255, 255);
+    font-weight:600;
+    font-style: oblique;
+    padding:20px 0;
+    border-bottom: 2px solid;
+}
+.why-us .choose-brief i{
+    color:rgb(34, 202, 34);
 }
 .why-us ul i{
     color:rgb(85, 84, 82);
 }
 .learn-more{
     text-align:center;
-    padding:0 20px;
+    padding:10px 20px;
 }
 .learn-more .learn-more-btn{
     padding:10px;
     width:100%;
     border-radius: 5px ;
-    background-color: rgb(103, 194, 42);
-    color:rgb(255, 255, 255);
+    background-color: rgb(54, 63, 48);
+    color:chocolate;
     border:0;
 }
 .learn-more-btn:hover{
-    background-color: rgb(28, 185, 14);
-    color:white;
+    background-color: rgb(43, 49, 38);
+    color:chocolate;
     cursor: pointer;
 }
 /*styling summary*/
@@ -548,8 +549,8 @@ nav .hire-us-btn{
     float:right;
 }
 .summary div div i{
-    font-size:50px;
-    color:rgb(238, 233, 223);
+    font-size:30px;
+    color:rgb(218, 217, 215);
 }
 .sum-1{
     padding:30px;
