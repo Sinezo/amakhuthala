@@ -538,11 +538,14 @@ nav .hire-us-btn{
     background-color: rgb(255, 255, 255);
     padding:20px;
     margin: 50px 10px 10px 10px;
-    color:rgb(109, 209, 78);
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
     gap:10px;
+}
+.summary span{
+    color:rgb(109, 209, 78);
+    font-family: 'Roboto', sans-serif;
 }
 .summary h3{
     font-size: x-large;
