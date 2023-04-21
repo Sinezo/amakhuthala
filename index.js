@@ -44,7 +44,6 @@ function Ourteam(){
     window.location='index.html#our-team';
 
     document.querySelector('.content-wrapper').style.margin='0';
-        document.querySelector('.content-wrapper').style.opacity='1';
         document.querySelector('.menu-wrapper').style.width='0';
 
         document.querySelector('.bar-one').style.transform='rotate(0)';
