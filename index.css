@@ -130,18 +130,21 @@ header .web-name{
 /*menu wrapper*/
 .menu-wrapper{
     text-align: center;
-    background-color: rgb(228, 228, 238);
+    background-image: url('Screenshot_20230422-083406_Gallery.jpg');
+    background-size: cover;
+    background-image: url;
     position:absolute;
     top:400px;
     height: 0;
     overflow: hidden;
-    transition: all 250ms ease-in-out;
+    transition: all 200ms ease-in-out;
     display:flex;
     justify-content: center;
     align-items: center;
     font-size: larger;
     line-height: 40px;
     bottom:0;
+    color:white
 }
 .menu-wrapper .close{
     position: absolute;
