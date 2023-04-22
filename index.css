@@ -52,6 +52,11 @@ header .web-name{
     list-style: none;
     gap:30px;
 }
+.nav-small-screen ul li:hover{
+    cursor: pointer;
+    color:rgb(240, 151, 43);
+    border-bottom:1px solid;
+}
 .nav-small-screen{
     display:none;
 }
@@ -130,7 +135,7 @@ header .web-name{
 /*menu wrapper*/
 .menu-wrapper{
     text-align: center;
-    background-image: url('Screenshot_20230422-083406_Gallery.jpg');
+    background-color:white;
     background-size: cover;
     background-image: url;
     position:absolute;
@@ -144,7 +149,7 @@ header .web-name{
     font-size: larger;
     line-height: 40px;
     bottom:0;
-    color:white
+    color:rgb(37, 37, 37);
 }
 .menu-wrapper .close{
     position: absolute;
@@ -179,6 +184,39 @@ header .web-name{
     background-color: rgb(189, 121, 21);
     box-shadow: 1px 1px 3px grey;
 }
+/*steps box*/
+.steps-box{
+    color:rgb(27, 26, 26);
+    padding:20px;
+    margin:15px;
+    border-left: 2px solid chocolate;
+    background-color: rgb(255, 255, 255);
+}
+.steps-box h4{
+    border:1px solid lightgrey;
+    padding:10px;
+    border-radius:10px;
+    font-weight:100;
+}
+.steps-box .content img{
+    width:80%;
+    border-radius: 4px;
+    margin:20px 0;
+}
+.steps-box .one .number2{
+    width:30px;
+    height:30px;
+    background-color: rgb(255, 255, 255);
+    color:chocolate;
+    box-shadow: 1px 1px 17px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:50%;
+    position:absolute;
+    margin:-40px 0 0 -35px;
+}
+
 /*SMALL SCREEN*/
 @media screen and (max-width:400px) {
 /*nav big screen*/
@@ -191,6 +229,7 @@ header .web-name{
     flex-wrap: wrap;
 
 }
+
 /*nav small screen*/
 .nav-small-screen{
     display:flex;
