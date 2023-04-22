@@ -19,256 +19,68 @@
     <title>Home | Amakhuthala</title>
 </head>
 <body>
-    <!--WRAP ALL BOX-->
-    <div class="wrap-all">
-        <!--CONTENT WRAPPER-->
+    <!--HEADER-->
+    <header onclick="window.location='index.html'">
+        <div class="image"><img src="Picture1.png" alt=""></div> <div class="web-name" id="web-name">Amakhuthala</div>
+    </header>
+
+    <!--MENU HEADER-->
+    <div class="nav-big-screen">
+        <ul>
+            <li class="home">Home</li>
+            <li>Design</li>
+            <li>Our designs</li>
+            <li>Team</li>
+            <li>E-learning</li>
+        </ul>
+    </div>
+
+    <!--MENU HEADER -SMALL SCREEN-->
+    <div class="nav-small-screen">
+        <ul>
+            <li><i class="fa-solid fa-chalkboard-user"></i></li>
+            <li><i class="fa-solid fa-compass-drafting"></i></li>
+            <li class="menu-icon"><i class="fa-solid fa-bars-staggered"></i></li>
+        </ul>
+    </div>
+
+    <!--CONTENT WRAPPER-->
     <div class="content-wrapper">
 
-        <!--HEADER WRAPPER-->
-        <div class="wrap-header">
-            <!--HEADER-->
-            <header onclick="window.location='index.html'">
-                <div class="image"><img src="Picture1.png" alt=""></div> <div class="web-name" id="web-name">Amakhuthala</div>
-            </header>
-            <!--MENU ICON-->
-            <div class="menu-icon">
-                <div class="wrap-menu-bars">
-                    <button class="sign-in" onclick="window.location='student_portal.html'"><i class="fa-regular fa-user"></i></button>
-
-                    <div class="bar-wrap" onclick="MENU()">
-                        <div class="bar-one"></div>
-                        <div class="bar-two"></div>
-                        <div class="bar-three"></div>
-                    </div>
-                </div>
+        <!--welcome box-->
+        <div class="welcome-box">
+            <p>
+                <span class="one">Electrical Enthusiasts</span><br> <span class="two">speciallizing in Electrical Design</span>
+            </p>
+            <!--search-->
+            <div class="search-box">
+                <div><input type="search" name="search" id="search"><i class="fa-solid fa-magnifying-glass"></i></div> 
             </div>
-        </div>
-
-        <!--US CONTAINER-->
-        <div class="us-container">
-            <div class="us-message">
-                <div class="top-welcome-message">
-                        <!--on top of us-message-->
-                    <h2>WE SPECIALIZE IN</h2>
-                    <h2 class="specialize">ELECTRICAL DESIGN</h2>
-                    <div class="period"><i class="fa-regular fa-clock"></i> Since 2023</div>
-                    <div class="buttons"><button class="hire-us" onclick="HIRE_US()">Hire us </button> <span class="call"><span class="icon"><i class="fa-solid fa-phone-flip"></i></span> <span class="number">+27786052462</span></span></div>
-                </div>
-
-
-                <div class="about-us">
-                        <div class="about-image"></div>
-                    <div class="content">
-                        <h3>WHO ARE WE?</h3>
-                    We are an electrical bussiness whose focus is on the design and installation 
-                        of electrical systems. We employ laws and principles of Electrical Engineering to 
-                        safely design and improve devices and systems out there. Through our thorough planning and necessary
-                        experiments, we guarantee to satisfy our customers with quality products and services. 
-        
-                    </div>
-                </div> 
-            </div>
-
-            <!--HIRE US-->
-            <div class="hire-us-container">
-                <div class="close" onclick="HIRE_US()"><i class="fa-solid fa-xmark"></i></div>
-                <p>
-                    Hello. Thank You for showing interest in hiring us to have the best of 
-                    our services.
-                </p>
-                <div class="form">
-                    <form action="POST">
-                        <input type="text" placeholder="Name"> <input type="text" placeholder="Surname">
-                        <br><input type="text" placeholder="Name of Company (optional) ">
-                        <br><label><b>Address</b></label>
-                        <br><input type="text" placeholder="Street"> <input type="text" placeholder="Surbub">
-                        <br><input type="text" placeholder="Town"> 
-                        <select name="province" id="province">
-                            <option>Province ---</option>
-                            <option value="Eastern Cape">Eastern Cape</option>
-                            <option value="Western Cape">Western Cape</option>
-                            <option value="Gauteng">Gauteng</option>
-                            <option value="North West">North West</option>
-                            <option value="Mpumalanga">Mpumalanga</option>
-                            <option value="Free State">Free State</option>
-                            <option value="Northen Cape">Northen Cape</option>
-                            <option value="Limpopo">Limpopo</option>
-                            <option value="Eastern Cape">Eastern Cape</option>
-                        </select>
-
-                        <br>
-                        <label><b>Decription of the project/task</b></label>
-                        <textarea name="description" placeholder="Write here..."></textarea>
-                        <br><br><button type="submit" class="send">Send Request</button>
-                    </form>
-                </div>
-            </div>
-        
-        </div>
-
-        <!--OUR SERVICES-->
-    <div class="services">
-        <div class="content">
-            <!--electrical maintenace-->
-            <div class="elec-maintenance">
-                <img src="Screenshot_20230406-171620_Gallery.jpg" alt="">
-                <div class="text"><h2>General Electrical Maintenance</h2>
-                    <p>
-                        We do maintenance in electrical systems, distribution of power, street lights etc.
-                        <br><i class="fa-solid fa-circle-chevron-right"></i>
-                    </p>
-                </div>
-            </div>
-
-            <!--domestic installation-->
-            <div class="domestic-installation">
-                <img src="Screenshot_20230406-171541_Gallery.jpg" alt="">
-                <div class="text"><h2>Domestic Installation</h2>
-                    <p>
-                        We design &  install control systems and distribution boards for protection and monitoring.
-                        <br><i class="fa-solid fa-circle-chevron-right"></i>
-                    </p>
-                </div>
-            </div>
-
-            <!--electrical design-->
-            <div class="elec-design">
-                <img src="Screenshot_20230406-171545_Gallery.jpg" alt="">
-                <div class="text"><h2>Electrical Design</h2>
-                    <p>
-                        With our creative and imaginative minds, we transform ideas into reallity to solve real world problems.
-                        <br><i class="fa-solid fa-circle-chevron-right"></i>
-                    </p>
-                </div>
-            </div>
-
-            <!--electronic design-->
-            <div class="electronic-design">
-                <img src="Screenshot_20230406-171551_Gallery.jpg" alt="">
-                <div class="text"><h2>Electronic Design</h2>
-                    <p>
-                        We also do electronics, designing the unbelievable, blowing minds with our impressive 
-                        and intelligent automated designs.
-                        <br><i class="fa-solid fa-circle-chevron-right"></i>
-                    </p>
-                    
-                </div>
-            </div>
-        </div>
-        <!--MORE ABOUT US-->
-        <div class="about-us-continued">
-            <div class="content">  
-           <div class="one">
-             We employ the 
-            proven electrical theories of the greatest physicists and electrical engineers, like NIKOLA TESLA.
-           </div>
-
-            <br><br> We value safety. In the process of designing and installation we follow <a href="#">NEC</a> and <a href="#b">IEC</a> standards.
-                
-                <br><br>
-                Our main objective is to outstand within the industry with the best quality and significance of our designs.
+            <!--buttons-->
+            <div class="buttons">
+                <button class="hire-us">Hire us</button> <button class="call-us"><span class="icon"><i class="fa-solid fa-phone-flip"></i></span><span class="number">+27786052462</span></button>
             </div>
         </div>
 
     </div>
-    
+
     <!--MENU WRAPPER-->
-    <div class="menu-wrapper">
-        <div class="close" onclick="MENU()"><i class="fa-solid fa-xmark"></i></div>
-        <div class="wrap">
-            <div class="menu">
-                <ul>
-                    <li class="home">HOME</li>
-                    <li onclick="Ourteam()"> Our Team</li>
-                    <li onclick="window.location='ourprojects.html'"></i> Our Projects</li>
-                    <li onclick="window.location='e_learning.html'">E-Learning</li>
-                    <li onclick="window.location='ourclients.html'"> Our Clients</li>
-                </ul>
-
+    <div class="menu-wrapper" id="menu-wrapper">
+        <div class="close"><i class="fa-solid fa-xmark"></i></div>
+        <div class="wrap-div">
+            <ul>
+                <li>Home</li>
+                <li>About Amakhuthala</li>
+                <li>Our designs</li>
+                <li>Our team</li>
+                <li>E-learning</li>
+            </ul>
+    
+            <div class="design">
+                <button>Design a project</button>
             </div>
         </div>
     </div>
-    </div>
-    </div>
-
-    <!--SUMMARY-->
-    <div class="summary">
-        <div class="sum-1">
-            <i class="fa-solid fa-people-carry-box"></i><br>
-            <span>Our Services</span>
-            <h3 class="services-number">0</h3>
-            
-            <p>
-                We offer six electrical services to  South African community. Our services are 
-                just exceptional no one can say otherwise.
-            </p>
-            <div><i class="fa-solid fa-chevron-right"></i></div>
-        </div>
-
-        <div class="sum-2">
-            <i class="fa-solid fa-handshake"></i><br>
-            <span>Our Clients</span>
-            <h3 class="clients-number">0</h3>
-
-            <p>
-                Our clients are happy and content. We have not recieved any serious complaints 
-                from them, and that is an achievement to us. 
-            </p>
-
-            <div><i class="fa-solid fa-chevron-right"></i></div>
-        </div>
-
-        <div class="sum-3">
-            <i class="fa-solid fa-people-group"></i><br>
-            <span>Employees</span>
-            <h3 class="employees-number">0</h3>
-
-            <p>
-                We are proud to say we have the best and hard working fam. In all that we do we do it as a dedicated team.
-            </p>
-
-            <div><i class="fa-solid fa-chevron-right"></i></div>
-        </div>
-
-        <div class="sum-4" onclick="window.location='ourprojects.html'">
-            <i class="fa-solid fa-microchip"></i><br>
-            <span>Our Projects</span>
-            <h3 class="projects-number">0</h3>
-
-            <p>
-                With our creative minds we bring ideas into reality and have built countless projects to solve real world problems.
-            </p>
-
-            <div><i class="fa-solid fa-chevron-right"></i></div>
-        </div>
-    </div>
-
-    <!--OUR TEAM-->
-    <div class="our-team" id="our-team">
-        <h3>OUR TEAM</h3><br>
-        <span class="member"><b>Founder </b> <span>Sinethemba Lusawana</span></span><br>
-        <div class="founder">
-            <div class="founder-wrap">
-                <img src="sinethemba.jpg" alt="">
-            </div>
-           <p>
-                <p class="text">
-                    <br>A front-end Web Developer, electrical engineering student at <a href="https://www.wsu.ac.za">Walter Sisulu University</a> and Eletcrician Apprentice at 
-                <a href="https://www.snrelectrical.co.za">SNR Electrical 
-                    and Mechanical Contractors</a>.
-                </p>
-           </p>
-           <div class="social">
-            <span class="call"><i class="fa-solid fa-square-phone-flip"></i></span>
-            <span class="facebook"><i class="fa-brands fa-square-facebook"></i></span>
-            <span class="whatsapp"><i class="fa-brands fa-square-whatsapp"></i></span>
-            <span class="youtube"><i class="fa-brands fa-square-youtube"></i></span>
-           </div>
-        </div>
-    </div>
-    <footer>
-        Copyright &copy; Amakhuthala -  2023
-    </footer>
 
     <script src="index.js"></script>
 </body>

@@ -1,696 +1,241 @@
 *{
     margin:0;
     padding:0;
+    box-sizing: border-box;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
-/*styling body*/
-html{
-    scroll-behavior: smooth;
-}
-body{
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: rgb(255, 255, 255);
-    color:rgb(85, 84, 84);
-    line-height: 30px;
-}
-button{
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 100;
-}
-input{
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-/*font-family: 'Roboto', sans-serif;*/
-
-/*styling header*/
-.wrap-header{
-    width:100%;
-    z-index:1;
-}
-.wrap-header .request-design{
-    padding:10px;
-    float:left;
-    margin:12px 0 0 10px;
-    background-color: rgb(12, 129, 184);
-    color:white;
-    border:0;
-    font-weight: 600;
-    box-shadow:1px 1px 3px lightgray;
-    text-align: start;
-}
-.wrap-header .request-design:hover{
-    cursor: pointer;
-    background-color: rgb(18, 117, 163);
-}
-.wrap-header .request-design i{
-    margin:2px 1px 0 5px;
-}
+/*header*/
 header{
     display:flex;
-    position:absolute;
-    padding:10px;
-    margin-top: 10px;
-}
-header .web-name{
-    font-family: 'Roboto', sans-serif;
-    font-size: larger;
-    color:white; 
+    padding:20px;
 }
 header img{
     width:25px;
 }
-nav{
-    float:right;
-    padding:5px;
-    color:white;
+header .web-name{
+    padding:0 5px;
+    font-weight: 600;
 }
-nav span{
-    margin-left:50px;
-    font-size:large;
-    padding:10px;
-}
-nav span:hover{
-    border:5px solid rgb(214, 140, 30);
-    border-top: 0;
-    border-left: 0;
-    border-right: 0;
-    border-radius: 5px;
-    cursor:pointer;
-}
-nav .hire-us-btn{
-    background-color: rgb(42, 140, 165);
-    color:white;
-    padding:10px;
-}
-/*styling wrap all*/
-.wrap-all{
+
+/*nav*/
+.nav-big-screen{
     display:flex;
+    justify-content: end;
+    margin-top:-66px;
+    padding:20px;
 }
-/*styling menu wrapper*/
+.nav-big-screen .home{
+    border-bottom: 4px solid chocolate;
+}
+.nav-big-screen ul{
+    display:flex;
+    list-style: none;
+    gap:35px;
+}
+.nav-big-screen ul li{
+    padding:0 0 5px 0;
+}
+.nav-big-screen ul li:hover{
+    border-bottom: 4px solid rgb(198, 210, 30);
+    cursor: pointer;
+}
+
+/*nav-small-screen*/
+.nav-small-screen{
+    display:flex;
+    justify-content: end;
+    margin-top:-66px;
+    padding:20px;
+}
+.nav-small-screen ul{
+    display:flex;
+    list-style: none;
+    gap:30px;
+}
+.nav-small-screen{
+    display:none;
+}
+/*content wrapper*/
+.content-wrapper{
+    background-image: url('Screenshot_20230422-083406_Gallery.jpg');
+    width:100%;
+    height:100vh;
+    background-size: cover;
+}
+
+/*welcome-box*/
+.welcome-box{
+    padding:70px 20px 20px 20px;
+    text-align: center;
+}
+.welcome-box p .one{
+    color:white;
+    font-size: 5em;
+}
+.welcome-box p .two{
+    color:chocolate;
+    font-size: 3em;
+}
+.welcome-box .search-box{
+    padding:20px;
+    display:flex;
+    justify-content: center;
+}
+.welcome-box .search-box div{
+    width:60%;
+    display:flex;
+    justify-content: start;
+    background-color: white;
+    align-items: center;
+    border-radius: 4px;
+}
+.welcome-box .search-box div input{
+    width:90%;
+    padding:30px;
+    border:0;
+    border-right: 1px solid rgb(224, 221, 221);
+    border-radius: 4px;
+}
+.welcome-box .search-box div i{
+    color:rgb(226, 121, 22);
+    padding:5px;
+    font-size: xx-large;
+}
+.welcome-box .buttons{
+    padding:30px 0;
+}
+.welcome-box .buttons .call-us{
+    background-color: unset;
+    color:rgb(254, 255, 253);
+    border:0;
+}
+.welcome-box .buttons .call-us .icon{
+    border-right: 1px solid;
+    padding:30px;
+    background-color: rgb(85, 172, 77);
+}
+.welcome-box .buttons .call-us .number{
+    padding:30px;
+    color:rgb(236, 102, 25);
+    background-color: azure;
+}
+.welcome-box .buttons .hire-us{
+    padding:30px;
+    border:0;
+    background-color: rgb(165, 97, 42);
+    color:white;
+    border-radius: 2px;
+}
+
+/*menu wrapper*/
 .menu-wrapper{
-    position: fixed;
-    height:100%;
-    right:0;
-    width:0;
-    bottom:0;
-    top:0;
-    background-color: rgb(40, 37, 54);
+    text-align: center;
+    background-color: rgb(228, 228, 238);
+    position:absolute;
+    top:400px;
+    height: 0;
     overflow: hidden;
-    font-size: x-large;
-    color:rgb(255, 255, 255);
-    text-align:center;
-    transition: all 200ms ease-in-out;
-    z-index:2;
-    font-family: 'Roboto', sans-serif;
-}
-.menu-wrapper .wrap{
+    transition: all 250ms ease-in-out;
     display:flex;
     justify-content: center;
     align-items: center;
-    height:100%;
+    font-size: larger;
+    line-height: 40px;
+    bottom:0;
 }
 .menu-wrapper .close{
-    padding:10px;
-    font-size: 30px;
+    position: absolute;
     width:fit-content;
-    color:rgb(223, 210, 210);
-    position:absolute;
-    border:2px solid;
-    border-left:0;
-
-}
-.menu .home{
-    padding:10px;
-    border-bottom: 2px solid grey;
-    color:rgb(226, 191, 77);
+    top:5px;
+    left:5px;
+    padding:0px 10px;
+    font-size: 25px;
+    border:1px solid;
 }
 .menu-wrapper .close:hover{
-    color:rgb(185, 15, 15);
     cursor: pointer;
+    color:rgb(224, 18, 18);
 }
-.menu{
-    padding:10px;
-    
-}
-.menu ul{
+.menu-wrapper ul{
     list-style: none;
-    line-height: 40px;
-    width:max-content
-}
-.menu ul li:hover{
-    color:rgb(226, 119, 77);
-    cursor: pointer;
-}
-.menu ul li i{
-    font-size: small;
-    color:rgb(235, 198, 129);
-}
-/*styling content wrapper*/
-.content-wrapper{
-    width:100%;
-    transition: margin 200ms ease-in-out;
-    box-sizing: border-box;
-}
-/*styling dropdown contact*/
-.drop-down-contact{
     padding:10px;
-    background-color: rgb(32, 60, 97);
-    color:rgb(240, 186, 10);
-    text-align: center;
-    opacity: .9;
 }
-.drop-down-contact .drop-down{
-    transform: rotate(45deg);
-}
-/*styling menu-icon*/
-.menu-icon{
-    padding:20px;
-    height:17px;
-    background-color:rgb(40, 37, 54);
-    box-shadow:1px 1px 3px;
-}
-.bar-wrap{
-    padding:10px 10px 5px 10px; 
-    background-color: unset;
-    width:fit-content;
-    margin:-30px -40px 0 0;
-   
-}
-.wrap-menu-bars{
-    display:flex;
-    justify-content: end;
-    padding:20px;
-    background-color: unset;
-    margin-top: 10px;
-}
-.sign-in{
-    padding:0 5px;
-    margin:-32px 0 0 0;
-    background-color: unset;
-    color:rgb(167, 158, 158);
-    height:30px;
-    border:0;
-    font-size: large;
-}
-.sign-in:hover{
-    cursor: pointer;
-    color:rgb(226, 160, 18);
-}
-.bar-wrap:hover{
+.menu-wrapper ul li:hover{
+    border-bottom: 1px solid chocolate;
     cursor:pointer;
-    color:rgb(226, 94, 17);
 }
-.bar-one{
-    width:20px;
-    padding:2px;
-    background-color: rgb(202, 206, 200);
-    margin-bottom:3px;
-    margin-top:-5px;
-    transition: all 500ms linear;
-}
-.bar-two{
-    width:20px;
-    padding:2px;
-    background-color: rgb(202, 206, 200);
-    margin-bottom:3px;
-    transition: all 500ms linear;
-}
-.bar-three{
-    width:20px;
-    padding:2px;
-    background-color: rgb(202, 206, 200);
-    transition: all 500ms linear;
-}
-/*styling us-container*/
-.us-container{
-    padding:20px;
-}
-.us-container .specialize{
-    color:chocolate;
-}
-.us-container .us-message{
+.menu-wrapper .design button{
     padding:10px;
-}
-.us-container .period{
-    font-size: 11px;
-    padding:10px 2px;
-    width:100%;
-    font-weight: 600;
-    color:rgb(139, 138, 138);
-}
-.us-message .decor{
-    color:chocolate;
-}
-.us-message h2{
-    font-family: 'Roboto', sans-serif;
-    font-weight: 100;
-}
-.top-welcome-message{
-    text-align: center;
-}
-.us-message .buttons{
-    padding:20px 0;
-    margin-top:30px;
-}
-.us-message .hire-us{
-    padding:13px;
-    width:40%;
-    border-radius: 4px;
-    font-weight: 600;
-    background-color:rgb(109, 209, 78);
+    width:80%;
+    background-color: rgb(235, 146, 14);
     color:white;
     border:1px solid;
 }
-.us-message .hire-us:hover{
+.menu-wrapper .design button:hover{
     cursor: pointer;
-    background-color: rgb(113, 190, 25);
+    background-color: rgb(189, 121, 21);
+    box-shadow: 1px 1px 3px grey;
 }
-.us-message .call{
-    width:40%;
-    border-radius: 4px;
-    font-weight: 600;
-    background-color: unset;
-    color:rgb(243, 106, 14);
-    border:1px solid;
-    padding:10px 0;
-}
-.us-message .call:hover{
-    cursor:pointer;
-    color:rgb(202, 91, 17);
-}
-.us-message .icon{
-    color:white;
-    background-color: chocolate;
-    padding:10px
-}
-.us-message .number{
-    padding:10px;
-}
-/*styling about-us*/
-.about-us{
-    background-color: unset;
-}
-.about-us-header{
-    background-color: rgb(43, 43, 44);
-}
-.about-image{
-   background-image: url('nicolas-thomas-3GZi6OpSDcY-unsplash.jpg');
-   width:100%;
-   height:250px;
-   background-size: cover;
-}
-.about-us .content{
-    padding:10px;
-    margin:-70px 10px 0 10px;
-    background-color: rgb(255, 255, 255);
-    box-shadow:1px 1px 3px lightgray
-}
-.about-us img{
-    width:100%;
-    z-index:-1;
-}
-.about-us h3{
-    color:chocolate;
-    width:fit-content;
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 100;
-    border-bottom: 4px solid;
-}
-.about-us-header .spanel{
-    font-size:small;
-    color:rgb(139, 138, 138);
-    padding:20px 10px;
-}
-.about-us .content .read-more{
-    border:0; 
-    background-color:unset;
-    padding:10px;
-    border-radius:4px; 
-    color:rgb(211, 103, 30);
-    font-weight: 600;
-}
-.about-us .content .read-more:hover{
-    cursor: pointer;
-    color:rgb(163, 79, 22); 
-}
-#read-more{
-    padding:10px;
-    box-shadow: 1px 1px 4px lightgrey;
-}
-#read-more{
+/*SMALL SCREEN*/
+@media screen and (max-width:400px) {
+/*nav big screen*/
+.nav-big-screen{
     display:none;
 }
-.about-us a{
-    color:rgb(221, 125, 0);
-}
-
-
-/*styling services*/
-.services{
-    margin:10px;
-    font-weight: 300;
-}
-.services .content{
-    padding:20px;
-    background-color:rgb(255, 255, 255); 
-    border-radius: 10px;
-    margin:10px
-}
-.services img{
-    width:100%;
-}
-.services i{
-    font-size: 25px;
-    padding:10px 0;
-    color:chocolate;
-}
-.services .elec-maintenance{
-    box-shadow: 1px 1px 3px lightgray;
-    margin-bottom: 20px;
-}
-.services .elec-maintenance div{
-    padding: 0 20px;
-}
-.services .elec-design{
-    box-shadow: 1px 1px 3px lightgray;
-    margin-bottom: 20px;
-}
-.services .elec-design div{
-    padding: 0 20px;
-}
-.services .electronic-design{
-    box-shadow: 1px 1px 3px lightgray;
-    margin-bottom: 20px;
-}
-.services .electronic-design div{
-    padding:0 20px;
-}
-.services .domestic-installation{
-    box-shadow: 1px 1px 3px lightgray;
-    margin-bottom: 20px;
-}
-.services .domestic-installation div{
-    padding:0 20px;
-}
-/*styling hire-us-container*/
-.hire-us-container{
-    height:0;
-    overflow:hidden;
-    position:absolute;
-    background-color: white;
-    top:100px;
-    transition:top 300ms ease-in-out;
-}
-.hire-us-container .close{
-    text-align: end;
-    font-size: large;
-    padding:5px;
-    margin:-5px 0 0 0;
-}
-.hire-us-container .close i:hover{
-    cursor: pointer;
-    color: rgb(221, 53, 11);
-}
-.hire-us-container input{
-    padding:10px;
-    margin-bottom: 10px;
-    width:90%;
-}
-.hire-us-container select{
-    padding:10px;
-    margin-bottom: 10px;
-}
-.hire-us-container textarea{
-    padding:10px;
-    width:90%;
-
-}
-.hire-us-container button{
-    padding:10px;
-    width:100%;
-    background-color: chocolate;
-    color:white;
-    border:0;
-    border-radius:3px;
-}
-/*about us continued*/
-.about-us-continued{
-    padding:10px;
-    background-color: rgb(59, 59, 59);
-}
-.about-us-continued .content{
-    background-color: unset;
-    color:rgb(153, 152, 151);
-}
-.about-us-continued .one{
-    box-shadow:1px 1px 3px rgb(51, 50, 50);
-    margin:10px 0;
-    padding:5px;
-}
-.about-us-continued .two{
-    box-shadow:1px 1px 3px rgb(51, 50, 50);
-    padding:5px
-}
-.about-us-continued .three{
-    box-shadow:1px 1px 3px rgb(51, 50, 50);
-    margin:10px 0;
-    padding:5px;
-}
-v
-/*styling why-us*/
-.why-us{
-    padding:0 20px;
-    box-shadow: 1px 1px 3px lightgray;
-    margin:-70px 10px;
-    background-color: rgb(5, 5, 5);
-
-}
-
-.reliability,.quality,.protection{
-    margin:20px 0;
-    box-shadow: 1px 1px 3px lightgray;
-    padding:20px;
-}
-.why-us ul{
-    list-style: none;
-}
-.why-us h3{
-    text-transform: uppercase;
-    color:chocolate;
-    border-bottom: 4px solid;
-    width:fit-content;
-    font-family: 'Roboto', sans-serif;
-}
-.why-us ul h2{
-    font-weight:100;
-    color:chocolate;
-    
-}
-
-.why-us .choose-brief{
-    color:rgb(182, 181, 178);
-    font-size: small;
-    text-transform:unset;
-    background-color: rgb(255, 255, 255);
-    font-weight:600;
-    font-style: oblique;
-    padding:10px 0;
-    border-bottom: 1px solid rgb(238, 234, 234);
-}
-.why-us .choose-brief i{
-    color:rgb(34, 202, 34);
-}
-.why-us ul i{
-    color:rgb(85, 84, 82);
-}
-.learn-more{
-    text-align:center;
-    padding:10px 20px;
-}
-.learn-more .learn-more-btn{
-    padding:10px;
-    width:100%;
-    border-radius: 5px ;
-    background-color: rgb(54, 54, 53);
-    color:chocolate;
-    border:0;
-}
-.learn-more-btn:hover{
-    background-color: rgb(43, 49, 38);
-    color:chocolate;
-    cursor: pointer;
-}
-/*styling summary*/
-.summary{
-    background-color: rgb(59, 59, 59);
-    padding:20px;
-    margin: 50px 10px 10px 10px;
+.nav-big-screen ul{
     display:flex;
-    flex-wrap: wrap;
     justify-content: center;
-    gap:10px;
-}
-.summary span{
-    color:rgb(131, 192, 113);
-    font-family: 'Roboto', sans-serif;
-}
-.summary h3{
-    font-size: x-large;
-    color:rgb(211, 103, 30);
-}
-.summary i{
-    color:rgb(102, 102, 102);
-    font-size:x-large;
-}
-.summary div div{
-    float:right;
-}
-.summary div div i{
-    font-size:20px;
-    color:rgb(129, 129, 128);
-}
-.summary p{
-    font-size: smaller;
-    color:rgb(153, 152, 151);
-}
-.sum-1{
-    padding:30px;
-    margin-bottom: 30px;
-    width:200px;
-    box-shadow:1px 1px 3px rgb(51, 50, 50);
-}
-.sum-1:hover{
-    box-shadow:1px 1px 1px chocolate;
-    cursor: pointer;
-}
-.sum-2{
-    padding:30px;
-    margin-bottom: 30px;
-    width:200px;
-    box-shadow:1px 1px 3px rgb(51, 50, 50);
-}
-.sum-2:hover{
-    box-shadow:1px 1px 1px chocolate;
-    cursor: pointer;
-}
-.sum-3{
-    padding:30px;
-    margin-bottom: 30px;
-    width:200px;
-    box-shadow:1px 1px 3px rgb(51, 50, 50);
-}
-.sum-3:hover{
-    box-shadow:1px 1px chocolate;
-    cursor: pointer;
-}
-.sum-4{
-    padding:30px;
-    width:200px;
-    box-shadow:1px 1px 3px rgb(51, 50, 50);
-}
-.sum-4:hover{
-    box-shadow:1px 1px chocolate;
-    cursor: pointer;
-}
-/*styling more-about-us*/
-.more-about-us{
-    margin:0 20px;
-}
-.more-about-us{
-    display:none;
-}
-.more-about-us p{
-    padding:20px;
-}
+    flex-wrap: wrap;
 
-/*styling our-team*/
-.our-team{
-    background-color: rgb(255, 255, 255);
-    padding:20px;
-    margin:50px 10px;
 }
-.our-team h3{
-    text-align: center;
-    color:rgb(211, 90, 34);
+/*nav small screen*/
+.nav-small-screen{
+    display:flex;
 }
-.our-team .founder{
-    width:100%;
-    margin:20px 0;
-    box-shadow: 1px 1px 3px lightgray;
-}
-.our-team .founder img{
-    width:100%;
-}
-.our-team  .text{
-    padding:10px;
-    font-size:small;
-}
-.our-team a{
-    color:rgb(172, 202, 61);
-}
-.our-team .member {
-    border:1px solid rgb(240, 234, 234);
-    padding:10px 10px 10px 0;
-    color:rgb(106, 192, 57);
-    font-weight:600;
-}
-.our-team .member span{
-    padding-left: 10px;
-}
-.our-team b{
-    color:rgb(156, 156, 156);
-    border:1px solid rgb(240, 234, 234);
-    border-left:0;
-    padding:10px 10px;
-    font-family:monospace;
-}
-.our-team .read-more{
-    border:0; 
-    background-color:unset;
-    padding:20px;
-    border-radius:4px; 
+/*welcome box*/
+.welcome-box p .one{
     color:white;
-    font-size: smaller;
+    font-size: 3em;
 }
-.our-team .read-more:hover{
-    cursor: pointer;
-    color:rgb(235, 152, 27);
+.welcome-box p .two{
+    color:chocolate;
+    font-size: 2em;
 }
-.our-team .social{
-    padding: 0 20px;
-    text-align: center;
+.welcome-box .search-box div{
+    width:80%;
+    background-color: rgb(255, 255, 255);
+    display:flex;
+    justify-content: start;
 }
-.our-team .social i{
-    font-size:30px;
-}
-.our-team .social .facebook{
-    color:rgb(49, 49, 194);
-}
-.our-team .social .call{
-    color:rgb(49, 153, 194);
-}
-.our-team .social .youtube{
-    color:rgb(196, 23, 32);
-}
-.our-team .social .whatsapp{
-    color:rgb(49, 194, 68);
-}
-/*styling footer*/
-footer{
-    margin-top: 50px;
+.welcome-box .search-box div input{
+    width:90%;
     padding:10px;
-    background-color:rgb(202, 157, 59);
-    box-shadow: 1px 1px 3px;
-    text-align: center;
-    color:rgb(255, 255, 255);
 }
-
-/*at small screens*/
-@media screen and (max-width:1200px) {
-    .short-cut-info{
-        width:100%;
-    }
-    nav{
-        display:none;
-    }
+.welcome-box .search-box div i{
+    color:rgb(228, 142, 13);
+    padding:5px;
+    font-size: medium;
+}
+.welcome-box .buttons .call-us{
+    background-color: unset;
+    color:rgb(254, 255, 253);
+    border:0;
+}
+.welcome-box .buttons .call-us .icon{
+    border-right: 1px solid;
+    padding:10px;
+    background-color: rgb(85, 172, 77);
+}
+.welcome-box .buttons .call-us .number{
+    padding:10px;
+    color:rgb(236, 102, 25);
+    background-color: azure;
+}
+.welcome-box .buttons .hire-us{
+    padding:10px;
+    border:0;
+    background-color: rgb(165, 97, 42);
+    color:white;
+    border-radius: 2px;
+}
 }
