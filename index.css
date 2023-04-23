@@ -2,9 +2,10 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Nunito', sans-serif;
     color:rgb(51, 51, 51);
 }
+/*font-family: 'Roboto', sans-serif;*/
 /*header*/
 header{
     display:flex;
@@ -112,6 +113,9 @@ header .web-name{
 .steps-box{
     padding:10px;
 }
+.steps-box h2{
+    padding:10px 0;
+}
 .steps-box .intro{
     display:flex;
     gap:10px;
@@ -152,13 +156,16 @@ header .web-name{
     height:fit-content;
     border:1px solid lightgray;
 }/*one*/
+.steps-box .one{
+    margin-top:16px;
+}
 .steps-box .one .number1{
     display:flex;
     justify-content: center;
     align-items: center;
     background-color: rgb(255, 255, 255);
     width:100%;
-    margin-top:-30px;
+    margin-top:-50px;
 }
 .steps-box .one .number1 .num{
     width:40px;
@@ -182,14 +189,14 @@ header .web-name{
     background-color: unset;
     border:1px solid rgb(236, 234, 234);
     color:rgb(113, 114, 112);
-}/*one*/
+}/*two*/
 .steps-box .two .number2{
     display:flex;
     justify-content: center;
     align-items: center;
     background-color: rgb(255, 255, 255);
     width:100%;
-    margin-top:-30px;
+    margin-top:-50px;
 }
 .steps-box .two .number2 .num{
     width:40px;
@@ -214,13 +221,14 @@ header .web-name{
     border:1px solid rgb(236, 234, 234);
     color:rgb(113, 114, 112);
 }/*three*/
+
 .steps-box .three .number3{
     display:flex;
     justify-content: center;
     align-items: center;
     background-color: rgb(255, 255, 255);
     width:100%;
-    margin-top:-30px;
+    margin-top:-50px;
 }
 .steps-box .three .number3 .num{
     width:40px;
@@ -245,15 +253,19 @@ header .web-name{
     border:1px solid rgb(236, 234, 234);
     color:rgb(113, 114, 112);
 }
+.steps-box  .paragraph button:hover{
+    background-color: rgb(68, 62, 62);
+    cursor:pointer;
+    color:red;
+}
 /*menu wrapper*/
 .menu-wrapper-box{
     display: flex;
     justify-content: center;
+    margin-bottom: 300px;
 }
 .menu-wrapper{
-    text-align: center;
     background-color:white;
-    background-size: cover;
     position:fixed;
     top:20px;
     width:80%;
@@ -261,9 +273,6 @@ header .web-name{
     height: 0;
     overflow: hidden;
     transition: top 200ms ease-in-out;
-    display:flex;
-    justify-content: center;
-    align-items: center;
     font-size: larger;
     line-height: 40px;
     color:rgb(37, 37, 37);
@@ -302,7 +311,7 @@ header .web-name{
 }
 .menu-wrapper .design button{
     padding:10px;
-    width:80%;
+    width:100%;
     background-color: rgb(235, 146, 14);
     color:white;
     border:1px solid;
