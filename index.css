@@ -62,6 +62,7 @@ header .web-name{
     justify-content: end;
     margin-top:-76px;
     padding:20px;
+    width:100%;
 }
 .nav-small-screen ul{
     display:flex;
@@ -202,6 +203,20 @@ header .web-name{
 }
 .advert .start-money{
     font-size:small;
+}
+/*top-services*/
+.top-services{
+    padding:20px;
+}
+.top-services h2{
+    padding:10px 0;
+}
+.top-services button{
+    padding:10px;
+    border-radius: 20px;
+    background-color: unset;
+    margin-bottom:5px;
+    border:1px solid;
 }
 /*steps-box*/
 .steps-box{
@@ -458,7 +473,7 @@ header .web-name{
 /**brag-advert*/
 .brag-advert{
     flex-wrap: wrap;
-    margin:0 20px;
+    margin:0 5px;
 }
 /*steps box*/
 .steps-box{
