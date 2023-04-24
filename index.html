@@ -36,16 +36,15 @@
             <li>Design</li>
             <li>Our designs <i class="fa-solid fa-chevron-down"></i></li>
             <li>Team</li>
-            <li><i class="fa-solid fa-right-to-bracket"></i></li>
+            <li class="sign-in"><i class="fa-solid fa-right-to-bracket"></i></li>
         </ul>
     </div>
 
     <!--MENU HEADER -SMALL SCREEN-->
     <div class="nav-small-screen">
         <ul>
-            <li onclick="window.location='student_portal.html'"><i class="fa-solid fa-right-to-bracket"></i></li>
-            <li onclick="window.location='design.html'"><i class="fa-solid fa-compass-drafting"></i></li>
             <li class="menu-icon"><i class="fa-solid fa-bars-staggered"></i></li>
+            <li onclick="window.location='student_portal.html'" class="sign-in"><i class="fa-solid fa-right-to-bracket"></i></li>
         </ul>
     </div>
 
@@ -55,11 +54,54 @@
         <!--welcome box-->
         <div class="welcome-box">
             <p>
-                <span class="one">Electrical Enthusiasts</span><br> <span class="two">speciallizing in Electrical Design</span>
+                <span class="one" id="electrical">Electrical Enthusiasts</span><br> <span class="two">speciallizing in Electrical Design</span>
             </p>
             <!--search-->
             <div class="search-box">
                 <div><input type="search" name="search" id="search"><i class="fa-solid fa-magnifying-glass"></i></div> 
+            </div>
+
+            <div class="contactus-btn">
+                <button>Contact us</button> <button>Explore designs</button>
+            </div>
+
+            <!--braggin and ardvertisement-->
+            <div class="brag-advert">
+                <!--brag-->
+                <div class="brag">
+                    <div class="wrap">
+                        <div class="icon"><i class="fa-regular fa-handshake"></i></div><div class="text">
+                            <h3>Trusted Service</h3>
+                            <span>It is the smile of our clients that motivates us.</span>
+                        </div>
+                    </div>
+
+                    <div class="wrap">
+                        <div class="icon"><i class="fa-regular fa-clock"></i></div><div class="text">
+                            <h3>Working: Mon - Fri</h3>
+                            <span>We are unvailable on weekends.</span>
+                        </div>
+                    </div>
+
+                    <div class="wrap">
+                        <div class="icon"><i class="fa-solid fa-trophy"></i></div><div class="text">
+                            <h3>Well Experienced</h3>
+                            <span>1 year of experience</span>
+                        </div>
+                    </div>
+
+                </div>
+                <!--advert-->
+                <div class="advert">
+                    <h4>Let us simplify your life with our interactive and well designed electrical designs at <span class="affordable-prices">affordable prices.</span></h4>
+                    <p>
+                        Do not do what we would not do. Our intelligent systems are here for that.
+                    </p>
+
+                    <button class="request-design">Request a design</button>
+                    <br><span class="start-money">Starting at R100.00, depending on the complexity of the design.</span>
+                </div>
+
             </div>
         </div>
 

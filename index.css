@@ -3,6 +3,8 @@
     padding:0;
     box-sizing: border-box;
     font-family: 'Nunito', sans-serif;
+}
+body{
     color:rgb(51, 51, 51);
 }
 /*font-family: 'Roboto', sans-serif;*/
@@ -10,7 +12,7 @@
 header{
     display:flex;
     padding:20px;
-    border-bottom:1px solid rgb(243, 240, 240);
+    box-shadow:1px 1px 3px lightgray;
 }
 header img{
     width:25px;
@@ -27,6 +29,15 @@ header .web-name{
     justify-content: end;
     margin-top:-66px;
     padding:20px;
+}
+.nav-big-screen .sign-in{
+    background-color: chocolate;
+    padding:10px;
+    width:100px;
+    text-align:center ;
+    color:white;
+    margin:-10px 0 10px 0;
+    border-radius:4px ;
 }
 .nav-big-screen .home{
     border-bottom: 4px solid chocolate;
@@ -49,7 +60,7 @@ header .web-name{
 .nav-small-screen{
     display:flex;
     justify-content: end;
-    margin-top:-66px;
+    margin-top:-76px;
     padding:20px;
 }
 .nav-small-screen ul{
@@ -57,13 +68,24 @@ header .web-name{
     list-style: none;
     gap:30px;
 }
+.nav-small-screen ul li{
+    padding:10px;
+}
 .nav-small-screen ul li:hover{
     cursor: pointer;
-    color:rgb(240, 151, 43);
+    color:rgb(36, 29, 21);
     border-bottom:1px solid;
 }
 .nav-small-screen{
     display:none;
+}
+.nav-small-screen .sign-in{
+    background-color: chocolate;
+    padding:10px;
+    width:70px;
+    text-align:center ;
+    color:white;
+    border-radius:4px ;
 }
 /*content wrapper*/
 .content-wrapper{
@@ -108,6 +130,78 @@ header .web-name{
     color:rgb(226, 121, 22);
     padding:5px;
     font-size: xx-large;
+}
+.contactus-btn{
+    padding:20px;
+}
+.contactus-btn button{
+    padding:20px;
+    width:200px;
+    background-color:rgb(50, 77, 102);
+    color:white;
+    border:0;
+    border-radius:4px;
+}
+/**brag-advert*/
+.brag-advert{
+    display:flex;
+    gap:20px;
+    justify-content: center;
+}
+.brag-advert .brag{
+    background-color: rgb(248, 248, 240);
+    width:fit-content;
+    padding:20px;
+    width:500px;
+}
+.brag-advert .brag .wrap .icon{
+    background-color:rgb(50, 77, 102) ;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    font-size: x-large;
+    color:rgb(248, 242, 242);
+}
+.brag-advert .brag .wrap .text{
+    padding:0 20px;
+}
+.brag-advert .brag .wrap span{
+    font-size:small;
+}
+.brag-advert .brag .wrap{
+    display:flex;
+    text-align: start;
+    margin-top:15px;
+}
+/*advert*/
+.advert{
+    text-align: start;
+    border:1px solid lightgrey;
+    padding:20px;
+    width:500px;
+}
+.advert .affordable-prices{
+    color:chocolate;
+}
+.advert h4{
+    padding:0 0 10px 0;
+}
+.advert button{
+    padding:10px;
+    width:100%;
+    background-color: chocolate;
+    color:white;
+    border:0;
+    margin:10px 0;
+}
+.advert p{
+    font-size:15px;
+}
+.advert .start-money{
+    font-size:small;
 }
 /*steps-box*/
 .steps-box{
@@ -283,7 +377,7 @@ header .web-name{
     position: absolute;
     width:100%;
     top:-30px;
-    right:-30px;
+    right:75px;
 }
 .menu-wrapper .close .icon{
     width:fit-content;
@@ -322,7 +416,7 @@ header .web-name{
 }
 
 /*SMALL SCREEN*/
-@media screen and (max-width:400px) {
+@media screen and (max-width:800px) {
 /*nav big screen*/
 .nav-big-screen{
     display:none;
@@ -357,6 +451,15 @@ header .web-name{
 .welcome-box .search-box div i{
     padding:5px;
     font-size: medium;
+}
+.contactus-btn button{
+    width:100%;
+    margin-top:10px;
+}
+/**brag-advert*/
+.brag-advert{
+    flex-wrap: wrap;
+    margin:0 20px;
 }
 /*steps box*/
 .steps-box{
