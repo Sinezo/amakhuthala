@@ -179,7 +179,7 @@ header .web-name{
 /*advert*/
 .advert{
     text-align: start;
-    border:1px solid lightgrey;
+    border:1px solid rgb(237, 238, 235);
     padding:20px;
     width:500px;
 }
@@ -247,7 +247,7 @@ header .web-name{
     padding:30px;
     width:400px;
     height:fit-content;
-    border:1px solid lightgray;
+    border:1px solid rgb(237, 238, 235);
 }/*one*/
 .steps-box .one{
     margin-top:16px;
