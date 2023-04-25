@@ -244,7 +244,25 @@ header .web-name{
     gap:10px;
     border-radius: 25px;
     width:fit-content;
-    margin:20px;
+    margin:10px;
+}
+.steps-box .intro .icon{
+    padding:10px;
+    background-color: rgb(233, 226, 135);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+}
+.steps-box .intro-wrap{
+    display:flex;
+    justify-content: center;
+}
+.steps-box .intro .text{
+    padding:5px;
+}
+.steps-box .intro .text span{
+    font-size: small;
 }
 .steps-box .image{
     padding:10px;
@@ -254,25 +272,7 @@ header .web-name{
 .steps-box .image img{
     width:50%;
 }
-.steps-box .intro .icon{
-    padding:10px;
-    background-color: rgb(255, 255, 255);
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    font-size: xx-large;
-}
-.steps-box .intro-wrap{
-    display:flex;
-    justify-content: center;
-    padding:20px;
-}
-.steps-box .intro .text{
-    padding:5px;
-}
-.steps-box .intro .text span{
-    font-size: small;
-}
+
 .steps-box .steps-wrapper{
     display:flex;
     justify-content: center;
@@ -303,7 +303,8 @@ header .web-name{
     display:flex;
     justify-content: center;
     align-items: center;
-    background-color: white;
+    background-color: rgb(167, 161, 150);
+    color:white;
     border-radius:50%;
 }
 .steps-box .one  .paragraph p{
@@ -334,8 +335,9 @@ header .web-name{
     display:flex;
     justify-content: center;
     align-items: center;
-    background-color: white;
+    background-color: rgb(167, 161, 150);
     border-radius:50%;
+    color:white;
 }
 .steps-box .two  .paragraph p{
     color:rgb(82, 81, 80);
@@ -365,8 +367,9 @@ header .web-name{
     display:flex;
     justify-content: center;
     align-items: center;
-    background-color: white;
+    background-color: rgb(167, 161, 150);
     border-radius:50%;
+    color:white;
 }
 .steps-box .three  .paragraph p{
     color:rgb(82, 81, 80);
