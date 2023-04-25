@@ -105,7 +105,7 @@ header .web-name{
     font-size: 50px;
 }
 .welcome-box h4{
-    color:rgb(100, 117, 133);
+    color:rgb(207, 154, 55);
 }
 .welcome-box .image{
     width:500px;
@@ -171,12 +171,13 @@ header .web-name{
 /*advert*/
 .advert{
     text-align: start;
-    border:1px solid rgb(237, 238, 235);
+    box-shadow:1px 1px 5px lightgrey;
     padding:20px;
     width:500px;
 }
 .advert .affordable-prices{
     color:chocolate;
+    text-decoration: underline;
 }
 .advert h4{
     padding:0 0 10px 0;
@@ -188,12 +189,25 @@ header .web-name{
     color:white;
     border:0;
     margin:10px 0;
+    border-radius:4px;
 }
 .advert p{
     font-size:15px;
 }
 .advert .start-money{
     font-size:small;
+}
+.summary .one{
+    display:flex;
+    justify-content: center;
+    gap:30px;
+    padding:10px 0;
+}
+.summary .one h5{
+    font-size:16px;
+}
+.summary .one span{
+    font-size: small;
 }
 /*top-services*/
 .top-services{
@@ -259,7 +273,7 @@ header .web-name{
     padding:30px;
     width:400px;
     height:fit-content;
-    border:1px solid rgb(237, 238, 235);
+    box-shadow:1px 1px 5px lightgrey;
 }/*one*/
 .steps-box .one{
     margin-top:16px;
