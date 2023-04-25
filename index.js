@@ -2,7 +2,7 @@
 var menu = document.querySelector('.menu-icon');
 menu.addEventListener('click', function(){
     document.querySelector('.menu-wrapper').style.top='50px';
-    document.querySelector('.menu-wrapper').style.height='fit-content';
+    document.querySelector('.menu-wrapper').style.height='90%';
     document.querySelector('.menu-wrapper').style.padding='20px';
     document.querySelector('.menu-wrapper').style.overflow='visible';
 
