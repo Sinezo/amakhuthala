@@ -386,6 +386,23 @@ header .web-name{
     cursor:pointer;
     color:red;
 }
+/*outcome*/
+.outcome{
+    padding:20px;
+}
+.outcome .image img{
+    width:100%;
+}
+.outcome .paragraph{
+    font-size: 15px;
+    padding:5px 0 0px 0;
+}
+.outcome .paragraph div{
+    font-size: small;
+    padding:5px 0;
+    border-bottom: 1px solid rgb(184, 163, 118);
+
+}
 /*menu wrapper*/
 .menu-wrapper-box{
     display: flex;
