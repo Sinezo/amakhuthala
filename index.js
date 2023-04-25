@@ -22,7 +22,7 @@ window.onscroll=function(){
     scrolling();
 };
 function scrolling(){
-    if(document.body.scrollTop > 0 || document.documentElement.scrollTop >100){
+    if(document.body.scrollTop > 0 || document.documentElement.scrollTop >0){
         document.querySelector('.nav-small-screen').style.backgroundColor='white';
         document.querySelector('.nav-small-screen').style.position='fixed';
         document.querySelector('.nav-small-screen').style.boxShadow='1px 1px 3px lightgrey';
@@ -32,5 +32,6 @@ function scrolling(){
     else{
         document.querySelector('.nav-small-screen').style.backgroundColor='unset';
         document.querySelector('.nav-small-screen').style.boxShadow='none';
+        document.querySelector('.nav-small-screen').style.position='relative';
     }
 }

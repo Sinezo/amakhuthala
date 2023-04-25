@@ -96,17 +96,29 @@ header .web-name{
     padding:10px;
 }
 /*welcome box*/
+.welcome-box{
+    display:flex;
+    justify-content: center;
+    gap:50px;
+}
+.welcome-box h1{
+    font-size: 50px;
+}
+.welcome-box h4{
+    color:rgb(100, 117, 133);
+}
+.welcome-box .image{
+    width:500px;
+}
 .welcome-box .image img{
     width:100%;
 }
-
-/*wrapper1*/
-.wrapper1{
-    padding:70px 20px 20px 20px;
-    text-align: center;
+.welcome-box .welcome-text{
+    padding:20px;
+    width:500px;
 }
 .contactus-btn{
-    padding:20px;
+    padding:50px 0;
 }
 .contactus-btn button{
     padding:20px;
@@ -116,6 +128,12 @@ header .web-name{
     border:0;
     border-radius:4px;
 }
+/*wrapper1*/
+.wrapper1{
+    padding:70px 20px 20px 20px;
+    text-align: center;
+}
+
 /**brag-advert*/
 .brag-advert{
     display:flex;
@@ -430,6 +448,16 @@ header .web-name{
     display:flex;
 }
 /*welcome box*/
+.welcome-box{
+    flex-wrap:wrap;
+    gap:0;
+}
+.welcome-box h1{
+    font-size:30px;
+}
+.contactus-btn{
+    padding:0;
+}
 .contactus-btn button{
     width:100%;
     margin-top:10px;
