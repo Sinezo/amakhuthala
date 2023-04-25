@@ -51,7 +51,7 @@ header .web-name{
     padding:0 0 5px 0;
     font-size: larger;
 }
-.nav-big-screen ul li:hover,.nav-big-screen ul li i:hover{
+.nav-big-screen ul li:hover{
     color:rgb(210, 138, 30);
     cursor: pointer;
 }
@@ -74,7 +74,7 @@ header .web-name{
 }
 .nav-small-screen ul li:hover{
     cursor: pointer;
-    color:rgb(36, 29, 21);
+    color:rgb(209, 131, 41);
     border-bottom:1px solid;
 }
 .nav-small-screen{
@@ -127,6 +127,10 @@ header .web-name{
     color:white;
     border:0;
     border-radius:4px;
+}
+.contactus-btn button:hover{
+    cursor: pointer;
+    background-color:rgb(24, 55, 83);
 }
 /*wrapper1*/
 .wrapper1{
@@ -191,6 +195,10 @@ header .web-name{
     margin:10px 0;
     border-radius:4px;
 }
+.advert button:hover{
+    cursor: pointer;
+    background-color: rgb(168, 85, 26);
+}
 .advert p{
     font-size:15px;
 }
@@ -240,9 +248,11 @@ header .web-name{
 }
 .steps-box .image{
     padding:10px;
+    display:flex;
+    justify-content: center;
 }
 .steps-box .image img{
-    width:100%;
+    width:50%;
 }
 .steps-box .intro .icon{
     padding:10px;
@@ -433,10 +443,11 @@ header .web-name{
     width:95%;
     background-color: rgb(235, 146, 14);
     color:white;
-    border:1px solid;
     bottom:15px;
+    border:0;
     position:absolute;
     margin-left: -13px;
+    border-radius:4px;
 }
 .menu-wrapper .design button:hover{
     cursor: pointer;
@@ -484,6 +495,9 @@ header .web-name{
 /*steps box*/
 .steps-box{
     padding:20px;
+}
+.steps-box .image img{
+    width:100%;
 }
 .steps-box .steps-wrapper{
     flex-wrap: wrap;
