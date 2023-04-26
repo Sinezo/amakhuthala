@@ -469,6 +469,13 @@ header .web-name span{
     border:1px solid rgb(192, 192, 192);
     border-radius: 50%;
 }
+.result .projects .project-name{
+    border:1px solid rgb(238, 238, 238);
+    padding:5px;
+    margin:5px 0;
+    float:right;
+    border-radius: 4px;
+}
 /*menu wrapper*/
 .menu-wrapper-box{
     display: flex;
@@ -536,7 +543,26 @@ header .web-name span{
     background-color: rgb(189, 121, 21);
     box-shadow: 1px 1px 3px grey;
 }
-
+/*footer*/
+footer{
+    display:flex;
+    justify-content: center;
+    background-color: rgb(24, 55, 83);
+    color:rgb(212, 208, 208);
+}
+footer ul{
+    list-style: none;
+}
+footer div{
+    padding:20px;
+    width:250px;
+}
+footer div h4{
+    border-bottom: 2px solid chocolate;
+    width:fit-content;
+    padding:10px 0;
+    margin:10px 0;
+}
 /*SMALL SCREEN*/
 @media screen and (max-width:800px) {
 /*nav big screen*/
@@ -590,6 +616,10 @@ header .web-name span{
 }
 /*result*/
 .result{
+    flex-wrap:wrap;
+}
+/*footer*/
+footer{
     flex-wrap:wrap;
 }
 }
