@@ -444,8 +444,19 @@ header .web-name span{
 .outcome .paragraph div{
     font-size: small;
     padding:5px 0;
-    border-bottom: 1px solid rgb(184, 163, 118);
 
+}
+.outcome .consult-btn{
+    text-align: center;
+    padding:20px;
+}
+.outcome .consult-btn button{
+    background-color: chocolate;
+    border:0;
+    padding:10px;
+    width:130px;
+    color:white;
+    border-radius: 20px;
 }
 .result .projects{
     width:500px;
