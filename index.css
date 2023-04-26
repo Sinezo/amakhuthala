@@ -104,6 +104,10 @@ header .web-name span{
     transition: all 100ms ease-in-out;
     background-color: white;
 }
+.nav-small-screen .phone:hover{
+    cursor: pointer;
+    box-shadow:1px 1px 3px;
+}
 .nav-small-screen .phone .icon{
     background-color: rgb(181, 197, 110) ;
     padding:8px;
@@ -127,9 +131,15 @@ header .web-name span{
 }
 .welcome-box h1{
     font-size: 50px;
+    padding:5px 0;
 }
 .welcome-box h4{
-    color:rgb(207, 154, 55);
+    color:rgb(65, 70, 94);
+    padding:5px 0;
+}
+.welcome-box b{
+    color:rgb(216, 140, 69);
+    text-decoration: underline;
 }
 .welcome-box .image{
     width:500px;
@@ -147,14 +157,15 @@ header .web-name span{
 .contactus-btn button{
     padding:20px;
     width:200px;
-    background-color:rgb(50, 77, 102);
+    background-color:rgb(24, 55, 83);
     color:white;
     border:0;
     border-radius:4px;
 }
 .contactus-btn button:hover{
     cursor: pointer;
-    background-color:rgb(24, 55, 83);
+    background-color:rgb(50, 77, 102);
+    
 }
 /*wrapper1*/
 .wrapper1{
@@ -413,9 +424,15 @@ header .web-name span{
     cursor:pointer;
     color:red;
 }
-/*outcome*/
+/*result*/
+.result{
+    display:flex;
+    justify-content: center;
+    padding:10px;
+}
 .outcome{
     padding:20px;
+    width:500px;
 }
 .outcome .image img{
     width:100%;
@@ -429,6 +446,28 @@ header .web-name span{
     padding:5px 0;
     border-bottom: 1px solid rgb(184, 163, 118);
 
+}
+.result .projects{
+    width:500px;
+    padding:20px;
+}
+.result .projects h3{
+    padding:10px 0;
+}
+.result .projects img{
+    width:100%;
+}
+.position{
+    display:flex;
+    justify-content: center;
+    gap:10px;
+    padding:5px 0;
+}
+.position div{
+    width:12px;
+    height:12px;
+    border:1px solid rgb(192, 192, 192);
+    border-radius: 50%;
 }
 /*menu wrapper*/
 .menu-wrapper-box{
@@ -525,7 +564,7 @@ header .web-name span{
     font-size:30px;
 }
 .contactus-btn{
-    padding:0;
+    padding:10px 0;
 }
 .contactus-btn button{
     width:100%;
@@ -549,5 +588,9 @@ header .web-name span{
 .steps-box .steps-wrapper .one,.steps-box .steps-wrapper .two,.steps-box .steps-wrapper .three{
     margin-top: 30px;
     padding:30px
+}
+/*result*/
+.result{
+    flex-wrap:wrap;
 }
 }
