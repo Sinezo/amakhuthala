@@ -514,6 +514,10 @@ header .web-name span{
     top:-30px;
     right:75px;
 }
+.menu-wrapper .home{
+    border-bottom: 2px solid chocolate;
+    width:fit-content;
+}
 .menu-wrapper .close .icon{
     width:fit-content;
     background-color: white;
