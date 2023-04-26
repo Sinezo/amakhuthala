@@ -26,6 +26,8 @@ function scrolling(){
         document.querySelector('.nav-small-screen').style.backgroundColor='white';
         document.querySelector('.nav-small-screen').style.position='fixed';
         document.querySelector('.nav-small-screen').style.boxShadow='1px 1px 3px lightgrey';
+        document.querySelector('.phone').style.width='170px';
+        document.querySelector('.phone').style.border='2px solid rgb(181, 197, 110)';
         
 
     }
@@ -33,5 +35,7 @@ function scrolling(){
         document.querySelector('.nav-small-screen').style.backgroundColor='unset';
         document.querySelector('.nav-small-screen').style.boxShadow='none';
         document.querySelector('.nav-small-screen').style.position='relative';
+        document.querySelector('.phone').style.width='0';
+        document.querySelector('.phone').style.border='0';
     }
 }

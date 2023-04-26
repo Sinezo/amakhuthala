@@ -2,7 +2,7 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
-    font-family: 'Nunito', sans-serif;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-weight:100;
 }
 body{
@@ -21,9 +21,12 @@ header img{
 header .web-name{
     padding:0 5px;
     font-weight: 600;
-    font-size: larger;
+    font-size: x-large;
 }
-
+header .web-name span{
+    color:rgb(204, 130, 33);
+    font-weight: 600;
+}
 /*nav*/
 .nav-big-screen{
     display:flex;
@@ -88,6 +91,27 @@ header .web-name{
     text-align:center ;
     color:white;
     border-radius:4px ;
+}
+.nav-small-screen .phone{
+    display:flex;
+    justify-content: start;
+    gap:10px;
+    align-items: center;
+    border-radius:4px;
+    position:absolute;
+    left:10px;
+    width:0;
+    overflow: hidden;
+    transition: all 100ms ease-in-out;
+    background-color: white;
+}
+.nav-small-screen .phone .icon{
+    background-color: rgb(181, 197, 110) ;
+    padding:8px;
+    color:white;
+}
+.nav-small-screen .phone .number{
+    padding:0 5px;
 }
 /*content wrapper*/
 .content-wrapper{
@@ -422,7 +446,7 @@ header .web-name{
     box-shadow:1px 1px 3px;
     height: 0;
     overflow: hidden;
-    transition: top 200ms ease-in-out;
+    transition:height 200ms ease-in-out;
     font-size: larger;
     line-height: 40px;
     color:rgb(37, 37, 37);
