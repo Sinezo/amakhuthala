@@ -473,7 +473,6 @@ header .web-name span{
 .menu-wrapper-box{
     display: flex;
     justify-content: center;
-    margin-bottom: 300px;
     box-sizing: border-box;
 }
 .menu-wrapper{
