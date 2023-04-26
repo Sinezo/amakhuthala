@@ -457,6 +457,10 @@ header .web-name span{
     color:white;
     border-radius: 20px;
 }
+.outcome .consult-btn button:hover{
+    cursor: pointer;
+    background-color: rgb(202, 117, 56);
+}
 .result .projects{
     width:500px;
     padding:20px;
@@ -500,7 +504,7 @@ header .web-name span{
     box-shadow:1px 1px 3px;
     height: 0;
     overflow: hidden;
-    transition:height 200ms ease-in-out;
+    transition:top 200ms ease-in-out;
     font-size: larger;
     line-height: 40px;
     color:rgb(37, 37, 37);
@@ -535,6 +539,7 @@ header .web-name span{
 .menu-wrapper ul{
     list-style: none;
     padding:10px;
+
 }
 
 .menu-wrapper ul li:hover{
