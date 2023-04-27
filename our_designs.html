@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/dd42663f14.js" crossorigin="anonymous"></script> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Our Designs| Escaletech</title>
+    <style>
+        *{
+            padding:0;
+            margin:0; 
+        }
+        .alert{
+            text-align: center;
+            padding:20px;
+        }
+        .alert i{
+            font-size:xx-large; 
+        }
+        .our-designs{
+            border-bottom: 2px solid chocolate;
+            width:fit-content;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap-header">
+        <!--HEADER-->
+    <header onclick="window.location='index.html'">
+        <div class="web-name" id="web-name" >escale<span>tech</span></div>
+    </header>
+
+    <!--MENU HEADER-->
+    <div class="nav-big-screen">
+        <ul>
+            <li class="home">Home</li>
+            <li>Design</li>
+            <li>Our designs <i class="fa-solid fa-chevron-down"></i></li>
+            <li>Team</li>
+            <li class="sign-in"><i class="fa-solid fa-right-to-bracket"></i></li>
+        </ul>
+    </div>
+</div>
+
+<!--MENU HEADER -SMALL SCREEN-->
+<div class="nav-small-screen">
+    <!--phone-->
+    <div class="phone">
+        <div class="icon"><i class="fa-solid fa-phone-flip"></i></div><div class="number">+27786052462</div>
+    </div>
+    <ul>
+        <li class="menu-icon"><i class="fa-solid fa-bars-staggered"></i></li>
+        <li onclick="window.location='student_portal.html'" class="sign-in"><i class="fa-solid fa-right-to-bracket"></i></li>
+    </ul>
+</div>
+
+    <div class="alert">
+        <i class="fa-solid fa-road-circle-exclamation"></i><br>
+        There is nothing to show at the moment. 
+    </div>
+
+        <!--MENU WRAPPER BOX-->
+        <div class="menu-wrapper-box">
+            <div class="menu-wrapper" id="menu-wrapper">
+                <div class="close"><div class="icon" id="close-menu"><i class="fa-solid fa-xmark"></i></div></div>
+                <div class="wrap-div">
+                    <ul>
+                        <li onclick="window.location='index.html'">Home</li>
+                        <li onclick="window.location='about-us.html'">About us</li>
+                        <li onclick="window.location='our_designs.html'" class="our-designs">OUR DESIGNS</li>
+                        <li onclick="window.location='our-team.html'">Our team</li>
+                        <li onclick="window.location='e-learning.html'">E-learning</li>
+                    </ul>
+            
+                    <div class="design">
+                        <button>Design a project</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

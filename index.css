@@ -271,7 +271,6 @@ header .web-name span{
 }
 .steps-box h2{
     padding:10px 0;
-    color:chocolate;
 }
 .steps-box .intro{
     display:flex;
@@ -342,7 +341,7 @@ header .web-name span{
     border-radius:50%;
 }
 .steps-box .one  .paragraph p{
-    color:rgb(82, 81, 80);
+    color:rgb(50, 122, 17);
     padding:10px 0;
 }
 .steps-box .one  .paragraph .buttons{
@@ -374,7 +373,7 @@ header .web-name span{
     color:white;
 }
 .steps-box .two  .paragraph p{
-    color:rgb(82, 81, 80);
+    color:rgb(50, 122, 17);
     padding:10px 0;
 }
 .steps-box .two  .paragraph .buttons{
@@ -406,7 +405,7 @@ header .web-name span{
     color:white;
 }
 .steps-box .three  .paragraph p{
-    color:rgb(82, 81, 80);
+    color:rgb(50, 122, 17);
     padding:10px 0;
 }
 .steps-box .three  .paragraph .buttons{
@@ -432,6 +431,10 @@ header .web-name span{
 .outcome{
     padding:20px;
     width:500px;
+}
+.outcome div{
+    font-size: small;
+    padding:5px 0;
 }
 .outcome .image img{
     width:100%;
