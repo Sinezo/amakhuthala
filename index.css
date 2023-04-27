@@ -642,11 +642,13 @@ footer div h4{
     width:100%;
 }
 .steps-box .steps-wrapper{
-    flex-wrap: wrap;
+    overflow-x: scroll;
+    justify-content: start;
 }
 .steps-box .steps-wrapper .one,.steps-box .steps-wrapper .two,.steps-box .steps-wrapper .three{
     margin-top: 30px;
-    padding:30px
+    padding:30px;
+    min-width:300px;
 }
 /*result*/
 .result{
