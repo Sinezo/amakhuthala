@@ -281,7 +281,7 @@ header .web-name span{
 }
 .steps-box .intro .icon{
     padding:10px;
-    background-color: rgb(233, 226, 135);
+    background-color: rgb(194, 135, 58);
     display:flex;
     justify-content: center;
     align-items: center;
@@ -290,6 +290,11 @@ header .web-name span{
 .steps-box .intro-wrap{
     display:flex;
     justify-content: center;
+    background-color: rgb(202, 142, 64);
+    padding:20px;
+    font-size: xx-large;
+    color:rgb(241, 234, 234);
+    margin:10px -20px 40px -20px;
 }
 .steps-box .intro .text{
     padding:5px;
@@ -580,6 +585,7 @@ footer{
 }
 footer ul{
     list-style: none;
+    line-height: 30px;
 }
 footer div{
     padding:20px;
