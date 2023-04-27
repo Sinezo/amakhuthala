@@ -688,5 +688,10 @@ footer div h4{
 /*footer*/
 footer{
     flex-wrap:wrap;
+    justify-content: start;
+}
+footer div{
+    padding:30px;
+    width:100%;
 }
 }
