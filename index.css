@@ -329,6 +329,12 @@ header .web-name span{
     width:100%;
     margin-top:-50px;
 }
+
+.steps-box .images img{
+    background-color: brown;
+    text-align: start;
+    width:100%;
+}
 .steps-box .one .number1 .num{
     width:40px;
     height:40px;
