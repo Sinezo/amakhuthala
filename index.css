@@ -9,8 +9,8 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    color:rgb(51, 51, 51);
-    background-color: dark;
+    color:rgb(160, 157, 157);
+    background-color: rgb(32, 30, 30);
 }
 /*font-family: 'Roboto', sans-serif;*/
 /*header*/
@@ -287,6 +287,7 @@ header .web-name span{
     display:flex;
     gap:20px;
     justify-content: center;
+    color:rgb(51, 51, 51);
 }
 .brag-advert .brag{
     background-color: rgb(248, 248, 240);
