@@ -460,7 +460,7 @@ header .web-name span{
     border-radius:50%;
 }
 .steps-box .one  .paragraph p{
-    color:rgb(50, 122, 17);
+    color:rgb(212, 107, 21);
     padding:10px 0;
 }
 .steps-box .one  .paragraph .buttons{
@@ -492,7 +492,7 @@ header .web-name span{
     color:white;
 }
 .steps-box .two  .paragraph p{
-    color:rgb(50, 122, 17);
+    color:rgb(212, 107, 21);
     padding:10px 0;
 }
 .steps-box .two  .paragraph .buttons{
@@ -524,7 +524,7 @@ header .web-name span{
     color:white;
 }
 .steps-box .three  .paragraph p{
-    color:rgb(50, 122, 17);
+    color:rgb(212, 107, 21);
     padding:10px 0;
 }
 .steps-box .three  .paragraph .buttons{
@@ -627,7 +627,7 @@ header .web-name span{
     height: 0;
     overflow: hidden;
     transition:top 200ms ease-in-out;
-    font-size: larger;
+    font-size: small;
     line-height: 40px;
     color:rgb(37, 37, 37);
 }
