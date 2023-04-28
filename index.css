@@ -9,7 +9,7 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    color:rgb(51, 51, 51);
+    color:rgb(100, 99, 99);
 }
 /*font-family: 'Roboto', sans-serif;*/
 /*header*/
@@ -159,7 +159,7 @@ header .web-name span{
     padding:50px 0;
 }
 .contactus-btn button{
-    padding:20px;
+    padding:10px;
     width:200px;
     background-color:chocolate;
     color:white;
@@ -315,51 +315,7 @@ header .web-name span{
     text-align: start;
     margin-top:15px;
 }
-/*advert*/
-.advert{
-    text-align: start;
-    box-shadow:1px 1px 5px lightgrey;
-    padding:20px;
-    width:500px;
-}
-.advert .affordable-prices{
-    color:chocolate;
-    text-decoration: underline;
-}
-.advert h4{
-    padding:0 0 10px 0;
-}
-.advert button{
-    padding:10px;
-    width:100%;
-    background-color: chocolate;
-    color:white;
-    border:0;
-    margin:10px 0;
-    border-radius:4px;
-}
-.advert button:hover{
-    cursor: pointer;
-    background-color: rgb(168, 85, 26);
-}
-.advert p{
-    font-size:15px;
-}
-.advert .start-money{
-    font-size:small;
-}
-.summary .one{
-    display:flex;
-    justify-content: center;
-    gap:30px;
-    padding:10px 0;
-}
-.summary .one h5{
-    font-size:16px;
-}
-.summary .one span{
-    font-size: small;
-}
+
 /*top-services*/
 .top-services{
     padding:20px;
@@ -799,7 +755,7 @@ footer div h4{
 .steps-box .steps-wrapper .one,.steps-box .steps-wrapper .two,.steps-box .steps-wrapper .three{
     margin-top: 30px;
     padding:30px;
-    min-width:300px;
+    min-width:400px;
 }
 /*result*/
 .result{
