@@ -35,7 +35,7 @@ var position=1;
                 
                 position=1;
             }
-            setTimeout('slide_function()',3000);
+            setTimeout('slide_function()',7000);
         }
         window.onload = slide_function();
 
