@@ -23,6 +23,7 @@ header .web-name{
     font-weight: 600;
     font-size: x-large;
     margin:0 0 0 -12px;
+    text-shadow:1px 1px;
 }
 header .web-name span{
     color:rgb(204, 130, 33);
@@ -159,15 +160,119 @@ header .web-name span{
 .contactus-btn button{
     padding:20px;
     width:200px;
-    background-color:rgb(24, 55, 83);
+    background-color:chocolate;
     color:white;
     border:0;
     border-radius:4px;
 }
 .contactus-btn button:hover{
     cursor: pointer;
-    background-color:rgb(50, 77, 102);
+    background-color:rgb(161, 76, 15);
     
+}
+/*slide show*/
+.slide-show{
+    display:flex;
+    width:500px;
+    overflow:hidden;
+    margin:0 0 50px 0;
+    border-bottom:1px solid rgb(71, 70, 70);
+}
+.slide-show div{
+    width:100%;
+    height:100%;
+}
+.slide-show div img{
+    width:100%;
+}
+.slide-show .box1{
+    min-width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.slide-show .box1 button{
+    padding:10px 2px;
+    background-color: chocolate;
+    border:0;
+    color:white;
+    border-radius: 4px;
+    width:150px;
+}
+.slide-show .box2{
+    min-width:100%;
+}
+.slide-show .box2 .text2{
+    padding:10px;
+    height:150px;
+}
+.slide-show .box2 button{
+    padding:10px 2px;
+    background-color: chocolate;
+    border:0;
+    color:white;
+    border-radius: 4px;
+
+}
+.slide-show .box2 .text2 .p-text2{
+    height:0;
+    overflow: hidden;
+    margin:20px 0 0 0;
+    transition: margin 600ms ease-in-out;
+    padding:10px 0;
+    font-size:small;
+}
+.slide-show .box3{
+    min-width:100%;
+}
+.slide-show .box3 .text3{
+    padding:10px;
+    height:150px;
+}
+.slide-show .box3 .text3 .p-text3{
+    height:0;
+    overflow: hidden;
+    margin:20px 0 0 0;
+    transition: margin 600ms ease-in-out;
+    padding:10px 0;
+    font-size:small;
+}
+.slide-show .box3 button{
+    padding:10px 2px;
+    background-color: chocolate;
+    border:0;
+    color:white;
+    border-radius: 4px;
+}
+.slide-show .box4{
+    min-width:100%;
+}
+.slide-show .box4 .text4{
+    padding:10px;
+    height:150px;
+}
+.slide-show .box4 .text4 .p-text4{
+    height:0;
+    overflow: hidden;
+    margin:20px 0 0 0;
+    transition: margin 600ms ease-in-out;
+    padding:10px 0;
+    font-size:small;
+}
+.slide-show .box4 button{
+    padding:10px 2px;
+    background-color: chocolate;
+    border:0;
+    color:white;
+    border-radius: 4px;
+}
+/*decorator*/
+.decorator{
+    padding:20px;
+}
+.decorator .one{
+    padding:10px;
+    background-color: chocolate;
 }
 /*wrapper1*/
 .wrapper1{
@@ -188,7 +293,7 @@ header .web-name span{
     width:500px;
 }
 .brag-advert .brag .wrap .icon{
-    background-color:rgb(50, 77, 102) ;
+    background-color:chocolate ;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -284,7 +389,7 @@ header .web-name span{
 }
 .steps-box .intro .icon{
     padding:10px;
-    background-color: rgb(194, 135, 58);
+    background-color: rgb(24, 55, 83);
     display:flex;
     justify-content: center;
     align-items: center;
@@ -293,7 +398,7 @@ header .web-name span{
 .steps-box .intro-wrap{
     display:flex;
     justify-content: center;
-    background-color: rgb(202, 142, 64);
+    background-color: rgb(24, 55, 83);
     padding:20px;
     font-size: xx-large;
     color:rgb(241, 234, 234);
@@ -585,10 +690,21 @@ footer{
     justify-content: center;
     background-color: rgb(24, 55, 83);
     color:rgb(212, 208, 208);
+    font-size:x-large;
 }
 footer ul{
     list-style: none;
     line-height: 30px;
+}
+footer ul li{
+    transition: all 300ms ease-in-out;
+    width:200px;
+}
+footer ul li:hover{
+    border-bottom:1px solid;
+    width:fit-content;
+    cursor: pointer;
+    width:210px;
 }
 footer div{
     padding:20px;
@@ -652,6 +768,9 @@ footer div h4{
 }
 .welcome-box h1{
     font-size:30px;
+}
+.welcome-box .welcome-text{
+    text-align:center;
 }
 .contactus-btn{
     padding:10px 0;

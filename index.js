@@ -1,3 +1,44 @@
+//slide show
+var position=1;
+        function slide_function(){
+            if(position==1){
+                document.querySelector('.box1').style.minWidth='0';
+                document.querySelector('.p-text2').style.height='fit-content';
+                document.querySelector('.p-text2').style.margin='0';
+                position=2;
+            }
+            else if(position==2){
+                document.querySelector('.box2').style.minWidth='0';
+                document.querySelector('.p-text3').style.height='fit-content';
+                document.querySelector('.p-text3').style.margin='0';
+
+                position=3;
+            }
+            else if(position==3){
+                document.querySelector('.box3').style.minWidth='0';
+                document.querySelector('.p-text4').style.height='fit-content';
+                document.querySelector('.p-text4').style.margin='0';
+                position=4;
+            }
+            else if(position==4){
+                document.querySelector('.box1').style.minWidth='100%';
+                document.querySelector('.box2').style.minWidth='100%';
+                document.querySelector('.box3').style.minWidth='100%';
+                document.querySelector('.box4').style.minWidth='100%';
+
+                document.querySelector('.p-text2').style.height='0';
+                document.querySelector('.p-text2').style.margin='20px 0 0 0';
+                document.querySelector('.p-text3').style.height='0';
+                document.querySelector('.p-text3').style.margin='20px 0 0 0';
+                document.querySelector('.p-text4').style.height='0';
+                document.querySelector('.p-text4').style.margin='20px 0 0 0';
+                
+                position=1;
+            }
+            setTimeout('slide_function()',3000);
+        }
+        window.onload = slide_function();
+
 //menu icon click
 var menu = document.querySelector('.menu-icon');
 menu.addEventListener('click', function(){
