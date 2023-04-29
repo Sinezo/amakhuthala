@@ -2,16 +2,15 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
-    font-size:small;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 html{
     scroll-behavior: smooth;
 }
 body{
-    color:rgb(70, 69, 69);
+    color:rgb(0, 0, 0);
 }
-/*font-family: 'Roboto', sans-serif;*/
+/*font-family: 'Poppins', sans-serif;*/
 /*header*/
 header{
     display:flex;
@@ -58,6 +57,7 @@ header .web-name span{
 .nav-big-screen ul li{
     padding:0 0 5px 0;
     font-size: larger;
+    font-weight:600;
 }
 .nav-big-screen ul li:hover{
     color:rgb(210, 138, 30);
@@ -172,14 +172,18 @@ header .web-name span{
     background-color:rgb(161, 76, 15);
     
 }
+.contactus-btn button i{
+    margin-left:10px;
+}
 /*slide show*/
 .slide-show{
     display:flex;
     width:500px;
     height:fit-content;
     overflow:hidden;
-    margin:20px 10px;
+    margin:20px 20px;
     border-bottom:1px solid chocolate;
+    background-image: url('images (1).jpeg');
 }
 .slide-show div{
     width:100%;
@@ -318,28 +322,38 @@ header .web-name span{
 /*top-services*/
 .top-services{
     padding:20px;
-}
-.top-services .list{
-    display:flex;
+    width:500px;
+    margin-top:-30px;
 }
 .top-services h2{
     padding:10px 0;
 }
+/*top-services*/
+.top-services .list{
+    display:flex;
+    flex-wrap:wrap;
+}
 .top-services button{
     padding:10px;
-    border-radius: 20px;
+    border-radius: 4px;
     margin-bottom:5px;
     border:1px solid;
     background-color:chocolate;
     color:white;
+    width:100%;
+
+}
+.top-services button:hover{
+    cursor: pointer;
+    background-color:rgb(153, 79, 26);
 }
 /*steps-box*/
 .steps-box{
     padding:10px;
-    background-color: rgb(24, 55, 83);
 }
 .steps-box h2{
     padding:10px 0;
+    color:chocolate;
 }
 .steps-box .intro{
     display:flex;
@@ -350,7 +364,6 @@ header .web-name span{
 }
 .steps-box .intro .icon{
     padding:10px;
-    background-color: rgb(24, 55, 83);
     display:flex;
     justify-content: center;
     align-items: center;
@@ -359,10 +372,10 @@ header .web-name span{
 .steps-box .intro-wrap{
     display:flex;
     justify-content: center;
-    background-color: rgb(24, 55, 83);
+    background-color: rgb(236, 241, 245);
     padding:20px;
     font-size: xx-large;
-    color:rgb(241, 234, 234);
+    color:rgb(66, 64, 64);
     margin:10px -20px 0px -20px;
 }
 .steps-box .intro .text{
@@ -406,7 +419,6 @@ header .web-name span{
 }
 
 .steps-box .images img{
-    background-color: brown;
     text-align: start;
     width:100%;
 }
@@ -422,7 +434,7 @@ header .web-name span{
     border-radius:50%;
 }
 .steps-box .one  .paragraph p{
-    color:rgb(212, 107, 21);
+    color:rgb(141, 140, 139);
     padding:10px 0;
 }
 .steps-box .one  .paragraph .buttons{
@@ -454,7 +466,7 @@ header .web-name span{
     color:white;
 }
 .steps-box .two  .paragraph p{
-    color:rgb(212, 107, 21);
+    color:rgb(141, 140, 139);
     padding:10px 0;
 }
 .steps-box .two  .paragraph .buttons{
@@ -486,7 +498,7 @@ header .web-name span{
     color:white;
 }
 .steps-box .three  .paragraph p{
-    color:rgb(212, 107, 21);
+    color:rgb(141, 140, 139);
     padding:10px 0;
 }
 .steps-box .three  .paragraph .buttons{
@@ -738,7 +750,7 @@ footer div h4{
     padding:10px 0;
 }
 .contactus-btn button{
-    width:100%;
+    width:80%;
     margin-top:10px;
 }
 /**brag-advert*/
@@ -753,7 +765,7 @@ footer div h4{
 }
 .top-services button{
     padding:10px;
-    border-radius: 20px;
+    border-radius: 4px;
     margin-bottom:5px;
     border:1px solid;
     background-color:chocolate;
