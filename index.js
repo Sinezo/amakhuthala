@@ -65,7 +65,7 @@ window.onscroll=function(){
 function scrolling(){
     if(document.body.scrollTop > 0 || document.documentElement.scrollTop >0){
         document.querySelector('.nav-small-screen').style.backgroundColor='white';
-       // document.querySelector('.nav-small-screen').style.position='fixed';
+        document.querySelector('.nav-small-screen').style.position='fixed';
         document.querySelector('.nav-small-screen').style.boxShadow='1px 1px 3px lightgrey';
         document.querySelector('.phone').style.width='170px';
         document.querySelector('.phone').style.border='2px solid rgb(181, 197, 110)';
