@@ -4,20 +4,27 @@ var position=1;
             if(position==1){
                 document.querySelector('.box1').style.minWidth='0';
                 document.querySelector('.p-text2').style.height='fit-content';
-                document.querySelector('.p-text2').style.margin='0';
+                document.querySelector('.p-text2').style.marginTop='100px';
+                document.querySelector('.slide-show').style.backgroundImage="url(Screenshot_20230425-172947_Gallery.jpg)";
+                document.querySelector('.slide-show').style.backgroundSize='cover';
                 position=2;
             }
             else if(position==2){
                 document.querySelector('.box2').style.minWidth='0';
                 document.querySelector('.p-text3').style.height='fit-content';
-                document.querySelector('.p-text3').style.margin='0';
+                document.querySelector('.p-text3').style.marginTop='100px';
+                document.querySelector('.slide-show').style.backgroundImage="url(Screenshot_20230426-180826_Gallery.jpg)";
+                document.querySelector('.slide-show').style.backgroundSize='cover';
 
                 position=3;
             }
             else if(position==3){
                 document.querySelector('.box3').style.minWidth='0';
                 document.querySelector('.p-text4').style.height='fit-content';
-                document.querySelector('.p-text4').style.margin='0';
+                document.querySelector('.p-text4').style.marginTop='100px';
+                document.querySelector('.slide-show').style.backgroundImage="url(Screenshot_20230427-084427_Gallery.jpg)";
+                document.querySelector('.slide-show').style.backgroundSize='cover';
+                
                 position=4;
             }
             else if(position==4){
@@ -27,11 +34,11 @@ var position=1;
                 document.querySelector('.box4').style.minWidth='100%';
 
                 document.querySelector('.p-text2').style.height='0';
-                document.querySelector('.p-text2').style.margin='20px 0 0 0';
+                document.querySelector('.p-text2').style.margin='200px 20px';
                 document.querySelector('.p-text3').style.height='0';
-                document.querySelector('.p-text3').style.margin='20px 0 0 0';
+                document.querySelector('.p-text3').style.margin='200px 20px';
                 document.querySelector('.p-text4').style.height='0';
-                document.querySelector('.p-text4').style.margin='20px 0 0 0';
+                document.querySelector('.p-text4').style.margin='200px 20px';
                 
                 position=1;
             }

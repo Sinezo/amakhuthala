@@ -179,11 +179,10 @@ header .web-name span{
 .slide-show{
     display:flex;
     width:500px;
-    height:fit-content;
+    height:400px;
     overflow:hidden;
     margin:20px 20px;
     border-bottom:1px solid chocolate;
-    background-image: url('images (1).jpeg');
 }
 .slide-show div{
     width:100%;
@@ -209,22 +208,16 @@ header .web-name span{
     padding:10px 0;
     height:200px;
 }
-.slide-show .box2 button{
-    padding:10px 2px;
-    background-color: chocolate;
-    border:0;
-    color:white;
-    border-radius: 4px;
-    font-size: x-large;
 
-}
 .slide-show .box2 .text2 .p-text2{
     height:0;
     overflow: hidden;
-    margin:20px 0 0 0;
     transition: margin 600ms ease-in-out;
-    padding:10px 0;
+    padding:20px 0;
     font-size:x-large;
+    color:white;
+    margin:200px 20px;
+
 }
 .slide-show .box3{
     min-width:100%;
@@ -235,19 +228,13 @@ header .web-name span{
 .slide-show .box3 .text3 .p-text3{
     height:0;
     overflow: hidden;
-    margin:20px 0 0 0;
     transition: margin 600ms ease-in-out;
-    padding:10px 0;
+    padding:20px 0;
     font-size:x-large;
-}
-.slide-show .box3 button{
-    padding:10px 2px;
-    background-color: chocolate;
-    border:0;
     color:white;
-    border-radius: 4px;
-    font-size: x-large;
+    margin:200px 20px;
 }
+
 .slide-show .box4{
     min-width:100%;
 }
@@ -257,19 +244,13 @@ header .web-name span{
 .slide-show .box4 .text4 .p-text4{
     height:0;
     overflow: hidden;
-    margin:20px 0 0 0;
     transition: margin 600ms ease-in-out;
-    padding:10px 0;
+    padding:20px 0;
     font-size:x-large;
-}
-.slide-show .box4 button{
-    padding:10px 2px;
-    background-color: chocolate;
-    border:0;
     color:white;
-    border-radius: 4px;
-    font-size: x-large;
+    margin:200px 20px;
 }
+
 /*decorator*/
 .decorator{
     padding:20px;
