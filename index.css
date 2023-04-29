@@ -333,6 +333,7 @@ header .web-name span{
 /*steps-box*/
 .steps-box{
     padding:10px;
+    background-color: rgb(24, 55, 83);
 }
 .steps-box h2{
     padding:10px 0;
@@ -387,6 +388,7 @@ header .web-name span{
     width:400px;
     height:fit-content;
     box-shadow:1px 1px 5px lightgrey;
+    background-color: white;
 }/*one*/
 .steps-box .one{
     margin-top:16px;
