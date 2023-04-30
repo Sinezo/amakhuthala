@@ -179,7 +179,7 @@ header .web-name span{
 /*slide show*/
 .slide-show{
     display:flex;
-    height:570px;
+    height:590px;
     overflow:hidden;
     margin:20px 20px;
 }
@@ -190,7 +190,7 @@ header .web-name span{
 .slide-show h2{
     padding:20px;
     color:chocolate;
-    margin-top: 30px;
+    margin-top: 50px;
     font-size:50px;
 }
 .slide-show div img{
@@ -198,6 +198,9 @@ header .web-name span{
 }
 .slide-show .box1{
     text-align:center;
+}
+.slide-show .box2 h2{
+    margin-top:0px;
 }
 .slide-show .box1 .buttons{
     padding:20px;
