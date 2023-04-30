@@ -6,9 +6,7 @@ var position=1;
                 document.querySelector('.box1').style.overflow='hidden';
                 document.querySelector('.p-text2').style.height='fit-content';
                 document.querySelector('.p-text2').style.marginTop='0px';
-                document.querySelector('.slide-show').style.backgroundImage="url(images.png)";
-                document.querySelector('.slide-show').style.backgroundSize='cover';
-                document.querySelector('.slide-show').style.bacgroundPosition='center';
+                document.querySelector('.h2').style.margin="0";
                 position=2;
             }
             else if(position==2){
@@ -16,10 +14,7 @@ var position=1;
                 document.querySelector('.box2').style.overflow='hidden';
                 document.querySelector('.p-text3').style.height='fit-content';
                 document.querySelector('.p-text3').style.marginTop='0px';
-                document.querySelector('.slide-show').style.backgroundImage="url(Screenshot_20230430-184718_Gallery.jpg)";
-                document.querySelector('.slide-show').style.backgroundSize='cover';
-                document.querySelector('.slide-show').style.bacgroundPosition='center';
-
+                document.querySelector('.h3').style.margin="0";
                 position=3;
             }
             else if(position==3){
@@ -27,10 +22,7 @@ var position=1;
                 document.querySelector('.box3').style.overflow='hidden';
                 document.querySelector('.p-text4').style.height='fit-content';
                 document.querySelector('.p-text4').style.marginTop='0px';
-                document.querySelector('.slide-show').style.backgroundImage="url(Screenshot_20230430-184715_Gallery.jpg)";
-                document.querySelector('.slide-show').style.backgroundSize='cover';
-                document.querySelector('.slide-show').style.bacgroundPosition='center';
-                
+                document.querySelector('.h4').style.margin="0";
                 position=4;
             }
             else if(position==4){
@@ -39,6 +31,7 @@ var position=1;
                 document.querySelector('.box3').style.minWidth='100%';
                 document.querySelector('.box4').style.minWidth='100%';
                 document.querySelector('.slide-show').style.backgroundImage="none";
+    
 
                 document.querySelector('.p-text2').style.height='0';
                 document.querySelector('.p-text2').style.margin='200px 20px';
@@ -46,6 +39,10 @@ var position=1;
                 document.querySelector('.p-text3').style.margin='200px 20px';
                 document.querySelector('.p-text4').style.height='0';
                 document.querySelector('.p-text4').style.margin='200px 20px';
+
+                document.querySelector('.h2').style.margin="0px 0 0 -20px";
+                document.querySelector('.h3').style.margin="0px 0 0 -20px";
+                document.querySelector('.h4').style.margin="0px 0 0 -20px";
                 
                 position=1;
             }
@@ -96,5 +93,46 @@ function scrolling(){
         document.querySelector('.phone').style.border='0';
         document.querySelector('.web-name').style.fontSize="x-large";
         document.querySelector('.web-name').style.color='black';
+    }
+}
+
+//projects
+var projects_position=1;
+function projects(){
+    if(projects_position==1){
+        document.querySelector('.projects_images').src="Screenshot_20230425-172947_Gallery.jpg";
+
+        document.querySelector('#pos1').style.backgroundColor='white';
+        document.querySelector('#pos2').style.backgroundColor='rgb(114, 117, 111)';
+
+        projects_position=2;
+    }
+    else if(projects_position==2){
+        document.querySelector('.projects_images').src="Screenshot_20230430-184718_Gallery.jpg";
+
+        document.querySelector('#pos2').style.backgroundColor='white';
+        document.querySelector('#pos3').style.backgroundColor='rgb(114, 117, 111)';
+        projects_position=3;
+    }
+    else if(projects_position==3){
+        document.querySelector('.projects_images').src="sinethemba.jpg";
+
+        document.querySelector('#pos3').style.backgroundColor='white';
+        document.querySelector('#pos4').style.backgroundColor='rgb(114, 117, 111)';
+        projects_position=4;
+    }
+    else if(projects_position==4){
+        document.querySelector('.projects_images').src="Screenshot_20230430-184715_Gallery.jpg";
+
+        document.querySelector('#pos4').style.backgroundColor='white';
+        document.querySelector('#pos5').style.backgroundColor='rgb(114, 117, 111)';
+        projects_position=5;
+    }
+    else{
+        document.querySelector('.projects_images').src="Screenshot_20230426-180826_Gallery.jpg";
+
+        document.querySelector('#pos5').style.backgroundColor='white';
+        document.querySelector('#pos1').style.backgroundColor='rgb(114, 117, 111)';
+        projects_position=1;
     }
 }
