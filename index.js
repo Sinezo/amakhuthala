@@ -3,16 +3,18 @@ var position=1;
         function slide_function(){
             if(position==1){
                 document.querySelector('.box1').style.minWidth='0';
+                document.querySelector('.box1').style.overflow='hidden';
                 document.querySelector('.p-text2').style.height='fit-content';
-                document.querySelector('.p-text2').style.marginTop='100px';
+                document.querySelector('.p-text2').style.marginTop='0px';
                 document.querySelector('.slide-show').style.backgroundImage="url(Screenshot_20230425-172947_Gallery.jpg)";
                 document.querySelector('.slide-show').style.backgroundSize='cover';
                 position=2;
             }
             else if(position==2){
                 document.querySelector('.box2').style.minWidth='0';
+                document.querySelector('.box2').style.overflow='hidden';
                 document.querySelector('.p-text3').style.height='fit-content';
-                document.querySelector('.p-text3').style.marginTop='100px';
+                document.querySelector('.p-text3').style.marginTop='0px';
                 document.querySelector('.slide-show').style.backgroundImage="url(Screenshot_20230426-180826_Gallery.jpg)";
                 document.querySelector('.slide-show').style.backgroundSize='cover';
 
@@ -20,8 +22,9 @@ var position=1;
             }
             else if(position==3){
                 document.querySelector('.box3').style.minWidth='0';
+                document.querySelector('.box3').style.overflow='hidden';
                 document.querySelector('.p-text4').style.height='fit-content';
-                document.querySelector('.p-text4').style.marginTop='100px';
+                document.querySelector('.p-text4').style.marginTop='0px';
                 document.querySelector('.slide-show').style.backgroundImage="url(Screenshot_20230427-084427_Gallery.jpg)";
                 document.querySelector('.slide-show').style.backgroundSize='cover';
                 

@@ -179,7 +179,7 @@ header .web-name span{
 .slide-show{
     display:flex;
     width:500px;
-    height:400px;
+    height:420px;
     overflow:hidden;
     margin:20px 20px;
     border-bottom:1px solid chocolate;
@@ -188,17 +188,29 @@ header .web-name span{
     width:100%;
     height:100%;
 }
+.slide-show h2{
+    padding:20px;
+    color:white;
+    margin-top: 30px;;
+}
 .slide-show div img{
     width:100%;
 }
 .slide-show .box1{
-    min-width:100%;
-    display:flex;
-    justify-content: center;
-    align-items: center;
+    text-align:center;
+}
+.slide-show .box1 .buttons{
+    padding:20px;
+}
+.slide-show .box1 button{
+    padding:10px;
+    background-color:chocolate ;
+    color:white;
+    border-radius:10px;
+    border:0;
 }
 .slide-show .box1 img{
-   margin-top: 100px;
+   margin:100px 10px 0  5px;
 
 }
 .slide-show .box2{
@@ -217,7 +229,14 @@ header .web-name span{
     font-size:x-large;
     color:white;
     margin:200px 20px;
-
+}
+.slide-show .box2 .text2 button{
+    padding:10px;
+    border:0;
+    background-color: chocolate;
+    color:white;
+    border-radius:20px;
+    margin-top:20px;
 }
 .slide-show .box3{
     min-width:100%;
@@ -234,7 +253,14 @@ header .web-name span{
     color:white;
     margin:200px 20px;
 }
-
+.slide-show .box3 .text3 button{
+    padding:10px;
+    border:0;
+    background-color: chocolate;
+    color:white;
+    border-radius:20px;
+    margin-top:20px;
+}
 .slide-show .box4{
     min-width:100%;
 }
@@ -250,21 +276,21 @@ header .web-name span{
     color:white;
     margin:200px 20px;
 }
-
-/*decorator*/
-.decorator{
-    padding:20px;
-}
-.decorator .one{
+.slide-show .box4 .text4 button{
     padding:10px;
+    border:0;
     background-color: chocolate;
+    color:white;
+    border-radius:20px;
+    margin-top:20px;
 }
 /*wrapper1*/
 .wrapper1{
     padding:70px 20px 20px 20px;
     text-align: center;
+    background-color: rgb(224, 219, 219);
+    margin-top:-43px;
 }
-
 /**brag-advert*/
 .brag-advert{
     display:flex;
@@ -328,175 +354,7 @@ header .web-name span{
     cursor: pointer;
     background-color:rgb(153, 79, 26);
 }
-/*steps-box*/
-.steps-box{
-    padding:10px;
-}
-.steps-box h2{
-    padding:10px 0;
-    color:chocolate;
-}
-.steps-box .intro{
-    display:flex;
-    gap:10px;
-    border-radius: 25px;
-    width:fit-content;
-    margin:10px;
-}
-.steps-box .intro .icon{
-    padding:10px;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    font-size: xx-large;
-}
-.steps-box .intro-wrap{
-    display:flex;
-    justify-content: center;
-    background-color: rgb(236, 241, 245);
-    padding:20px;
-    font-size: xx-large;
-    color:rgb(66, 64, 64);
-    margin:10px -20px 0px -20px;
-}
-.steps-box .intro .text{
-    padding:5px;
-}
-.steps-box .intro .text span{
-    font-size: small;
-}
-.steps-box .image{
-    padding:10px;
-    display:flex;
-    justify-content: center;
-}
-.steps-box .image img{
-    width:50%;
-}
-
-.steps-box .steps-wrapper{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    gap:20px;
-}
-.steps-box .steps-wrapper .one,.steps-box .steps-wrapper .two,.steps-box .steps-wrapper .three{
-    padding:30px;
-    width:400px;
-    height:fit-content;
-    box-shadow:1px 1px 5px lightgrey;
-    background-color: white;
-}/*one*/
-.steps-box .one{
-    margin-top:16px;
-}
-.steps-box .one .number1{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(255, 255, 255);
-    width:100%;
-    margin-top:-50px;
-}
-
-.steps-box .images img{
-    text-align: start;
-    width:100%;
-}
-.steps-box .one .number1 .num{
-    width:40px;
-    height:40px;
-    border:1px solid;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(24, 55, 83);
-    color:white;
-    border-radius:50%;
-}
-.steps-box .one  .paragraph p{
-    color:rgb(141, 140, 139);
-    padding:10px 0;
-}
-.steps-box .one  .paragraph .buttons{
-    padding:10px 0;
-}
-.steps-box .one  .paragraph .buttons button{
-    padding:4px;
-    background-color: unset;
-    border:1px solid rgb(236, 234, 234);
-    color:rgb(113, 114, 112);
-}/*two*/
-.steps-box .two .number2{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(255, 255, 255);
-    width:100%;
-    margin-top:-50px;
-}
-.steps-box .two .number2 .num{
-    width:40px;
-    height:40px;
-    border:1px solid;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(24, 55, 83);
-    border-radius:50%;
-    color:white;
-}
-.steps-box .two  .paragraph p{
-    color:rgb(141, 140, 139);
-    padding:10px 0;
-}
-.steps-box .two  .paragraph .buttons{
-    padding:10px 0;
-}
-.steps-box .two  .paragraph .buttons button{
-    padding:4px;
-    background-color: unset;
-    border:1px solid rgb(236, 234, 234);
-    color:rgb(113, 114, 112);
-}/*three*/
-.steps-box .three .number3{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(255, 255, 255);
-    width:100%;
-    margin-top:-50px;
-}
-.steps-box .three .number3 .num{
-    width:40px;
-    height:40px;
-    border:1px solid;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(24, 55, 83);
-    border-radius:50%;
-    color:white;
-}
-.steps-box .three  .paragraph p{
-    color:rgb(141, 140, 139);
-    padding:10px 0;
-}
-.steps-box .three  .paragraph .buttons{
-    padding:10px 0;
-}
-.steps-box .three  .paragraph .buttons button{
-    padding:4px;
-    background-color: unset;
-    border:1px solid rgb(236, 234, 234);
-    color:rgb(113, 114, 112);
-}
-.steps-box  .paragraph button:hover{
-    background-color: rgb(68, 62, 62);
-    cursor:pointer;
-    color:red;
-}
-/*result*/
+/*result - top designs*/
 .result{
     display:flex;
     justify-content: center;
@@ -566,6 +424,24 @@ header .web-name span{
     margin:-20px 0 10px 0;
     float:right;
     border-radius: 4px;
+}
+.result .projects .buttons{
+    padding:20px;
+    text-align:center;
+}
+.result .projects .buttons button{
+    background-color: chocolate;
+    border:0;
+    padding:10px;
+    color:white;
+    border-radius: 20px;
+}
+.result .projects .buttons .download{
+    background-color: rgb(48, 47, 46);
+    border:0;
+    padding:10px;
+    color:white;
+    border-radius: 20px;
 }
 /*menu wrapper*/
 .menu-wrapper-box{
@@ -646,6 +522,7 @@ footer{
     background-color: rgb(24, 55, 83);
     color:rgb(212, 208, 208);
     font-size:x-large;
+    margin-top:-44px;
 }
 footer ul{
     list-style: none;
