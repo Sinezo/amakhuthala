@@ -79,6 +79,8 @@ function scrolling(){
         document.querySelector('.nav-small-screen').style.boxShadow='1px 1px 3px lightgrey';
         document.querySelector('.phone').style.width='170px';
         document.querySelector('.phone').style.border='2px solid rgb(181, 197, 110)';
+        document.querySelector('.web-name').style.fontSize="10px";
+        document.querySelector('.web-name').style.color='chocolate';
         
 
     }
@@ -88,5 +90,7 @@ function scrolling(){
         document.querySelector('.nav-small-screen').style.position='relative';
         document.querySelector('.phone').style.width='0';
         document.querySelector('.phone').style.border='0';
+        document.querySelector('.web-name').style.fontSize="x-large";
+        document.querySelector('.web-name').style.color='black';
     }
 }
