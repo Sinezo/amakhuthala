@@ -10,6 +10,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
     <title>E-Learning| Escaletech</title>
     <style>
         *{
@@ -30,6 +34,12 @@
     </style>
 </head>
 <body>
+    <!--TOP MORE INFO-->
+    <div class="top-more-info">
+        <div class="location"><i class="fa-solid fa-location-dot"></i></div>
+        <div class="info"><div class="icon"><i class="fa-regular fa-envelope"></i></div> <div class="email">escaletech@gmail.com</div></div>
+    </div>
+
     <div class="wrap-header">
         <!--HEADER-->
     <header onclick="window.location='index.html'">
@@ -54,10 +64,16 @@
     <div class="phone">
         <div class="icon"><i class="fa-solid fa-phone-flip"></i></div><div class="number">+27786052462</div>
     </div>
-    <ul>
-        <li class="menu-icon"><i class="fa-solid fa-bars-staggered"></i></li>
-        <li onclick="window.location='student_portal.html'" class="sign-in"><i class="fa-solid fa-right-to-bracket"></i></li>
-    </ul>
+    <div class="wrap-nav-small-screen">
+        <!--menu icon-->
+        <div id="menu-icon">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <!--sign in icon-->
+        <div><li onclick="window.location='student_portal.html'" class="sign-in"><i class="fa-solid fa-right-to-bracket"></i></li></div>
+    </div>
 </div>
 
     <div class="alert">

@@ -87,7 +87,24 @@ menu.addEventListener('click', function(){
     }
 
 });
+//contact us form
+function contact_form(){
+    window.location='index.html#contact-us-form';
+    document.querySelector('.menu-wrapper').style.top='20px';
+    document.querySelector('.menu-wrapper').style.height='0';
+    document.querySelector('.menu-wrapper').style.padding='0';
+    document.querySelector('.menu-wrapper').style.overflow='hidden';
 
+    document.querySelector('.bar1').style.transform='rotate(0)';
+    document.querySelector('.bar2').style.transform='translate(0)';
+    document.querySelector('.bar2').style.opacity='1';
+    document.querySelector('.bar3').style.transform='rotate(0)';
+
+    document.querySelector('.bar1').style.margin='0 0 3px 0';
+    document.querySelector('.bar2').style.margin='0 0 3px 0';
+    document.querySelector('.bar3').style.margin='0 0 3px 0';
+    menu_status=1;
+}
 //window scroll
 window.onscroll=function(){
     scrolling();

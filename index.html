@@ -22,11 +22,10 @@
 <body>
     <!--TOP MORE INFO-->
     <div class="top-more-info">
+        <div class="location"><i class="fa-solid fa-location-dot"></i></div>
         <div class="info"><div class="icon"><i class="fa-regular fa-envelope"></i></div> <div class="email">escaletech@gmail.com</div></div>
     </div>
-    <div class="top-more-info">
-
-    </div>
+    
     <!--WRAP HEADER-->
     <div class="wrap-header">
         
@@ -208,7 +207,7 @@
                     <div class="five" id="pos5" onclick="skip_dots5()"></div>
                 </div>
                 <div class="buttons">
-                    <button>See more designs</button> <button class="download">Download PDF</button>
+                    <button>See more designs</button> <button class="download">Download PDF <i class="fa-solid fa-download"></i></button>
                 </div>
             </div>
         </div>
@@ -223,6 +222,7 @@
                     <li onclick="window.location='our_designs.html'">Our designs</li>
                     <li onclick="window.location='our-team.html'">Our team</li>
                     <li onclick="window.location='e-learning.html'">E-learning</li>
+                    <li onclick="contact_form()">Contact us</li>
                 </ul>
         
                 <div class="design">
@@ -271,14 +271,14 @@
         <div class="social-media">
             <h4>Follow Us</h4>
             <ul>
-                <li><i class="fa-brands fa-facebook"></i> Facebook</li>
-                <li> <i class="fa-brands fa-twitter"></i> Twitter</li>
-                <li><i class="fa-brands fa-whatsapp"></i> WhatsApp</li>
-                <li><i class="fa-brands fa-youtube"></i> YouTube</li>
+                <li id="facebook"><i class="fa-brands fa-facebook"></i> Facebook</li>
+                <li id="twitter"> <i class="fa-brands fa-twitter"></i> Twitter</li>
+                <li id="whatsapp"><i class="fa-brands fa-whatsapp" ></i> WhatsApp</li>
+                <li id="youtube"><i class="fa-brands fa-youtube"></i> YouTube</li>
             </ul>
         </div>
 
-        <div class="contact-us-form">
+        <div class="contact-us-form" id="contact-us-form">
             <h4>Contact Us</h4>
             <form action="https://formsubmit.co/87fe266c27fb4d7c9ec7d8608d73b97d" method="POST">
                 <label for="email">Email:</label><br>
