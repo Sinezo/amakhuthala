@@ -97,42 +97,48 @@ function scrolling(){
 }
 
 //projects
-var projects_position=1;
-function projects(){
-    if(projects_position==1){
-        document.querySelector('.projects_images').src="Screenshot_20230425-172947_Gallery.jpg";
-
-        document.querySelector('#pos1').style.backgroundColor='white';
-        document.querySelector('#pos2').style.backgroundColor='rgb(114, 117, 111)';
-
-        projects_position=2;
-    }
-    else if(projects_position==2){
-        document.querySelector('.projects_images').src="Screenshot_20230430-184718_Gallery.jpg";
-
-        document.querySelector('#pos2').style.backgroundColor='white';
-        document.querySelector('#pos3').style.backgroundColor='rgb(114, 117, 111)';
-        projects_position=3;
-    }
-    else if(projects_position==3){
-        document.querySelector('.projects_images').src="sinethemba.jpg";
-
-        document.querySelector('#pos3').style.backgroundColor='white';
-        document.querySelector('#pos4').style.backgroundColor='rgb(114, 117, 111)';
-        projects_position=4;
-    }
-    else if(projects_position==4){
-        document.querySelector('.projects_images').src="Screenshot_20230430-184715_Gallery.jpg";
-
-        document.querySelector('#pos4').style.backgroundColor='white';
-        document.querySelector('#pos5').style.backgroundColor='rgb(114, 117, 111)';
-        projects_position=5;
-    }
-    else{
-        document.querySelector('.projects_images').src="Screenshot_20230426-180826_Gallery.jpg";
-
-        document.querySelector('#pos5').style.backgroundColor='white';
-        document.querySelector('#pos1').style.backgroundColor='rgb(114, 117, 111)';
-        projects_position=1;
-    }
+//skipping by dots
+function skip_dots1(){
+    document.querySelector('.projects_images').src="Screenshot_20230425-172947_Gallery.jpg";
+    document.querySelector('#pos1').style.backgroundColor='rgb(114, 117, 111)';
+    document.querySelector('#pos2').style.backgroundColor='white';
+    document.querySelector('#pos3').style.backgroundColor='white';
+    document.querySelector('#pos4').style.backgroundColor='white';
+    document.querySelector('#pos5').style.backgroundColor='white';
+}
+function skip_dots2(){
+    document.querySelector('.projects_images').src="Screenshot_20230430-184718_Gallery.jpg";
+    document.querySelector('#pos2').style.backgroundColor='rgb(114, 117, 111)';
+    document.querySelector('#pos1').style.backgroundColor='white';
+    document.querySelector('#pos3').style.backgroundColor='white';
+    document.querySelector('#pos4').style.backgroundColor='white';
+    document.querySelector('#pos5').style.backgroundColor='white';
+    projects();
+}
+function skip_dots3(){
+    document.querySelector('.projects_images').src="sinethemba.jpg";
+    document.querySelector('#pos3').style.backgroundColor='rgb(114, 117, 111)';
+    document.querySelector('#pos1').style.backgroundColor='white';
+    document.querySelector('#pos2').style.backgroundColor='white';
+    document.querySelector('#pos4').style.backgroundColor='white';
+    document.querySelector('#pos5').style.backgroundColor='white';
+    projects();
+}
+function skip_dots4(){
+    document.querySelector('.projects_images').src="Screenshot_20230430-184715_Gallery.jpg";
+    document.querySelector('#pos4').style.backgroundColor='rgb(114, 117, 111)';
+    document.querySelector('#pos1').style.backgroundColor='white';
+    document.querySelector('#pos3').style.backgroundColor='white';
+    document.querySelector('#pos2').style.backgroundColor='white';
+    document.querySelector('#pos5').style.backgroundColor='white';
+    projects();
+}
+function skip_dots5(){
+    document.querySelector('.projects_images').src="DSC_8533 (2).jpg";
+    document.querySelector('#pos5').style.backgroundColor='rgb(114, 117, 111)';
+    document.querySelector('#pos1').style.backgroundColor='white';
+    document.querySelector('#pos3').style.backgroundColor='white';
+    document.querySelector('#pos4').style.backgroundColor='white';
+    document.querySelector('#pos2').style.backgroundColor='white';
+    projects();
 }
