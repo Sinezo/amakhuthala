@@ -13,7 +13,7 @@ body{
 /*font-family: 'Poppins', sans-serif;*/
 /*top-more-info*/
 .top-more-info{
-    padding:5px;
+    padding:10px;
     display:flex;
     justify-content: end;
     background-color: rgb(42, 67, 114);
@@ -23,7 +23,6 @@ body{
 }
 .top-more-info .info{
     display:flex;
-    margin-top:7px;
     border:0;
     transition: color 300ms ease-in-out;
 }
@@ -38,7 +37,6 @@ body{
 .location{
     position:absolute;
     left:10px;
-    top:14px;
 }
 .location i:hover{
     cursor: pointer;
