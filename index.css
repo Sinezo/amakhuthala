@@ -99,6 +99,7 @@ header .web-name img{
     margin-top:-95px;
     padding:20px;
     width:100%;
+    transition:all 300ms ease-in-out;
 }
 .nav-small-screen .wrap-nav-small-screen{
     display:flex;

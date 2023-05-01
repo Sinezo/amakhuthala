@@ -20,16 +20,8 @@
             padding:0;
             margin:0; 
         }
-        .alert{
-            text-align: center;
+        .about-us-container{
             padding:20px;
-        }
-        .alert i{
-            font-size:xx-large; 
-        }
-        .about-us{
-            border-bottom: 2px solid chocolate;
-            width:fit-content;
         }
     </style>
 </head>
@@ -77,11 +69,19 @@
         <div><li onclick="window.location='student_portal.html'" class="sign-in"><i class="fa-solid fa-right-to-bracket"></i></li></div>
     </div>
 </div>
-
-    <div class="alert">
-        <i class="fa-solid fa-road-circle-exclamation"></i><br>
-        There is nothing to show at the moment. 
-    </div>
+     <!--ABOUT US-->
+     <div class="about-us-container">
+        <h3>About us</h3>
+        <p>
+            escaletech  is a group of diligent engineering enthusiasts who seek , at any given time to apply the laws and principles 
+        of electrical engineering and create something <u>significant </u> out of them.
+        <br><br>
+        In the process of designing, we take three steps to ensure that our designs are working accordingly and meet the objectives.
+        <br><br>
+        Electricity is dangerous, that is why in each and every design we follow the <u>International Electricatronic Commission (IEC)</u> and 
+        <u>National Electrical Code (NEC)</u> standards.
+        </p> 
+     </div>
 
         <!--MENU WRAPPER BOX-->
         <div class="menu-wrapper-box">
@@ -102,6 +102,66 @@
                 </div>
             </div>
         </div>
+
+            <!--custom-shape-divider-top-1682867737-->
+    <div class="custom-shape-divider-top-1682867737">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill" fill="white"></path>
+        </svg>
+    <!--FOOTER-->
+    <footer>
+        <div class="aboutt-us">
+            <h4>Company</h4>
+            <ul>
+                <li onclick="window.location='about-us.html'" >About us</li>
+                <li>Our Services</li>
+                <li>Our Team</li>
+                <li>Privacy & Policy</li>
+            </ul>
+        </div>
+
+        <div class="help">
+            <h4>Get Help</h4>
+            <ul>
+                <li>Consult</li>
+                <li>FAQs</li>
+                <li>Delivery</li>
+                <li>Payment Methods</li>
+            </ul>
+        </div>
+
+        <div class="online-services">
+            <h4>Online Activities</h4>
+            <ul>
+                <li>Blog</li>
+            <li>Hire</li>
+            <li>Buy</li>
+            <li>Learn</li>
+            </ul>
+        </div>
+
+        <div class="social-media">
+            <h4>Follow Us</h4>
+            <ul>
+                <li id="facebook"><i class="fa-brands fa-facebook"></i> Facebook</li>
+                <li id="twitter"> <i class="fa-brands fa-twitter"></i> Twitter</li>
+                <li id="whatsapp"><i class="fa-brands fa-whatsapp" ></i> WhatsApp</li>
+                <li id="youtube"><i class="fa-brands fa-youtube"></i> YouTube</li>
+            </ul>
+        </div>
+
+        <div class="contact-us-form" id="contact-us-form">
+            <h4>Contact Us</h4>
+            <form action="https://formsubmit.co/87fe266c27fb4d7c9ec7d8608d73b97d" method="POST">
+                <label for="email">Email:</label><br>
+                <input type="email" placeholder="example@gmail.com" name="Email">
+                <label for="message" class="message">Message:</label><br>
+                <textarea type="text" placeholder="Type here" name="Message"></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+       
+    </footer>
 
     <script src="index.js"></script>
 </body>

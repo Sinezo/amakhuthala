@@ -46,7 +46,7 @@ var position=1;
                 
                 position=1;
             }
-            setTimeout('slide_function()',7000);
+            setTimeout('slide_function()',10000);
         }
         window.onload = slide_function();
 
@@ -112,7 +112,7 @@ window.onscroll=function(){
 function scrolling(){
     if(document.body.scrollTop > 0 || document.documentElement.scrollTop >0){
         document.querySelector('.nav-small-screen').style.backgroundColor='white';
-        document.querySelector('.nav-small-screen').style.marginTop='-140px';
+        document.querySelector('.nav-small-screen').style.marginTop='-145px';
         document.querySelector('.nav-small-screen').style.position='fixed';
         document.querySelector('.nav-small-screen').style.boxShadow='1px 1px 3px lightgrey';
         document.querySelector('.phone').style.width='170px';
