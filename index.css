@@ -164,9 +164,10 @@ header .web-name span{
     box-shadow:1px 1px 3px;
 }
 .nav-small-screen .phone .icon{
-    background-color: rgb(181, 197, 110) ;
+    background-color: rgb(245, 247, 243) ;
     padding:8px;
-    color:white;
+    color:rgb(75, 156, 59);
+    font-size:larger;
 }
 .nav-small-screen .phone .number{
     padding:0 5px;

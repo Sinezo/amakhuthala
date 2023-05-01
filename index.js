@@ -116,7 +116,7 @@ function scrolling(){
         document.querySelector('.nav-small-screen').style.position='fixed';
         document.querySelector('.nav-small-screen').style.boxShadow='1px 1px 3px lightgrey';
         document.querySelector('.phone').style.width='170px';
-        document.querySelector('.phone').style.border='2px solid rgb(181, 197, 110)';
+        document.querySelector('.phone').style.border='1px solid lightgrey';
         document.querySelector('.web-name').style.fontSize="10px";
         document.querySelector('.web-name').style.color='chocolate';
         
