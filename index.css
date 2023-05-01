@@ -53,16 +53,11 @@ header{
 }
 
 header .web-name{
-    padding:0px;
-    font-weight: 600;
-    font-size: x-large;
     margin:0 0 0 -12px;
     transition: all 800ms ease-in-out;
 }
-header .web-name span{
-    color:rgb(204, 130, 33);
-    font-weight: 600;
-    font-size: x-large;
+header .web-name img{
+    width:140px;
 }
 /*nav*/
 .nav-big-screen{
@@ -103,7 +98,7 @@ header .web-name span{
 .nav-small-screen{
     display:flex;
     justify-content: end;
-    margin-top:-76px;
+    margin-top:-95px;
     padding:20px;
     width:100%;
 }

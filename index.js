@@ -126,7 +126,7 @@ function scrolling(){
         document.querySelector('.nav-small-screen').style.backgroundColor='unset';
         document.querySelector('.nav-small-screen').style.boxShadow='none';
         document.querySelector('.nav-small-screen').style.position='relative';
-        document.querySelector('.nav-small-screen').style.marginTop='-76px';
+        document.querySelector('.nav-small-screen').style.marginTop='-95px';
         document.querySelector('.phone').style.width='0';
         document.querySelector('.phone').style.border='0';
         document.querySelector('.web-name').style.fontSize="x-large";
