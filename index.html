@@ -53,10 +53,16 @@
         <div class="phone">
             <div class="icon"><i class="fa-solid fa-phone-flip"></i></div><div class="number">+27786052462</div>
         </div>
-        <ul>
-            <li class="menu-icon"><i class="fa-solid fa-bars-staggered"></i></li>
-            <li onclick="window.location='student_portal.html'" class="sign-in"><i class="fa-solid fa-right-to-bracket"></i></li>
-        </ul>
+        <div class="wrap-nav-small-screen">
+            <!--menu icon-->
+            <div id="menu-icon">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <!--sign in icon-->
+            <div><li onclick="window.location='student_portal.html'" class="sign-in"><i class="fa-solid fa-right-to-bracket"></i></li></div>
+        </div>
     </div>
 
  
@@ -210,7 +216,6 @@
     <!--MENU WRAPPER BOX-->
     <div class="menu-wrapper-box">
         <div class="menu-wrapper" id="menu-wrapper">
-            <div class="close"><div class="icon" id="close-menu"><i class="fa-solid fa-xmark"></i></div></div>
             <div class="wrap-div">
                 <ul>
                     <li class="home" onclick="window.location='index.html'">HOME</li>

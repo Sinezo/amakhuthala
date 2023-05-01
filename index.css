@@ -97,21 +97,36 @@ header .web-name span{
     padding:20px;
     width:100%;
 }
-.nav-small-screen ul{
+.nav-small-screen .wrap-nav-small-screen{
     display:flex;
     list-style: none;
     gap:30px;
 }
-.nav-small-screen ul li{
-    padding:10px;
-}
-.nav-small-screen ul li:hover{
-    cursor: pointer;
-    color:rgb(209, 131, 41);
-    border-bottom:1px solid;
-}
 .nav-small-screen{
     display:none;
+}
+#menu-icon{
+    margin:10px 0 0 0;
+}
+#menu-icon .bar1{
+    width:30px;
+    height:5px;
+    background-color: rgb(70, 77, 67);
+    margin-bottom:3px;
+    transition:transform 300ms ease-in-out
+}
+#menu-icon .bar2{
+    width:30px;
+    height:5px;
+    background-color: rgb(70, 77, 67);
+    margin-bottom:3px;
+    transition:transform 300ms ease-in-out
+}
+#menu-icon .bar3{
+    width:30px;
+    height:5px;
+    background-color: rgb(70, 77, 67);
+    transition:transform 300ms ease-in-out
 }
 .nav-small-screen .sign-in{
     background-color: chocolate;
