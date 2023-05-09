@@ -56,7 +56,7 @@ var menu_status=1;
 menu.addEventListener('click', function(){
     if(menu_status==1){
         document.querySelector('.menu-wrapper').style.top='120px';
-    document.querySelector('.menu-wrapper').style.height='90%';
+    document.querySelector('.menu-wrapper').style.height='50%';
     document.querySelector('.menu-wrapper').style.padding='20px';
     document.querySelector('.menu-wrapper').style.overflow='visible';
 

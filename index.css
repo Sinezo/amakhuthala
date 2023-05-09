@@ -400,8 +400,8 @@ header .web-name img{
 .top-services button{
     padding:10px;
     border-radius: 4px;
+    border:0;
     margin-bottom:5px;
-    border:1px solid;
     background-color:chocolate;
     color:white;
     width:100%;
@@ -515,13 +515,14 @@ header .web-name img{
     position:fixed;
     top:20px;
     width:80%;
-    box-shadow:1px 1px 3px;
+    box-shadow:1px 1px 3px lightgrey;
     height: 0;
     overflow: hidden;
     transition:top 200ms ease-in-out;
     font-size: small;
     line-height: 40px;
     color:rgb(37, 37, 37);
+    border-left:2px solid rgb(223, 222, 222);
 }
 .menu-wrapper .close{
     display:flex;
@@ -694,7 +695,6 @@ footer div h4{
     padding:10px;
     border-radius: 4px;
     margin-bottom:5px;
-    border:1px solid;
     background-color:chocolate;
     color:white;
     width:100%;
