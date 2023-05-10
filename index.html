@@ -23,7 +23,7 @@
     <!--TOP MORE INFO-->
     <div class="top-more-info">
         <div class="location"><i class="fa-solid fa-location-dot"></i></div>
-        <div class="info"><div class="icon"><i class="fa-regular fa-envelope"></i></div> <div class="email">escaletech@gmail.com</div></div>
+        <div class="info"><div class="icon"><i class="fa-regular fa-envelope"></i></div> <div class="email" onclick="window.location='mailto:lusawanasinethemba@gmail.com'">escaletech@gmail.com</div></div>
     </div>
 
     <!--WRAP HEADER-->
@@ -52,7 +52,7 @@
     <div class="nav-small-screen">
         <!--phone-->
         <div class="phone">
-            <div class="icon"><i class="fa-brands fa-whatsapp" ></i></i></div><div class="number">+27786052462</div>
+            <div class="icon"><i class="fa-brands fa-whatsapp" ></i></i></div><div class="number" onclick="window.location='tel:+27786052462'">+27786052462</div>
         </div>
         <div class="wrap-nav-small-screen">
             <!--menu icon-->
@@ -93,9 +93,9 @@
                         <p class="p-text2">
                             We are a team of diligent beings filled with enthusiasm in the field of 
                 engineering. We apply laws and principles of electrical engineering to transform ideas 
-                into reality following <b>IEC</b> and <b>NEC</b> standards. <br>
+                into reality following <b onclick="window.location=''">IEC</b> and <b>NEC</b> standards. <br>
                             <br>
-                                <button>Contact us <i class="fa-solid fa-phone-flip"></i></button> <button onclick="window.location='our_designs.html'">Explore designs <i class="fa-solid fa-up-right-from-square"></i></button>
+                                <button onclick="window.location='tel:+27786052462'">Contact us <i class="fa-solid fa-phone-flip"></i></button> <button onclick="window.location='our_designs.html'">Explore designs <i class="fa-solid fa-up-right-from-square"></i></button>
                         </p>
                     </div>
                     
@@ -203,7 +203,40 @@
                     <div>We just can't help our curiosity & diligence, we design and design again...</div>
 
                     <div class="consult-btn">
-                        <button>Consult</button>
+                        <button id="consult-btn">Consult</button>
+                        <div class="consult-form">
+                            <div class="icon"><i class="fa-solid fa-user-tie"></i></div>
+                            <h3>Hear from the experts</h3>
+                            <p>
+                                Be it a technical question or a word of inspiration, we want to hear that in detail.
+                                <div class="wrapper">
+                                    <h4>Important Information</h6>
+                                        <ul>
+                                            <li>As you might have heared that we are diligent team, sometimes we may not 
+                                                get back to you immediately as we are busy.
+                                            </li>
+
+                                            <li>As a group of electrical engineering enthusiasts, we have studied and understood 
+                                                the laws and principles of electrical engineering. Ours is not to say we guarantee to give correct response to every 
+                                                technical question posed. What we do is give the best response we think is suitable for that 
+                                                specific problem and it is then up to the person consulting to take that further like doing more research 
+                                                refering to that response.
+                                            </li>
+                                            <li>
+                                                Should you misunderstand our explanation or view on technical problem 
+                                                and use that information to build or work on electrical project and fail, it is your own problem, our team does not take accountability for such.
+                                            </li>
+
+                                        </ul>
+                                </div>
+                                <div class="buttons">
+                                    <button onclick="window.location='https://wa.me/<076052462>'">Consult with expert</button><br>
+                                    <span>Consulting us means you have read and understood the important information provided 
+                                        above.
+                                    </span>
+                                </div>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -258,7 +291,7 @@
             <ul>
                 <li onclick="window.location='about-us.html'" >About us</li>
                 <li>Our Services</li>
-                <li>Our Team</li>
+                <li onclick="window.location='our-team.html'">Our Team</li>
                 <li>Privacy & Policy</li>
             </ul>
         </div>
@@ -286,10 +319,10 @@
         <div class="social-media">
             <h4>Follow Us</h4>
             <ul>
-                <li id="facebook"><i class="fa-brands fa-facebook"></i> Facebook</li>
-                <li id="twitter"> <i class="fa-brands fa-twitter"></i> Twitter</li>
-                <li id="whatsapp"><i class="fa-brands fa-whatsapp" ></i> WhatsApp</li>
-                <li id="youtube"><i class="fa-brands fa-youtube"></i> YouTube</li>
+                <li id="facebook" onclick="window.location='https://www.facebook.com/escaletech'"><i class="fa-brands fa-facebook"></i> Facebook</li>
+                <li id="twitter"> <i class="fa-brands fa-twitter" onclick="window.location='https://www.twitter.com/'"></i> Twitter</li>
+                <li id="whatsapp"><i class="fa-brands fa-whatsapp" onclick="window.location='https://wa.me/<0786052462>'"></i> WhatsApp</li>
+                <li id="youtube"><i class="fa-brands fa-youtube" onclick="window.location='https://www.youtube.com/'"></i> YouTube</li>
             </ul>
         </div>
 

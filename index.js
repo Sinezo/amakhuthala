@@ -180,3 +180,12 @@ function skip_dots5(){
     document.querySelector('#pos2').style.backgroundColor='white';
     projects();
 }
+
+//consult click
+var consult = document.querySelector('#consult-btn');
+consult.addEventListener('click', function(){
+    document.querySelector('.consult-form').style.height='100%';
+    document.querySelector('.consult-form').style.top='20px';
+    document.querySelector('.consult-form').style.backgroundColor="white";
+    document.querySelector('.consult-form').style.boxShadow='1px 1px 3px lightgrey';
+});

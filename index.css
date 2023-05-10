@@ -268,6 +268,9 @@ header .web-name img{
 .slide-show .box2{
     min-width:100%;
 }
+.slide-show .box2 b{
+    color:rgb(42, 67, 114)
+}
 .slide-show .box2 .text2{
     padding:10px 0;
     height:200px;
@@ -291,6 +294,9 @@ header .web-name img{
 }
 .slide-show .box3{
     min-width:100%;
+}
+.slide-show .box3 b{
+    color:rgb(42, 67, 114)
 }
 .slide-show .box3 .text3{
     height:200px;
@@ -333,6 +339,7 @@ header .web-name img{
     border-radius:20px;
     margin-top:20px;
 }
+
 /*welcome-images*/
 .welcome-images{
     padding:10px;
@@ -452,6 +459,46 @@ header .web-name img{
 .outcome .consult-btn button:hover{
     cursor: pointer;
     background-color: rgb(202, 117, 56);
+}
+.outcome .consult-form{
+    text-align: start;
+    position:fixed;
+    height:0;
+    overflow: hidden;
+    top:0px;
+    transition: top 300ms ease-in;
+    left:20px;
+    right:20px;
+    padding:0;
+}
+.outcome .consult-form .icon{
+    font-size: 50px;
+    text-align: center;
+    color:rgb(207, 200, 191);
+}
+.outcome .consult-form h3{
+    text-align: center;
+    padding:10px;
+}
+.outcome .consult-form p{
+    padding:10px;
+}
+.outcome .consult-form .wrapper{
+    padding:10px;
+    border:1px solid lightgrey;
+    height:250px;
+    overflow-y: scroll;
+}
+.outcome .consult-form ul{
+    list-style:square; 
+    padding:10px  10px 10px 20px;
+}
+.outcome .consult-form .buttons{
+    text-align: center;
+}
+.outcome .consult-form .buttons button{
+    width:100%;
+    margin:10px 0 0 0;
 }
 .result .projects{
     width:500px;
